@@ -12,7 +12,7 @@ Este repositório é um **protótipo independente e descartável**, com Babylon.
 
 ## Antes da próxima autoria: imagens e novos personagens
 
-Abra visualmente os quatro arquivos de `docs/art/README.md`, depois leia `docs/art/ART_TO_BABYLON.md` e `docs/research/HORIZON_NMS_WORLDBUILDING.md`. Eles integram Horizon Zero Dawn/No Man’s Sky às referências existentes por princípios originais e escopo finito. Preserve rótulos de IA e diferencie meta visual de screenshot do jogo.
+Abra visualmente os oito arquivos de `docs/art/README.md`, depois leia `docs/art/ART_TO_BABYLON.md` e `docs/research/HORIZON_NMS_WORLDBUILDING.md`. Eles integram Horizon Zero Dawn/No Man’s Sky às referências existentes por princípios originais e escopo finito. Preserve rótulos de IA e diferencie meta visual de screenshot do jogo.
 
 Os novos lotes 4A–4C de `MASTER_GOAL.md` exigem refinamento de mundo, rigs/animações de astronauta e NPCs (além dos robôs) e o buddy Cometa: cachorro salsicha astronauta. A ativação do cachorro é opcional para o jogador; implementá-lo é parte requerida desta goal. `docs/animation/CHARACTER_ANIMATION_SPEC.md`, `docs/characters/COMETA_BUDDY.md` e manifests em `content-design/` são contratos propostos; não trate paths futuros como modelos existentes. Primeiro autorar/importar/validar os GLBs e clips, depois integrar. Cometa e as novas animações ainda não estão no site atual.
 
@@ -34,3 +34,7 @@ Os exemplos Godot/Unity das skills são referências conceituais, não instruç�
 Continue decisões reversíveis sem pedir autorização repetida. Reduza área ou efeitos para manter o ciclo completo, diagnóstico e recuperação. IA, contas, chaves, ferramenta paga e backend são opcionais. Jogo e biblioteca científica precisam funcionar offline após carregar os arquivos locais.
 
 Faça lotes finitos com um integrador. Mantenha código, fontes, licença dos assets e evidências revisáveis. Não publique nem faça submissão oficial automaticamente. Nunca descreva teste de CPU como validação de GPU, nem orçamento de desempenho como medição. Se houver bloqueio real, conclua o que independe dele e registre o comando/recurso ausente e o próximo passo exato.
+
+## Episódio e storyboards adicionais
+
+As pranchas 05–08 ligam o mundo ao episódio: vínculo/treino, viagem, investigação/Scout e retorno/colheita. Ler `docs/narrative/EPISODE_01_TREATMENT.md` e `content-design/narrative-beats.json`; lote 4D da master goal. São dez beats propostos sobre alvos reais. Implementar cenas sem transformar a exploração numa sequência de diálogos nem ignorar recursos/alerta. Reutilizar o que já existe e marcar a nova autoria como pendente até testada.

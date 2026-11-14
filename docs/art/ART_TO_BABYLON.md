@@ -1,6 +1,6 @@
 # Das imagens ao mundo Babylon.js
 
-Contrato de produção proposto, 14/11/2026. As quatro pranchas são referências originais; todos os sistemas abaixo ainda exigem implementação e captura real para aceite. A demo atual já tem cinco regiões, oito GLBs, pivôs animados e simulação pura. Ela ainda não tem os novos rigs, Cometa, terreno desta composição ou a densidade das imagens.
+Contrato de produção proposto, 14/11/2026. As oito pranchas são referências originais; todos os sistemas abaixo ainda exigem implementação e captura real para aceite. A demo atual já tem cinco regiões, oito GLBs, pivôs animados e simulação pura. Ela ainda não tem os novos rigs, Cometa, terreno desta composição ou a densidade das imagens.
 
 ## Ordem de autoridade
 
@@ -44,3 +44,7 @@ Criar comparação por prancha: alvo → captura real do mesmo ponto de câmera 
 Executar percurso completo com sucesso e falha, dois atores do mesmo rig, pausa/retomada, mudança de região, recall bloqueado e save/reload. Dar baixa em meshes, skeletons, grupos, texturas, observers e tarefas assíncronas descartadas. Registrar 20 transições reais sem crescimento contínuo, console e assets.
 
 Registrar commit, GPU/browser, resolução/DPR, qualidade, carga fria/quente e trace de 60 s. Meta inicial: 60 fps desktop e modo econômico, sujeita a orçamento de frame medido; não é resultado atual. Orçamentos de personagem estão na spec de animação e são provisórios. Reduzir efeitos/área antes de cortar simulação, contato de patas, acessibilidade ou diagnóstico. Sem GPU, entregar código/GLBs e testes possíveis com pendência precisa, sem captura fictícia.
+
+## Storyboards 05–08: espaço a serviço do episódio
+
+A academia oferece vínculo e teste sem risco; a cabine marca a passagem entre mundos; o cânion dá evidência e novo companheiro; o abrigo/estufa fecha o episódio com uma base que responde ao cuidado. Usar o tratamento `docs/narrative/EPISODE_01_TREATMENT.md` para preservar causa e efeito. Não implementar uma sequência rígida de cutscenes que ignore a radiação ou recursos atuais. A geometria e câmera devem permitir a ação mostrada, e a comparação deve usar capturas reais, não substituir o mundo por um storyboard.

@@ -12,7 +12,7 @@ O projeto precisa funcionar em navegador público sem login obrigatório. Não �
 
 ## 1A. Primeiro: abrir as referências visuais
 
-Antes de continuar a autoria de cenário/personagem, abrir os quatro PNGs em `docs/art/README.md`: atlas de ambientes, vista de exploração Aurora, turnaround do salsichinha Cometa e keyposes de animação. As imagens já foram criadas nesta revisão; preservar hashes/rótulos e não gerar outro pacote para adiar implementação. Ler `docs/art/ART_TO_BABYLON.md`, `docs/research/HORIZON_NMS_WORLDBUILDING.md`, `docs/animation/CHARACTER_ANIMATION_SPEC.md` e `docs/characters/COMETA_BUDDY.md`.
+Antes de continuar a autoria de cenário/personagem, abrir os oito PNGs em `docs/art/README.md`: quatro referências-base de mundo/personagem e quatro storyboards da academia, trânsito, cânion e abrigo/colheita. As imagens já foram criadas nesta revisão; preservar hashes/rótulos e não gerar outro pacote para adiar implementação. Ler `docs/art/ART_TO_BABYLON.md`, `docs/research/HORIZON_NMS_WORLDBUILDING.md`, `docs/animation/CHARACTER_ANIMATION_SPEC.md` e `docs/characters/COMETA_BUDDY.md`.
 
 Se a ferramenta não puder ver imagens locais, declarar o limite, usar as descrições e continuar o que independe de visão. Não alegar comparação visual inexistente. A arte é alvo, não gameplay ou modelo pronto. A prancha 02 corrigida governa gelo não emissivo/iluminação lunar; a 03 governa proporções de Cometa. O humano ilustrado é uma opção de aparência original, não bloqueio à personalização prevista.
 
@@ -124,6 +124,12 @@ Modelar a prancha 03 em GLB local original e integrá-lo adicionalmente aos rob�
 UI permite ativar/desativar buddy e chamar/esperar; o personagem reage a carinho sem alterar física ou concluir quest. Validar recall no mundo, não teletransportar para dentro de parede. Versionar/migrar save de estado opcional, região, modo e destino seguro; restaurar não duplica companions/custos/eventos. A mesma missão deve ser concluível com Cometa ativo e desativado. Documentar contabilidade de suporte à vida antes de prometer taxas por ator. Cometa é ficção autoral, não traje/animal aprovado pela NASA.
 
 Aceite: asset e animações reais, controles e presença no jogo, bloqueio/recall/airlock/retorno/pausa/reload testados e captura mostrando caminhada/trote/sentar/carinho em contexto. Marcar pendente o que não puder medir; não dar baixa por haver apenas concept art.
+
+### Lote 4D — integrar espaço e roteiro do episódio
+
+Usar `docs/narrative/EPISODE_01_TREATMENT.md`, `content-design/narrative-beats.json` e pranchas 05–08. Entregar chegada/vínculo, falha segura, preparo/transição, Aurora, expedição e vestígios, Scout/amostra, aviso/retorno e colheita/relatório. Falas curtas e relíveis; diálogo dá pista, equipamentos executam a intervenção. Não fixar a ordem do storyboard quando a previsão exigir abrigo mais cedo. Cometa pode esperar em segurança e sua ausência não bloqueia o caminho.
+
+Aceite: cada beat tem entrada observável, alvo alcançável, ação com consequência da simulação, evidência e recuperação. A pessoa pode antecipar ou adiar cultivo com efeito real em água/energia/tempo; deixar carga secundária ligada impede estabilidade no treino. Contexto e escolha de tom não alteram a física por LLM. A jornada funciona pulando falas opcionais e também com todas elas lidas; pausa de leitura é uniforme. Nenhum quadro de flutuação prova 6DoF e nenhum instrumento desenhado fornece valores para hardcode. Capturar a cena real, provar gates/retorno e registrar o que falta.
 
 ### Lote 5 — RPG, visual novel e exploração
 

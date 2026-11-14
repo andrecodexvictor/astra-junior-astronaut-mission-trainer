@@ -584,6 +584,10 @@
     "runtimeChanged": false,
     "newRigsImplemented": false,
     "cometaImplemented": false,
-    "visualTargetReached": false
+    "visualTargetReached": false,
+    "referenceBoardCount": 8,
+    "narrativeTreatment": "docs/narrative/EPISODE_01_TREATMENT.md",
+    "narrativeBeats": "content-design/narrative-beats.json",
+    "newEpisodeImplemented": false
   }
 }

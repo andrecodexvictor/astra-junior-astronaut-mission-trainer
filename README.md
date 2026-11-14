@@ -34,9 +34,11 @@ The orbital cabin currently uses floor-assisted movement, not six-degree-of-free
 
 ## Visual targets and next character goal
 
-Open [the four original concept boards](docs/art/README.md): environment atlas, Aurora exploration vista, Cometa turnaround and character keyposes. They are AI-generated, visibly labelled references for implementation, **not current game screenshots or animation clips**. [The Horizon Zero Dawn / No Man’s Sky research](docs/research/HORIZON_NMS_WORLDBUILDING.md) translates primary sources into scoped Babylon worldbuilding.
+Open [the eight original concept boards](docs/art/README.md): environment atlas, Aurora exploration vista, Cometa turnaround, character keyposes and four episode storyboards. They are AI-generated, visibly labelled references for implementation, **not current game screenshots or animation clips**. [The Horizon Zero Dawn / No Man’s Sky research](docs/research/HORIZON_NMS_WORLDBUILDING.md) translates primary sources into scoped Babylon worldbuilding.
 
 The next goal requires humanoid and robot animation work plus **Cometa, an astronaut dachshund buddy**. His selection is optional for the player; creating his real GLB/rig/clips and integration is required for that goal. See [animation specification](docs/animation/CHARACTER_ANIMATION_SPEC.md), [Cometa](docs/characters/COMETA_BUDDY.md) and MASTER_GOAL batches 4A–4C. These characters/animations are not yet added to the live demo. `npm run audit:art` verifies the concept files and provenance.
+
+The proposed episode [Uma luz de cada vez](docs/narrative/EPISODE_01_TREATMENT.md) connects ten narrative beats to actual world targets, playable actions, evidence and recovery. The new storyboards and dialogues remain authoring targets, not scenes already implemented.
 
 ## Continue with Gemini
 

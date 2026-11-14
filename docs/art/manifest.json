@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "status": "reference_only",
   "images": [
     {
@@ -77,6 +77,121 @@
       "credit": "ASTRA project, AI-assisted original concept art",
       "rights": "Original ASTRA contribution under project license; no third-party game screenshot used as an input.",
       "review": "Concept images visually inspected; human helmets and illuminated non-emissive ice/frost corrected. No runtime 3D/rig/animation acceptance implied."
+    },
+    {
+      "id": "story-academy",
+      "path": "docs/art/05-academy-storyboard.png",
+      "title": "Academia: o primeiro vínculo",
+      "sha256": "fe2abb2654b8bac79130984d9b450d5a30708c7e811ac50614a2687d048f4a12",
+      "bytes": 2908049,
+      "width": 1671,
+      "height": 941,
+      "role": "narrative_and_environment_storyboard",
+      "narrativeBeatIds": [
+        "arrival",
+        "trial"
+      ],
+      "classification": "AI-generated original narrative concept; not gameplay, measured geography, a 3D asset or exported animation",
+      "aiGenerated": true,
+      "visibleAiLabel": true,
+      "runtimeAsset": false,
+      "tool": "OpenAI image_gen",
+      "date": "2026-11-14",
+      "credit": "ASTRA project, AI-assisted original concept art",
+      "rights": "Original ASTRA contribution under project license; only prior original ASTRA boards used as visual inputs.",
+      "review": "Visually inspected: distinct Scout/PIP, safe Cometa, invisible radiation conveyed by instruments and no lunar storm clouds. Proposed scenes and readings, not runtime evidence."
+    },
+    {
+      "id": "story-transit",
+      "path": "docs/art/06-transit-storyboard.png",
+      "title": "Trânsito: entre dois mundos",
+      "sha256": "baff3d2798366c81136dd16670d540416552d0878a9ad618eecc674b3d430935",
+      "bytes": 2953313,
+      "width": 1672,
+      "height": 941,
+      "role": "narrative_and_environment_storyboard",
+      "narrativeBeatIds": [
+        "transit",
+        "aurora"
+      ],
+      "classification": "AI-generated original narrative concept; not gameplay, measured geography, a 3D asset or exported animation",
+      "aiGenerated": true,
+      "visibleAiLabel": true,
+      "runtimeAsset": false,
+      "tool": "OpenAI image_gen",
+      "date": "2026-11-14",
+      "credit": "ASTRA project, AI-assisted original concept art",
+      "rights": "Original ASTRA contribution under project license; only prior original ASTRA boards used as visual inputs.",
+      "review": "Visually inspected: distinct Scout/PIP, safe Cometa, invisible radiation conveyed by instruments and no lunar storm clouds. Proposed scenes and readings, not runtime evidence."
+    },
+    {
+      "id": "story-canyon",
+      "path": "docs/art/07-canyon-discovery-storyboard.png",
+      "title": "Cânion: um sinal de volta",
+      "sha256": "e8464e43cede31ef7997b4bdd39f6acc4ea72f4ce35d1edd7bf914349e217578",
+      "bytes": 3242107,
+      "width": 1672,
+      "height": 941,
+      "role": "narrative_and_environment_storyboard",
+      "narrativeBeatIds": [
+        "trace",
+        "scout"
+      ],
+      "classification": "AI-generated original narrative concept; not gameplay, measured geography, a 3D asset or exported animation",
+      "aiGenerated": true,
+      "visibleAiLabel": true,
+      "runtimeAsset": false,
+      "tool": "OpenAI image_gen",
+      "date": "2026-11-14",
+      "credit": "ASTRA project, AI-assisted original concept art",
+      "rights": "Original ASTRA contribution under project license; only prior original ASTRA boards used as visual inputs.",
+      "review": "Visually inspected: distinct Scout/PIP, safe Cometa, invisible radiation conveyed by instruments and no lunar storm clouds. Proposed scenes and readings, not runtime evidence."
+    },
+    {
+      "id": "story-homecoming",
+      "path": "docs/art/08-storm-homecoming-storyboard.png",
+      "title": "Abrigo: a primeira colheita",
+      "sha256": "737b942321aac84ef0a19dabbf53033ffe9387f9caa4a0f2be4ea7cdcd86ce4d",
+      "bytes": 2917137,
+      "width": 1671,
+      "height": 941,
+      "role": "narrative_and_environment_storyboard",
+      "narrativeBeatIds": [
+        "warning",
+        "harvest",
+        "home"
+      ],
+      "classification": "AI-generated original narrative concept; not gameplay, measured geography, a 3D asset or exported animation",
+      "aiGenerated": true,
+      "visibleAiLabel": true,
+      "runtimeAsset": false,
+      "tool": "OpenAI image_gen",
+      "date": "2026-11-14",
+      "credit": "ASTRA project, AI-assisted original concept art",
+      "rights": "Original ASTRA contribution under project license; only prior original ASTRA boards used as visual inputs.",
+      "review": "Visually inspected: distinct Scout/PIP, safe Cometa, invisible radiation conveyed by instruments and no lunar storm clouds. Proposed scenes and readings, not runtime evidence."
+    }
+  ],
+  "collections": [
+    {
+      "id": "world-and-characters",
+      "imageIds": [
+        "world-atlas",
+        "aurora-exploration",
+        "cometa-turnaround",
+        "animation-keyposes"
+      ]
+    },
+    {
+      "id": "episode-01",
+      "imageIds": [
+        "story-academy",
+        "story-transit",
+        "story-canyon",
+        "story-homecoming"
+      ],
+      "treatment": "docs/narrative/EPISODE_01_TREATMENT.md",
+      "beats": "content-design/narrative-beats.json"
     }
   ]
 }

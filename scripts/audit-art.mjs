@@ -2,7 +2,11 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {createHash} from 'node:crypto';
 const root=process.cwd(),manifest=JSON.parse(await fs.readFile('docs/art/manifest.json','utf8'));
-if(manifest.status!=='reference_only'||manifest.images.length!==4)throw Error('Expected the four reference-only ASTRA boards');
+if(manifest.status!=='reference_only'||manifest.images.length<4)throw Error('Expected reference-only ASTRA boards');
+const ids=new Set(manifest.images.map(image=>image.id));
+if(ids.size!==manifest.images.length)throw Error('Duplicate art reference IDs');
+for(const group of manifest.collections??[])for(const id of group.imageIds)if(!ids.has(id))throw Error('Missing collection image: '+id);
+for(const file of await fs.readdir('docs/art'))if(file.endsWith('.png')&&!manifest.images.some(image=>image.path===`docs/art/${file}`))throw Error('PNG missing provenance: '+file);
 for(const entry of manifest.images){
  const filename=path.resolve(root,entry.path);if(!filename.startsWith(path.join(root,'docs','art')+path.sep))throw Error('Art path outside the reference folder');
  const data=await fs.readFile(filename);
@@ -12,4 +16,12 @@ for(const entry of manifest.images){
  if(entry.runtimeAsset!==false||entry.aiGenerated!==true||entry.visibleAiLabel!==true||!entry.credit||!entry.rights)throw Error('Incomplete concept provenance: '+entry.path);
  console.log(`${entry.id}: ${entry.width}x${entry.height}, SHA-256 verified, reference only`);
 }
-console.log('Four concept boards verified. Labels were visually inspected; this is not OCR, rig or GPU validation.');
+console.log(`${manifest.images.length} concept boards verified. Labels were visually inspected; this is not OCR, rig or GPU validation.`);
+const beats=JSON.parse(await fs.readFile('content-design/narrative-beats.json','utf8'));
+const targetSource=await fs.readFile('src/world/manifest.ts','utf8');
+const worldIds=new Set([...targetSource.matchAll(/target\(\s*['"][a-z]+['"]\s*,\s*['"]([^'"]+)/g)].map(match=>match[1]));
+for(const beat of beats.beats){
+ for(const id of Array.isArray(beat.targetWorldId)?beat.targetWorldId:[beat.targetWorldId])if(id&&!worldIds.has(id))throw Error('Narrative target not in current world: '+id);
+}
+for(const board of beats.storyboards)if(!manifest.images.some(image=>image.path===board))throw Error('Narrative board missing provenance: '+board);
+console.log(`${beats.beats.length} proposed narrative beats reference current world targets; this does not execute scenes.`);

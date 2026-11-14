@@ -23,3 +23,10 @@ O produto atual é um primeiro corte de demo, não a entrega final do mundo nem 
 - [ ] Modelos/rigs/clips novos, integração do cachorro e comparações de GPU: ainda não implementados.
 
 Esta revisão muda referências e contratos de design, não o jogo publicado.
+
+## Storyboards adicionais e roteiro
+
+- [x] Pranchas 05–08: academia/vínculo, trânsito, cânion/Scout e abrigo/colheita; pacote agora com oito PNGs.
+- [x] Episódio “Uma luz de cada vez”: dez beats propostos, falas, alvos, escolhas causais e recuperação.
+- [x] Master goal 4D e Gemini atualizados; novos arquivos auditáveis sem alterar runtime.
+- [ ] Novas cenas/diálogos/cenários ainda precisam de implementação e QA real.

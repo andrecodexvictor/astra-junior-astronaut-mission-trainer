@@ -42,4 +42,8 @@ Preservar a proveniência: oito GLBs e Blue Marble foram reutilizados do legado 
 
 ## Próxima goal visual — 14/11/2026
 
-O novo pacote [arte](docs/art/README.md) contém quatro PNGs originais, pesquisa Horizon/NMS e tradução para Babylon. `MASTER_GOAL.md` 4A–4C exige mundo refinado, animações de humanos/robôs e Cometa, buddy dachshund astronauta. [Manifests de design](content-design/animation-manifest.json) são propostas; não são assets ou clips de runtime. O site publicado continua no primeiro corte, sem Cometa ou novos rigs. Começar abrindo as imagens e preservar a simulação e o caminho completo.
+O novo pacote [arte](docs/art/README.md) contém oito PNGs originais, pesquisa Horizon/NMS e tradução para Babylon. `MASTER_GOAL.md` 4A–4C exige mundo refinado, animações de humanos/robôs e Cometa, buddy dachshund astronauta. [Manifests de design](content-design/animation-manifest.json) são propostas; não são assets ou clips de runtime. O site publicado continua no primeiro corte, sem Cometa ou novos rigs. Começar abrindo as imagens e preservar a simulação e o caminho completo.
+
+## Episódio e novas pranchas
+
+As pranchas 05–08 ampliam o mundo com cenas de vínculo/treino, trânsito, investigação no cânion e retorno/colheita. `docs/narrative/EPISODE_01_TREATMENT.md` e `content-design/narrative-beats.json` descrevem dez batidas propostas com diálogos, ações, escolhas, evidência e retry. A master goal 4D rege sua integração. `audit:art` verifica também alvos narrativos presentes no manifesto do mundo; isso não executa as cenas. Nenhum runtime foi alterado nesta revisão.

@@ -1,0 +1,232 @@
+{
+  "version": 1,
+  "status": "proposed_unimplemented",
+  "treatment": "docs/narrative/EPISODE_01_TREATMENT.md",
+  "principles": [
+    "Customizable young astronaut; no fixed gender.",
+    "Cometa optional to player and completion; Scout required by current simulation completion.",
+    "Narrative flavor cannot mutate physical truth; choices read simulation outcomes.",
+    "Radiation is invisible; no lunar clouds or lightning.",
+    "Cometa experiences no harm and does not sniff in vacuum.",
+    "History is hypothesis until supported by evidence."
+  ],
+  "beats": [
+    {
+      "id": "arrival",
+      "status": "proposed_narrative",
+      "region": "academy",
+      "targetWorldId": "academy-console",
+      "playableAction": "Walk to the console; optional Cometa encounter is proposed.",
+      "evidence": "Console reached; no resource reward.",
+      "dialogue": [
+        {
+          "speaker": "Reyes",
+          "line": "Aurora precisa de gente que saiba observar."
+        },
+        {
+          "speaker": "PIP",
+          "line": "Vamos começar por uma leitura?"
+        },
+        {
+          "speaker": "Reyes",
+          "line": "Cometa pode acompanhar, se você quiser."
+        }
+      ]
+    },
+    {
+      "id": "trial",
+      "status": "proposed_narrative",
+      "region": "academy",
+      "targetWorldId": "academy-console",
+      "playableAction": "Diagnose, shed nonessential load and observe recovery.",
+      "evidence": "Diagnosis and load shed; 15 stable ticks.",
+      "dialogue": [
+        {
+          "speaker": "Lia",
+          "line": "A reserva está caindo. O que você consegue medir?"
+        },
+        {
+          "speaker": "PIP",
+          "line": "Reduza uma carga e acompanhe a tendência."
+        }
+      ]
+    },
+    {
+      "id": "transit",
+      "status": "proposed_narrative",
+      "region": "orbit",
+      "targetWorldId": "cargo",
+      "playableAction": "Secure cargo; then use lunar-transfer.",
+      "evidence": "Cargo and landing flags.",
+      "dialogue": [
+        {
+          "speaker": "Reyes",
+          "line": "Levamos só o que foi preparado. Cada peça conta."
+        },
+        {
+          "speaker": "PIP",
+          "line": "Carga segura. Podemos seguir para a transferência."
+        }
+      ]
+    },
+    {
+      "id": "aurora",
+      "status": "proposed_narrative",
+      "region": "habitat",
+      "targetWorldId": "battery-bank",
+      "playableAction": "Inspect mission-console and repair power, water and oxygen.",
+      "evidence": "Connection states, energy and reserve readings.",
+      "dialogue": [
+        {
+          "speaker": "Lia",
+          "line": "Há circuitos desconectados. Primeiro, confirme as leituras."
+        },
+        {
+          "speaker": "PIP",
+          "line": "Reparar um circuito permite fluxo; não enche a bateria."
+        }
+      ]
+    },
+    {
+      "id": "prepare",
+      "status": "proposed_narrative",
+      "region": "habitat",
+      "targetWorldId": "field-locker",
+      "playableAction": "Choose field tools and review reserves; optionally start crop early.",
+      "evidence": "Loadout flag, reserves and crop state.",
+      "dialogue": [
+        {
+          "speaker": "Lia",
+          "line": "Ferramentas não substituem a volta planejada."
+        },
+        {
+          "speaker": "PIP",
+          "line": "Confira energia, água e oxigênio antes de sair."
+        }
+      ]
+    },
+    {
+      "id": "trace",
+      "status": "proposed_narrative",
+      "region": "canyon",
+      "targetWorldId": "survey-beacon",
+      "playableAction": "Read the survey and compare proposed environmental traces.",
+      "evidence": "Survey context; history is an unverified hypothesis.",
+      "dialogue": [
+        {
+          "speaker": "PIP",
+          "line": "Essa marca pode indicar um caminho antigo."
+        },
+        {
+          "speaker": "Cadete",
+          "line": "Pode ser. Vamos procurar mais evidência."
+        }
+      ]
+    },
+    {
+      "id": "scout",
+      "status": "proposed_narrative",
+      "region": "canyon",
+      "targetWorldId": "damaged-scout",
+      "playableAction": "Repair and recruit Scout; collect a finite sample at ice-deposit.",
+      "evidence": "Scout repair and recruitment flags, part and energy debit, sample transfer.",
+      "dialogue": [
+        {
+          "speaker": "Scout",
+          "line": "Diagnóstico incompleto. Preciso de ajuda."
+        },
+        {
+          "speaker": "PIP",
+          "line": "Verifique a peça e a energia antes de começar."
+        }
+      ]
+    },
+    {
+      "id": "warning",
+      "status": "proposed_narrative",
+      "region": "habitat",
+      "targetWorldId": "habitat-shelter",
+      "playableAction": "Return through return-gate and shelter through active radiation cycle.",
+      "evidence": "Forecast, sheltered state and stormSurvived flag.",
+      "dialogue": [
+        {
+          "speaker": "Lia",
+          "line": "A previsão mudou. Cancele a saída e volte."
+        },
+        {
+          "speaker": "PIP",
+          "line": "A proteção vem antes da próxima leitura."
+        }
+      ]
+    },
+    {
+      "id": "harvest",
+      "status": "proposed_narrative",
+      "region": "greenhouse",
+      "targetWorldId": "crop-bed",
+      "playableAction": "Deliver sample at mission-console; plant and harvest crop after powered growth.",
+      "evidence": "Processed ice and crop growth/harvest; food added only at harvest.",
+      "dialogue": [
+        {
+          "speaker": "Elena",
+          "line": "A planta não responde a uma promessa; precisa de luz e água."
+        },
+        {
+          "speaker": "Cadete",
+          "line": "Então vamos acompanhar o que ela recebeu."
+        }
+      ]
+    },
+    {
+      "id": "home",
+      "status": "proposed_narrative",
+      "region": "habitat",
+      "targetWorldId": "mission-console",
+      "playableAction": "Review actual simulation report and outstanding criteria.",
+      "evidence": "Complete phase only when all simulation conditions are met.",
+      "dialogue": [
+        {
+          "speaker": "Reyes",
+          "line": "Aurora está respondendo porque vocês cuidaram dos detalhes."
+        },
+        {
+          "speaker": "PIP",
+          "line": "Ainda há leituras para acompanhar."
+        },
+        {
+          "speaker": "Cadete",
+          "line": "Uma luz de cada vez."
+        }
+      ]
+    }
+  ],
+  "meaningfulChoices": [
+    {
+      "id": "academy_load",
+      "scope": "existing simulation action; proposed framing",
+      "options": [
+        "Diagnose and reduce load: recovery and stability become possible.",
+        "Leave load on: battery falls and stability is not achieved."
+      ],
+      "outcomeSource": "academyBattery and academyStableTicks"
+    },
+    {
+      "id": "crop_timing",
+      "scope": "existing simulation actions; proposed explicit comparison",
+      "options": [
+        "Plant early: powered growth starts while energy and water are consumed.",
+        "Wait: defer those costs and also defer harvest."
+      ],
+      "outcomeSource": "powerDemand, potable, cropGrowth and harvested"
+    }
+  ],
+  "storyboards": [
+    "docs/art/05-academy-storyboard.png",
+    "docs/art/06-transit-storyboard.png",
+    "docs/art/07-canyon-discovery-storyboard.png",
+    "docs/art/08-storm-homecoming-storyboard.png"
+  ],
+  "storyboardStatus": "files_present_and_hashed_in_docs_art_manifest; concepts_only",
+  "pacing": "2–3 short lines per beat, optional breathers, critical route; playtime targets unmeasured",
+  "runtimeChanges": false
+}

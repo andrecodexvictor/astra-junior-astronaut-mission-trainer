@@ -1,5 +1,9 @@
 # Changelog
 
+## Storyboard expansion — 2026-11-14
+
+Four additional original storyboards (eight boards total) and a ten-beat episode treatment connect academy, transit, canyon investigation and homecoming to world targets and resource consequences. Master goal batch 4D covers narrative integration. Runtime remains unchanged.
+
 ## Visual design pack — 2026-11-14
 
 Four original labelled AI concept boards, primary Horizon Zero Dawn / No Man’s Sky research, Babylon art-to-world guide and required next goals for human/robot animations and Cometa, an astronaut dachshund. Proposed character/animation manifests are not runtime assets; the live game remains unchanged.
