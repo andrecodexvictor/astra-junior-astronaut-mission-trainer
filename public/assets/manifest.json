@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "astronaut",
+      "path": "assets/models/astronaut.glb",
+      "sha256": "bc0db0c00d4999f35f576dbd16c390d3446a493d8c0e12820b17e31af62425eb",
+      "credit": "ASTRA contributors; AI-assisted parametric modeling, legacy prototype 2026-11-14",
+      "rights": "Original ASTRA contribution, Apache-2.0; Blender is the authoring tool, not a runtime dependency.",
+      "source": "tools/models/build.py",
+      "method": "Deterministic Python geometry exported to glTF binary; bevelled meshes and shared PBR materials.",
+      "classification": "Original fictional engineering/stylized art, not measured NASA equipment",
+      "aiAssisted": true,
+      "review": "Structural glTF validation, node pivots and local ownership checked. Visual human/GPU review pending."
+    },
+    {
+      "id": "battery",
+      "path": "assets/models/battery.glb",
+      "sha256": "3a6325e26e1f3d9289681eb1e122da65b28e05e1e00ceace82a0beeb4f58b0ff",
+      "credit": "ASTRA contributors; AI-assisted parametric modeling, legacy prototype 2026-11-14",
+      "rights": "Original ASTRA contribution, Apache-2.0; Blender is the authoring tool, not a runtime dependency.",
+      "source": "tools/models/build.py",
+      "method": "Deterministic Python geometry exported to glTF binary; bevelled meshes and shared PBR materials.",
+      "classification": "Original fictional engineering/stylized art, not measured NASA equipment",
+      "aiAssisted": true,
+      "review": "Structural glTF validation, node pivots and local ownership checked. Visual human/GPU review pending."
+    },
+    {
+      "id": "greenhouse",
+      "path": "assets/models/greenhouse.glb",
+      "sha256": "6da245e97849a4a38e9ba7d7db6b5b2386ec57396e4f68757ae754e7679af196",
+      "credit": "ASTRA contributors; AI-assisted parametric modeling, legacy prototype 2026-11-14",
+      "rights": "Original ASTRA contribution, Apache-2.0; Blender is the authoring tool, not a runtime dependency.",
+      "source": "tools/models/build.py",
+      "method": "Deterministic Python geometry exported to glTF binary; bevelled meshes and shared PBR materials.",
+      "classification": "Original fictional engineering/stylized art, not measured NASA equipment",
+      "aiAssisted": true,
+      "review": "Structural glTF validation, node pivots and local ownership checked. Visual human/GPU review pending."
+    },
+    {
+      "id": "habitat",
+      "path": "assets/models/habitat.glb",
+      "sha256": "6e549b2c0bc7e68bb4e1449b8a389ea106b47a01f4cbda42526efaa18967bf74",
+      "credit": "ASTRA contributors; AI-assisted parametric modeling, legacy prototype 2026-11-14",
+      "rights": "Original ASTRA contribution, Apache-2.0; Blender is the authoring tool, not a runtime dependency.",
+      "source": "tools/models/build.py",
+      "method": "Deterministic Python geometry exported to glTF binary; bevelled meshes and shared PBR materials.",
+      "classification": "Original fictional engineering/stylized art, not measured NASA equipment",
+      "aiAssisted": true,
+      "review": "Structural glTF validation, node pivots and local ownership checked. Visual human/GPU review pending."
+    },
+    {
+      "id": "oxygen",
+      "path": "assets/models/oxygen.glb",
+      "sha256": "840857448e32b997ffac74b115b06efdc346da312fa4e1fd6419837dc9576f78",
+      "credit": "ASTRA contributors; AI-assisted parametric modeling, legacy prototype 2026-11-14",
+      "rights": "Original ASTRA contribution, Apache-2.0; Blender is the authoring tool, not a runtime dependency.",
+      "source": "tools/models/build.py",
+      "method": "Deterministic Python geometry exported to glTF binary; bevelled meshes and shared PBR materials.",
+      "classification": "Original fictional engineering/stylized art, not measured NASA equipment",
+      "aiAssisted": true,
+      "review": "Structural glTF validation, node pivots and local ownership checked. Visual human/GPU review pending."
+    },
+    {
+      "id": "robot",
+      "path": "assets/models/robot.glb",
+      "sha256": "1490d67d424f314cee8b3aee3637480040451969f6e5bf0b49827a26220e8952",
+      "credit": "ASTRA contributors; AI-assisted parametric modeling, legacy prototype 2026-11-14",
+      "rights": "Original ASTRA contribution, Apache-2.0; Blender is the authoring tool, not a runtime dependency.",
+      "source": "tools/models/build.py",
+      "method": "Deterministic Python geometry exported to glTF binary; bevelled meshes and shared PBR materials.",
+      "classification": "Original fictional engineering/stylized art, not measured NASA equipment",
+      "aiAssisted": true,
+      "review": "Structural glTF validation, node pivots and local ownership checked. Visual human/GPU review pending."
+    },
+    {
+      "id": "solar",
+      "path": "assets/models/solar.glb",
+      "sha256": "b56a1ab2d6e321051499f91569f235aeed21c409eaa5371bfe21eb398afda182",
+      "credit": "ASTRA contributors; AI-assisted parametric modeling, legacy prototype 2026-11-14",
+      "rights": "Original ASTRA contribution, Apache-2.0; Blender is the authoring tool, not a runtime dependency.",
+      "source": "tools/models/build.py",
+      "method": "Deterministic Python geometry exported to glTF binary; bevelled meshes and shared PBR materials.",
+      "classification": "Original fictional engineering/stylized art, not measured NASA equipment",
+      "aiAssisted": true,
+      "review": "Structural glTF validation, node pivots and local ownership checked. Visual human/GPU review pending."
+    },
+    {
+      "id": "water",
+      "path": "assets/models/water.glb",
+      "sha256": "7e495852184b280bd0893a19cca5deb2089289867b9667ed853865376429a4f9",
+      "credit": "ASTRA contributors; AI-assisted parametric modeling, legacy prototype 2026-11-14",
+      "rights": "Original ASTRA contribution, Apache-2.0; Blender is the authoring tool, not a runtime dependency.",
+      "source": "tools/models/build.py",
+      "method": "Deterministic Python geometry exported to glTF binary; bevelled meshes and shared PBR materials.",
+      "classification": "Original fictional engineering/stylized art, not measured NASA equipment",
+      "aiAssisted": true,
+      "review": "Structural glTF validation, node pivots and local ownership checked. Visual human/GPU review pending."
+    },
+    {
+      "id": "earth-blue-marble",
+      "path": "assets/textures/earth.jpg",
+      "sha256": "312c89088b2e1f50607d449c5f69e2735df03b0f8889e9b2b958c0dfed6fc887",
+      "credit": "NASA/Goddard Space Flight Center Scientific Visualization Studio; Reto Stockli; NASA Earth Observatory; Terra/MODIS",
+      "rights": "NASA media usage guidelines apply; no NASA endorsement or emblem. See public/science/earth-provenance.json.",
+      "source": "https://svs.gsfc.nasa.gov/2915/",
+      "classification": "NASA satellite mosaic, converted to JPEG; artistic illumination in scene, not AI generated",
+      "aiAssisted": false
+    }
+  ]
+}

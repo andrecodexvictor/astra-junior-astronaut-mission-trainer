@@ -1,5 +1,7 @@
 # ASTRA: Lunar Frontier — especificação de jogo
 
+> Atualização 14/11/2026: esta é a visão ampliada. O executável atual é uma demo independente menor; consulte `docs/demo/DESIGN_PILLARS.md`, `HANDOFF.md` e `ACCEPTANCE.json`. Seis referências de design agora incluem Scrap Mechanic, Journey to the Savage Planet e Deliver Us The Moon. Construção/veículos e os requisitos ampliados abaixo não se tornam implementados por estarem descritos.
+
 **Estado:** proposta de design, não implementação. **Data de referência:** 14/11/2026, horário local do projeto. Requisitos abaixo descrevem o alvo; não atestam que ele existe ou foi testado. O protótipo de referência auditado em [PRIOR_WORK.md](PRIOR_WORK.md) se identifica como expansão 1.1: visual novel, seis zonas compactas, exploração 3D, simulação determinística, nove quests estruturadas e testes CPU/DOM. Seu README registra que Chrome real, GPU, desempenho e toque continuam sem verificação. Ele é material de referência e não constitui evidência de elegibilidade competitiva ou de implementação desta proposta.
 
 ## Visão e experiência

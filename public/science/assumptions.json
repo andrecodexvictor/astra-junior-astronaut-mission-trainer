@@ -1,0 +1,66 @@
+{
+  "version": 2,
+  "classification": "Didactic fictional demo parameters, NOT NASA habitat specifications",
+  "time": {
+    "fixed_step_seconds": 1,
+    "mission_hours_per_tick": 0.01,
+    "paused_while_reading_or_hidden": true,
+    "offline_progress": false
+  },
+  "power": {
+    "solar_kw": 5,
+    "critical_kw": 1.2,
+    "recycler_kw": 0.7,
+    "electrolyser_kw": 1.1,
+    "crop_kw": 0.8,
+    "processing_kw": 0.5,
+    "scout_repair_kw": 0.3,
+    "battery_capacity_kwh": 12,
+    "initial_kwh": 8,
+    "charge_efficiency": 0.9,
+    "discharge_efficiency": 0.9,
+    "storm_solar_fraction": 0.45
+  },
+  "academy": {
+    "generation_kw": 20,
+    "demand_kw": 38,
+    "shed_demand_kw": 12,
+    "battery_capacity_kwh": 10,
+    "initial_kwh": 6,
+    "observation_ticks": 15
+  },
+  "rates_per_mission_hour": {
+    "crew_water_kg": 0.18,
+    "crew_oxygen_kg": 0.08,
+    "crew_food_kg": 0.025,
+    "recycler_processing_kg": 0.12,
+    "recycler_recovery": 0.8,
+    "electrolysis_water_kg": 0.18,
+    "electrolysis_oxygen_kg": 0.16,
+    "electrolysis_hydrogen_kg": 0.02,
+    "crop_irrigation_kg": 0.012
+  },
+  "crop": {
+    "powered_ticks": 180,
+    "yield_kg": 3,
+    "limitation": "Abstract biomass yield; carbon, nutrients, CO2 and full growth mass accounting omitted. Irrigation is retained in a ledger."
+  },
+  "storm": {
+    "warning_lunar_tick": 180,
+    "active_lunar_ticks": [
+      300,
+      379
+    ],
+    "repeat_period_ticks": 600,
+    "risk": "Qualitative hazard and safety margin; not a dose/health model"
+  },
+  "geography": "Artist-authored flat ground and fictional canyon; no DEM is loaded.",
+  "sources": [
+    "eia-energy",
+    "nasa-eclss",
+    "nasa-electrolysis",
+    "nasa-radiation",
+    "nasa-plants",
+    "nasa-moon"
+  ]
+}

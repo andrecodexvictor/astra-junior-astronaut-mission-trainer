@@ -14,7 +14,7 @@ O ASTRA 1.1 foi construído nesta conversa antes da abertura competitiva padrão
 
 ## Tratamento no novo repositório
 
-Nenhum arquivo executável, modelo, atlas, identidade de hospedagem ou credencial do legado é distribuído aqui. O inventário abaixo é referência, não importação. Antes de reutilizar algo, decidir a trilha de elegibilidade e registrar origem, licença, data e transformação.
+O proprietário escolheu a trilha independente/descartável em 14/11/2026. Foram reutilizados os oito GLBs originais, seu script Python de autoria, a textura NASA Blue Marble e referências científicas locais, todos registrados em `public/assets/manifest.json`. O código modular TypeScript, controlador e simulação desta demo foram escritos nesta fase; não são uma alegação de novidade competitiva. Atlases gerados, identidade de hospedagem e credenciais do legado não foram importados. O inventário histórico abaixo preserva as questões para uma eventual entrada oficial separada.
 
 | Material anterior | Situação de referência | Pendência para eventual uso |
 |---|---|---|

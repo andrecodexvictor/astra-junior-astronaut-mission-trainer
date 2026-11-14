@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "retrievedAt": "2026-11-14",
+  "sources": [
+    {
+      "id": "eia-energy",
+      "title": "EIA — Measuring electricity",
+      "url": "https://www.eia.gov/energyexplained/electricity/measuring-electricity.php",
+      "concepts": [
+        "potência",
+        "energia",
+        "autonomia"
+      ],
+      "fact": "Quilowatt (kW) mede potência. Quilowatt-hora (kWh) mede energia: 1 kW durante 1 hora corresponde a 1 kWh.",
+      "simplification": "Capacidades, cargas e eficiências da base são hipóteses de jogo. A autonomia estimada muda quando geração ou demanda mudam.",
+      "usageNotes": "Referência educacional governamental; paráfrase autoral, sem reprodução de imagens.",
+      "excerptId": "energy-units-01"
+    },
+    {
+      "id": "nasa-eclss",
+      "title": "NASA — Environmental Control and Life Support Systems",
+      "url": "https://www.nasa.gov/reference/environmental-control-and-life-support-systems-eclss/",
+      "concepts": [
+        "suporte à vida",
+        "água",
+        "oxigênio",
+        "dependências"
+      ],
+      "fact": "O suporte à vida inclui controle do ar, abastecimento de água e tratamento de resíduos; esses subsistemas precisam trabalhar em conjunto.",
+      "simplification": "A base omite química detalhada, pressão, remoção de CO₂, nutrientes e manutenção real. Taxas e reservas são didáticas, não especificações da NASA.",
+      "usageNotes": "Página oficial da NASA, usada como referência conceitual. Paráfrase autoral.",
+      "excerptId": "eclss-functions-01"
+    },
+    {
+      "id": "nasa-moon",
+      "title": "NASA Science — Moon Facts",
+      "url": "https://science.nasa.gov/moon/facts/",
+      "concepts": [
+        "gravidade lunar",
+        "ambiente lunar"
+      ],
+      "fact": "A gravidade superficial lunar é aproximadamente um sexto da terrestre. A Lua possui uma exosfera muito tênue.",
+      "simplification": "Tração, velocidade, câmera e saltos são ajustados para controle acessível. A base e sua localização são ficcionais; o terreno é artisticamente reescalado.",
+      "usageNotes": "Referência oficial da NASA. Sem uso de emblemas ou alegação de endosso.",
+      "excerptId": "moon-environment-01"
+    },
+    {
+      "id": "nasa-radiation",
+      "title": "NASA — Hazard: Space Radiation",
+      "url": "https://www.nasa.gov/hrp/hazard-space-radiation/",
+      "concepts": [
+        "radiação",
+        "risco",
+        "abrigo"
+      ],
+      "fact": "A radiação espacial é um risco para astronautas e exige avaliação, monitoramento e medidas de proteção.",
+      "simplification": "Alerta e abrigo são qualitativos. O temporizador não representa dose, prognóstico de saúde ou procedimento operacional real.",
+      "usageNotes": "Referência oficial. O modelo do jogo não calcula sieverts nem eficácia clínica de blindagem.",
+      "excerptId": "radiation-risk-01"
+    },
+    {
+      "id": "nasa-storm-shelter",
+      "title": "NASA — Protecting astronauts from space radiation at the Moon",
+      "url": "https://science.nasa.gov/science-research/heliophysics/how-nasa-will-protect-astronauts-from-space-radiation-at-the-moon/",
+      "concepts": [
+        "tempestade solar",
+        "planejamento",
+        "abrigo"
+      ],
+      "fact": "Eventos de partículas solares podem exigir que a tripulação busque uma área com proteção adicional.",
+      "simplification": "O habitat é um abrigo abstrato. A tempestade tem horário fixo para que estratégias sejam reproduzíveis; não é uma previsão de clima espacial.",
+      "usageNotes": "Paráfrase de referência oficial da NASA. Cenário narrativo fictício.",
+      "excerptId": "shelter-planning-01"
+    },
+    {
+      "id": "nasa-station-microgravity",
+      "title": "NASA — What Is Microgravity? (Grades 5–8)",
+      "url": "https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-microgravity-grades-5-8/",
+      "concepts": [
+        "microgravidade",
+        "órbita",
+        "inércia"
+      ],
+      "fact": "Objetos em órbita parecem flutuar porque nave e ocupantes estão juntos em queda livre. Há gravidade na órbita terrestre.",
+      "simplification": "A cabine atual usa deslocamento assistido no plano. Inércia e seis graus de liberdade ainda não estão implementados; viagem e descida são comprimidas.",
+      "usageNotes": "Material educacional oficial; resumo autoral em português.",
+      "excerptId": "orbit-free-fall-01"
+    },
+    {
+      "id": "nasa-plants",
+      "title": "NASA Science — VEGGIE",
+      "url": "https://science.nasa.gov/mission/veggie/",
+      "concepts": [
+        "plantas",
+        "alimentos",
+        "crescimento"
+      ],
+      "fact": "O experimento Veggie estuda plantas em microgravidade e pode complementar a alimentação com vegetais frescos.",
+      "simplification": "O cultivo do jogo usa um ciclo muito acelerado, omite nutrientes e doenças e não representa uma dieta completa ou uma estufa lunar comprovada.",
+      "usageNotes": "Referência científica oficial; sem alegação de que a estufa ficcional existe na Lua.",
+      "excerptId": "space-crops-01"
+    },
+    {
+      "id": "nasa-lola",
+      "title": "NASA SVS — CGI Moon Kit / LRO LOLA",
+      "url": "https://svs.gsfc.nasa.gov/4720/",
+      "concepts": [
+        "topografia",
+        "proveniência",
+        "modelos"
+      ],
+      "fact": "O instrumento LOLA do Lunar Reconnaissance Orbiter mede a topografia lunar; o CGI Moon Kit oferece mapas derivados para visualização.",
+      "simplification": "Referência para o pipeline futuro. Esta demo NÃO usa mapas LOLA nem DEM medido: todo o chão caminhável é autoral.",
+      "usageNotes": "Fonte conceitual oficial. Nenhum dado deste produto foi incorporado ao terreno desta demo.",
+      "excerptId": "lola-terrain-01"
+    },
+    {
+      "id": "nasa-electrolysis",
+      "title": "NASA — ECLSS Fact Sheet: Oxygen Generation",
+      "url": "https://www.nasa.gov/wp-content/uploads/2020/10/g-281237_eclss_0.pdf",
+      "concepts": [
+        "eletrólise",
+        "balanço de massa"
+      ],
+      "fact": "Uma corrente elétrica pode separar a água em hidrogênio e oxigênio; assim, gerar oxigênio também depende de água e energia.",
+      "simplification": "O jogo registra entrada de água, oxigênio produzido e hidrogênio separado, mas omite pressão, temperatura e processamento químico detalhado.",
+      "usageNotes": "Referência oficial NASA; taxas da simulação são hipóteses didáticas.",
+      "excerptId": "water-splitting-01"
+    },
+    {
+      "id": "nasa-blue-marble",
+      "title": "NASA SVS — Blue Marble, Terra/MODIS",
+      "url": "https://svs.gsfc.nasa.gov/2915/",
+      "concepts": [
+        "observação da Terra",
+        "proveniência"
+      ],
+      "fact": "O mosaico Blue Marble combina observações de satélite para representar a superfície terrestre.",
+      "simplification": "A Terra no cenário usa uma textura estática e iluminação artística; não é uma visualização meteorológica ao vivo.",
+      "usageNotes": "NASA/Goddard Space Flight Center Scientific Visualization Studio; Reto Stockli, NASA Earth Observatory; Terra/MODIS.",
+      "excerptId": "earth-mosaic-01"
+    },
+    {
+      "id": "nasa-moon-gravity",
+      "title": "NASA Glenn — Moon",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/moon/",
+      "concepts": [
+        "gravidade",
+        "salto lunar"
+      ],
+      "fact": "A aceleração gravitacional lunar é aproximadamente 1,62 m/s².",
+      "simplification": "O salto usa esse valor com impulso e tração ajustados para gameplay; traje, equilíbrio e biomecânica não são simulados.",
+      "usageNotes": "Referência técnica oficial NASA Glenn, consultada em 14/11/2026.",
+      "excerptId": "moon-gravity-01"
+    }
+  ]
+}

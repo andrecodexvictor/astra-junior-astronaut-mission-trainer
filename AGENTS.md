@@ -2,13 +2,13 @@
 
 ## Read order and current state
 
-Read GOAL.md, docs/SPACE_APPS_COMPLIANCE.md, docs/PRIOR_WORK.md, docs/GAME_SPEC.md, docs/WORLD_BIBLE.md and docs/BABYLON_WORLD_ARCHITECTURE.md before implementation. The repository currently holds planning only. It is not a runnable application or a NASA submission. Do not invent existing npm commands or passing implementation tests.
+Read GOAL.md, docs/SPACE_APPS_COMPLIANCE.md, docs/PRIOR_WORK.md, docs/GAME_SPEC.md, docs/WORLD_BIBLE.md and docs/BABYLON_WORLD_ARCHITECTURE.md before implementation. The owner has selected independent, disposable demo development. This repository now contains Vite/TypeScript/Babylon source, local models, simulation and tests. Read HANDOFF.md, TEST_REPORT.md and ACCEPTANCE.json for actual evidence. It is not an official NASA submission. Do not infer passed GPU checks from code presence.
 
 ## Authorization and provenance
 
 The owner asked for a team-agent execution goal. Delegation is encouraged with bounded tasks, file ownership and isolated worktrees/branches. Terra is the project preference for modeling and development when available; do not claim a model or tool was used when it was not.
 
-Resolve GOAL G0 once. Competition timing and treatment of pre-event work are real pending inputs; do not fabricate organizer approval or hide prior work. Independent product development must be identified as that track. Do not repeatedly ask the owner to approve routine reversible engineering within the chosen scope.
+GOAL G0 is resolved for this phase: the owner explicitly authorized this independent demo and reuse with provenance. Continue reversible implementation without reopening that choice. Competition timing and treatment of pre-event work only become gates for a separate official entry; do not fabricate organizer approval or hide prior work. MASTER_GOAL.md is the current batch execution plan.
 
 Do not import the old Sites deployment identity or credentials. A public legacy demo is not this repo's release. Never alter commit timestamps to change provenance. No automatic official submission, collaborator invitation or replacement of the old live site is authorized by the planning handoff.
 

@@ -1,5 +1,7 @@
 # ASTRA: Lunar Frontier — bíblia do mundo e missões
 
+> Visão de expansão. A demo atual contém apenas academia, cabine assistida, habitat, cânion e estufa, com inventário verificável em `HANDOFF.md`. Regiões, robôs e histórias adicionais permanecem propostas.
+
 **Estado:** visão futura de design, 14/11/2026 no horário local do projeto. Os locais, personagens, missões e números de percurso abaixo são propostas, não afirmações sobre o protótipo 1.1. Ver `GAME_SPEC.md` para requisitos, invariantes e metas de teste. A topografia é um cenário de treinamento ficcional; não é um mapa, sítio ou missão oficial da NASA.
 
 ## Premissa, tom e personagens

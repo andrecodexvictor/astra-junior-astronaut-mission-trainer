@@ -1,0 +1,577 @@
+{
+  "schemaVersion": 1,
+  "scope": "Independent disposable ASTRA first demo slice; extended campaign not complete",
+  "executionMode": "independent_demo",
+  "implementationCommit": null,
+  "buildArtifact": "npm run build -> dist/ (generated, not committed)",
+  "date": "2026-11-14",
+  "environment": {
+    "os": "Linux x86_64",
+    "node": "24.22.1",
+    "npm": "11.9.0",
+    "browser": null,
+    "gpu": null,
+    "viewport": null
+  },
+  "checks": [
+    {
+      "id": "AC01",
+      "status": "partial",
+      "owner": "ASTRA integration",
+      "evidence": [
+        "tests/unit/quests.test.ts",
+        "docs/demo/BROWSER_SMOKE.md"
+      ],
+      "limitations": [
+        "Scripted completion/failure succeeds; actual browser walkthrough and 20–30 minute human playtime unmeasured."
+      ]
+    },
+    {
+      "id": "AC02",
+      "status": "tested_cpu",
+      "owner": "ASTRA integration",
+      "evidence": [
+        "tests/unit/simulation.test.ts",
+        "docs/demo/SCIENCE_ASSUMPTIONS.md",
+        "public/science/assumptions.json"
+      ],
+      "limitations": [
+        "Crop biomass, safety and operational rates are explicitly didactic abstractions; not a full physical mission model."
+      ]
+    },
+    {
+      "id": "AC03",
+      "status": "tested_cpu",
+      "owner": "ASTRA integration",
+      "evidence": [
+        "tests/unit/simulation.test.ts",
+        "tests/unit/app.test.ts"
+      ],
+      "limitations": [
+        "CPU fixed tick/hash/save tests at 10/30/60/144 schedules; physical browser frame scheduling not measured."
+      ]
+    },
+    {
+      "id": "AC04",
+      "status": "partial",
+      "owner": "ASTRA integration",
+      "evidence": [
+        "src/actors/movement.ts",
+        "tests/unit/controller-motion.test.ts"
+      ],
+      "limitations": [
+        "Pivot gait and jump/controller logic implemented; animation/camera video and sloped or moving platforms absent."
+      ]
+    },
+    {
+      "id": "AC05",
+      "status": "partial",
+      "owner": "ASTRA integration",
+      "evidence": [
+        "src/world/createGameWorld.ts",
+        "tests/unit/quests.test.ts"
+      ],
+      "limitations": [
+        "PIP/Scout follow and one recruit implemented; general companion tasks, interruptions, navigation and team management absent."
+      ]
+    },
+    {
+      "id": "AC06",
+      "status": "partial",
+      "owner": "ASTRA integration",
+      "evidence": [
+        "tests/unit/world-layout.test.ts",
+        "tests/unit/world-assets.test.ts"
+      ],
+      "limitations": [
+        "Grid reachability and 3 actual GLB template disposal cycles checked; 20 complete browser region transitions not checked."
+      ]
+    },
+    {
+      "id": "AC07",
+      "status": "tested_cpu",
+      "owner": "ASTRA integration",
+      "evidence": [
+        "src/app/save.ts",
+        "tests/unit/app.test.ts",
+        "tests/unit/simulation.test.ts"
+      ],
+      "limitations": [
+        "Envelope v3/core v2; invalid/obsolete saves rejected, no legacy migration. Physical browser reload/storage-denial flow pending."
+      ]
+    },
+    {
+      "id": "AC08",
+      "status": "partial",
+      "owner": "ASTRA integration",
+      "evidence": [
+        "tests/unit/quests.test.ts",
+        "src/main.ts",
+        "src/app/catalogue.ts"
+      ],
+      "limitations": [
+        "Two scripted sequences and report/evidence exist; learner reasoning, alternatives and pedagogical efficacy not human tested."
+      ]
+    },
+    {
+      "id": "AC09",
+      "status": "pending_browser",
+      "owner": "ASTRA integration",
+      "evidence": [
+        "src/presentation/style.css",
+        "docs/demo/BROWSER_SMOKE.md"
+      ],
+      "limitations": [
+        "Focus/pause/captions/text and reduced motion implemented but not browser tested. Touch movement is absent."
+      ]
+    },
+    {
+      "id": "AC10",
+      "status": "pending_browser",
+      "owner": "ASTRA integration",
+      "evidence": [
+        "src/world/createGameWorld.ts"
+      ],
+      "limitations": [
+        "Real runtime metrics exposed; device/GPU/viewport, FPS, p95 and trace not measured. Bundle sizes are separate measurements."
+      ]
+    },
+    {
+      "id": "AC11",
+      "status": "tested_build",
+      "owner": "ASTRA integration",
+      "evidence": [
+        "package-lock.json",
+        "scripts/audit-assets.mjs",
+        "scripts/audit-skills.mjs",
+        "TEST_REPORT.md"
+      ],
+      "limitations": [
+        "Clean npm ci, typecheck/tests/audits/build pass; Vite reports a 1.6 MB chunk warning. Browser readiness remains separate."
+      ]
+    },
+    {
+      "id": "AC12",
+      "status": "documented",
+      "owner": "ASTRA integration",
+      "evidence": [
+        "AI_USAGE.md",
+        "docs/PRIOR_WORK.md",
+        "docs/SPACE_APPS_COMPLIANCE.md",
+        "HANDOFF.md"
+      ],
+      "limitations": [
+        "Independent demo authorized; no NASA submission, organizer approval or award readiness claimed. Official Resource list/guide verification is unresolved for any later official entry."
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "id": "G-01",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-01.",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "G-02",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-02.",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "G-03",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-03.",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "G-04",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-04 — vertical slice:",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "G-05",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-05 — horizonte de produto:",
+      "status": "planned",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "G-06",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-06 — plano de 48 horas:",
+      "status": "planned",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "G-07",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-07 — produção de 1–2 semanas:",
+      "status": "planned",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "S-01",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "S-01.",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "G-08",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-08.",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "G-09",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-09.",
+      "status": "planned",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "G-10",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-10 — encontro de descoberta:",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "G-11",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-11 — equipe:",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "G-12",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-12 — estados de companheiro:",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "S-02",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "S-02.",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "W-01",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "W-01.",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "W-02",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "W-02.",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "S-03",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "S-03 — modelo físico:",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "S-04",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "S-04.",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "G-13",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-13 — contrato de missão:",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "A-01",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "A-01.",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "A-02",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "A-02.",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "A-03",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "A-03.",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "A-04",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "A-04 — orçamento de arte:",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "N-01",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "N-01.",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "N-02",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "N-02 — critérios de aceite:",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "N-03",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "N-03 — rubrica de prontidão:",
+      "status": "planned",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "WB-01",
+      "document": "docs/WORLD_BIBLE.md",
+      "heading": "WB-01.",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "WB-02",
+      "document": "docs/WORLD_BIBLE.md",
+      "heading": "WB-02.",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "WB-03",
+      "document": "docs/WORLD_BIBLE.md",
+      "heading": "WB-03.",
+      "status": "planned",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "WB-04",
+      "document": "docs/WORLD_BIBLE.md",
+      "heading": "WB-04.",
+      "status": "planned",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "WB-05",
+      "document": "docs/WORLD_BIBLE.md",
+      "heading": "WB-05.",
+      "status": "planned",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "WB-06",
+      "document": "docs/WORLD_BIBLE.md",
+      "heading": "WB-06.",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "WB-07",
+      "document": "docs/WORLD_BIBLE.md",
+      "heading": "WB-07.",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "WB-08",
+      "document": "docs/WORLD_BIBLE.md",
+      "heading": "WB-08.",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    },
+    {
+      "id": "WB-09",
+      "document": "docs/WORLD_BIBLE.md",
+      "heading": "WB-09 — validação de cenário:",
+      "status": "implemented_partial",
+      "evidence": [
+        "HANDOFF.md",
+        "TEST_REPORT.md",
+        "ACCEPTANCE.json"
+      ]
+    }
+  ],
+  "validationSummary": {
+    "unitTests": 25,
+    "testFiles": 6,
+    "gltfModels": 8,
+    "gltfErrors": 0,
+    "gltfWarnings": 0,
+    "skillEntrypoints": 13,
+    "skillHashes": 25,
+    "dependencyAudit": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "browserE2E": "not_run_exit_2",
+    "viteMainChunkBytes": 1758590,
+    "viteMainChunkGzipApproxBytes": 454180,
+    "buildWarning": "Main chunk exceeds Vite 1600 kB warning threshold; no device performance inferred."
+  },
+  "buildManifest": "docs/demo/BUILD_MANIFEST.json"
+}

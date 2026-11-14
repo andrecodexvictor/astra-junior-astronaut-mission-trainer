@@ -1,6 +1,6 @@
 # ASTRA: world and Babylon architecture
 
-**Status: planning only; no implementation or browser testing is claimed.** Research began 2026-11-13 and was checked again 2026-11-14 in America/Sao_Paulo. This is a proposal for the authorized event window; check the organizer's current eligibility rules before coding or reusing any pre-event material. The goal is an original lunar exploration game with Pokémon-like readable traversal, discoveries and companion relationships, not copied characters, names, music, art or mechanics. The science simulation remains the authority for life support and tradeoffs. Reference IDs link to the primary-source record in [BABYLON_REFERENCES.json](research/BABYLON_REFERENCES.json).
+**Status: architecture proposal plus research. A smaller independent demo is now implemented; see HANDOFF.md and TEST_REPORT.md for the actual boundaries and tests. Browser/GPU testing remains pending.** Research began 2026-11-13 and was checked again 2026-11-14 in America/Sao_Paulo. The owner has selected an independent disposable demo, so local development may continue. Competition rules apply separately to any future official entry. The goal is an original lunar exploration game with Pokémon-like readable traversal, discoveries and companion relationships, not copied characters, names, music, art or mechanics. The science simulation remains the authority for life support and tradeoffs. Reference IDs link to the primary-source record in [BABYLON_REFERENCES.json](research/BABYLON_REFERENCES.json).
 
 ## Existing prototype and migration boundary
 

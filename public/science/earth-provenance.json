@@ -1,0 +1,14 @@
+{
+  "sourceId": "nasa-blue-marble",
+  "sourceUrl": "https://svs.gsfc.nasa.gov/2915/",
+  "downloadUrl": "https://svs.gsfc.nasa.gov/vis/a000000/a002900/a002915/bluemarble-2048.png",
+  "retrievedAt": "2026-11-14",
+  "sourceResolution": [
+    2048,
+    1024
+  ],
+  "transform": "Converted RGB PNG to quality-88 JPEG, same spatial resolution. No elevation inferred.",
+  "outputSha256": "312c89088b2e1f50607d449c5f69e2735df03b0f8889e9b2b958c0dfed6fc887",
+  "credit": "NASA/Goddard Space Flight Center Scientific Visualization Studio; Reto Stockli; NASA Earth Observatory; Terra/MODIS",
+  "usageGuidelines": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+}

@@ -1,6 +1,6 @@
 # GOAL G-001 — ASTRA: Scientific Exploration RPG
 
-**Entregável atual:** planejamento e handoff, consolidado em 14/11/2026. **Nenhum jogo foi implementado neste repositório.** Este é o texto para iniciar o seu time de agentes, não um relatório de implementação.
+**Estado atualizado em 14/11/2026:** G0 foi resolvida pelo proprietário como demo independente e descartável. O primeiro corte agora tem código Babylon.js executável, modelos locais, simulação, UI e testes; o aceite visual Chrome/GPU continua pendente. Este documento preserva o alvo original; `MASTER_GOAL.md` organiza a continuação por lotes e `HANDOFF.md`/`TEST_REPORT.md` registram o entregue.
 
 ## Missão para o time
 
@@ -15,7 +15,7 @@ O alvo inicial é um **slice concluível de 20–30 minutos** com uma expediçã
 3. `docs/BABYLON_WORLD_ARCHITECTURE.md` e as referências primárias.
 4. `docs/EXECUTION_BACKLOG.md`, `AGENTS.md` e `AI_USAGE.md`.
 
-### G0 — decisão de trilha e proveniência
+### G0 — decisão de trilha e proveniência (resolvida: demo independente)
 
 - Há código, arte e planejamento anteriores ao evento. Eles não se tornam novos por migração ou reescrita de commits.
 - **Trilha competitiva:** confirmar evento/fuso/registro, janela autorizada, guia 2026 e tratamento do trabalho prévio. Não iniciar código competitivo antes da janela nem importar legado sem resolver a regra aplicável. Não submeter nem prometer elegibilidade enquanto houver pendências.
@@ -111,7 +111,7 @@ O integrador mantém interfaces, ordem de integração e um único dono por arqu
 
 Metas iniciais de performance: até 150 draw calls desktop/100 mobile, transferência inicial até 25 MB comprimidos e textura móvel até 128 MB estimados. São alvos a validar em hardware nomeado, não resultados deste repo. Se uma meta não for atingida, registrar falha/escopo ou proposta fundamentada; não alterar silenciosamente o número para aprovar.
 
-Comandos que o scaffold deve fornecer e fazer passar: `npm ci`, `npm run dev`, `npm run build`, `npm run typecheck`, `npm test`, `npm run test:e2e`, `npm run audit:assets`. Hoje eles ainda não existem. Browser QA indisponível significa AC01/AC04/AC09/AC10 pendentes; não instalar um caminho proibido nem converter CPU/DOM em prova de GPU.
+Comandos que o scaffold deve fornecer e fazer passar: `npm ci`, `npm run dev`, `npm run build`, `npm run typecheck`, `npm test`, `npm run test:e2e`, `npm run audit:assets`. Os comandos agora existem; `test:e2e` informa a pendência real e sai com status 2, não representa um teste executado. Browser QA indisponível significa AC01/AC04/AC09/AC10 pendentes; não instalar um caminho proibido nem converter CPU/DOM em prova de GPU.
 
 ## Contratos mínimos entre frentes
 

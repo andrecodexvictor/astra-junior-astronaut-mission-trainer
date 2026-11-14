@@ -1,8 +1,11 @@
 ASTRA — Lunar Frontier
 Copyright 2026 andrecodexvictor and ASTRA contributors.
 
-This repository currently contains AI-assisted research and planning documents.
-It does not contain a playable build or an official NASA Space Apps submission.
-Original contributions are made available under Apache License 2.0.
-Third-party software, datasets, art and trademarks retain their own terms.
-No endorsement by NASA, The Pokémon Company, Nintendo or Babylon.js is implied.
+Independent disposable Babylon.js demonstration and agent handoff.
+Original code, documents and GLB authoring are AI-assisted Apache-2.0 contributions.
+No official NASA Space Apps submission, registration or eligibility is claimed.
+Third-party skills retain Apache-2.0/MIT licenses and their notices in vendor/skills/licenses/.
+NASA Blue Marble imagery retains NASA usage terms; see public/assets/manifest.json.
+The Stanestane Noncommercial bundle is linked bibliography, not redistributed here.
+Babylon.js and loaders are Apache-2.0 dependencies; other npm licenses remain their own.
+No endorsement by NASA, Babylon.js or any referenced game company is implied.

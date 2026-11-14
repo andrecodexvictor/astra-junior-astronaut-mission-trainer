@@ -2,6 +2,10 @@
 
 **Consulta iniciada em 13/11 e consolidada em 14/11/2026, America/Sao_Paulo.** Isto é uma revisão operacional com fontes e pendências, não certificação de elegibilidade. O evento/local e o registro da equipe ainda não foram informados. Não foram usados regulamentos de 2025 como se fossem os de 2026.
 
+## Trilha atual autorizada
+
+O proprietário determinou que este repositório é uma demo independente e descartável, separada da futura entrega real. G0 está resolvida para desenvolver esta demo; não é necessário bloquear seu código por pendências de inscrição. Os oito modelos próprios e Blue Marble do legado foram reutilizados com proveniência. As dúvidas abaixo continuam relevantes apenas se a equipe preparar uma entrada oficial; nenhum aceite competitivo foi declarado.
+
 ## O que foi encontrado
 
 | ID | Constatação e fonte | Consequência prática |
@@ -30,9 +34,9 @@ As respostas de fórum acima estão no repositório `nasa/spaceapps`; os autores
 1. Público, com README em inglês e documentação técnica em português; a futura submissão terá revisão editorial em inglês se o guia confirmar.
 2. Apache-2.0 explícita, NOTICE, créditos, inventário de fontes e declaração de IA. Isso não relicencia dados ou mídia de terceiros.
 3. Sem logo NASA e sem propriedade intelectual Pokémon. Referências de design explicam padrões de exploração; personagens e arte são originais.
-4. Nenhum código, GLB ou atlas do protótipo anterior foi importado. O link dele é identificado como legado e não é a demo de submissão deste repo.
+4. Após a autorização independente, oito GLBs e seu script de autoria, Blue Marble e referências científicas do legado foram incorporados com inventário. Atlases não foram importados. O site antigo permanece um artefato separado; nenhuma demo de submissão oficial é declarada.
 5. Histórico real de commits; nunca reescrever datas para parecer trabalho realizado durante o evento.
-6. Primeiro marco do time: resolver elegibilidade, fonte listada no desafio e guia atualizado. Desenvolvimento independente pode ser escolhido, sem alegar disputa a prêmio.
+6. Trilha independente escolhida para esta fase. Elegibilidade, fonte listada e guia atualizado são pendências de uma eventual entrada oficial separada, não bloqueios para experimentar a demo.
 
 ## Pendências antes de uma submissão
 

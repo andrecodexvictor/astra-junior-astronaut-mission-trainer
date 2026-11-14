@@ -1,0 +1,33 @@
+{
+  "name": "astra-lunar-frontier-demo",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Independent disposable ASTRA Babylon.js gameplay prototype and Gemini handoff",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "audit:assets": "node scripts/audit-assets.mjs",
+    "audit:skills": "node scripts/audit-skills.mjs",
+    "test:e2e": "node scripts/e2e-status.mjs",
+    "check": "npm run typecheck && npm test && npm run audit:assets && npm run audit:skills && npm run audit:docs && npm run build",
+    "audit:docs": "node scripts/audit-docs.mjs",
+    "audit:deps": "npm audit --audit-level=moderate"
+  },
+  "dependencies": {
+    "@babylonjs/core": "9.35.0",
+    "@babylonjs/loaders": "9.35.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "gltf-validator": "2.0.0-dev.3.10",
+    "typescript": "5.9.3",
+    "vite": "7.3.8",
+    "vitest": "4.1.12"
+  }
+}

@@ -1,0 +1,20 @@
+# Roteiro Chrome — pendente de execução real
+
+Este roteiro não foi executado em GPU nesta sessão. O ambiente gerenciado de autoria não disponibilizou o controle de navegador exigido; não foi instalado um navegador alternativo. Testes Node, Khronos e Babylon NullEngine foram usados para seus escopos próprios.
+
+Use Node 24, `npm ci`, `npm run check`, `npm run dev`. No Chrome com WebGL 2 registre commit, OS, versão do navegador, CPU/GPU, RAM, viewport, device pixel ratio e qualidade. Guarde vídeo/capturas reais e um trace de 60 segundos. Não chamar a cena assistida de microgravidade física nem afirmar 60 fps sem medições.
+
+1. Iniciar sem login, aguardar GLBs e escolher Nova expedição. Verificar câmera vendo astronauta e PIP; arrastar, andar/correr/saltar. Confirmar ausência de erros e de requisições a API externa.
+2. Na academia, ir ao painel à esquerda. Registrar hipótese e suspender carga. Fechar o painel: a bateria deve subir durante 15 segundos. Reabrir pausa: relógio e bateria devem congelar. Embarcar ao fundo.
+3. Na cabine, alcançar a carga à esquerda e fixá-la. Verificar legenda de movimento assistido. Transferir para a Lua.
+4. Na base, reparar rede elétrica, reciclador e gerador. Cada reparo custa 0,2 kWh e leva cinco segundos fora do painel. Comparar geração/demanda, água e O₂. Ação repetida não concede recursos.
+5. Entrar na estufa, iniciar cultivo e voltar. Preparar ferramentas no armário laranja. Sair para o cânion pelo caminho central ao norte. A saída exige os três sistemas ativos e reservas mínimas.
+6. Encontrar Scout à direita, gastar uma peça e 0,3 kWh, esperar cinco segundos, convidá-lo. Coletar gelo à esquerda. Verificar dois robôs acompanhando sem bloquear a saída. Voltar pelo portão sul.
+7. Entregar a amostra na central. Ela precisa de dez segundos com energia para virar água; o inventário perde a amostra uma só vez. Durante o alerta, ir ao abrigo e abrigar a equipe. O relógio continua com o painel fechado. A tempestade ocorre nos segundos lunares 300–379. Configuração 3× acelera também o perigo.
+8. Sair do abrigo após a tempestade. Voltar à estufa e colher após 180 segundos de cultivo ativo. Com todos os marcos e reservas adequadas, o relatório aparece. Exportar JSON e comparar custos/medidas ao percurso.
+9. Restaurar checkpoint e repetir com outra ordem de cargas. Em outra tentativa, ignorar a tempestade: deve falhar, informar causa e permitir restaurar o snapshot inteiro sem duplicar peças, gelo ou recrutamento.
+10. Salvar/recarregar no cânion, em reparo e no abrigo; verificar posição, resto subsegundo, recursos e flags. Fechar o jogo por um minuto: nenhum recurso avança offline. Testar save corrompido e storage bloqueado sem apagar dados de outros apps.
+11. Repetir base↔estufa e base↔cânion 20 vezes com métricas abertas. Confirmar estabilidade de meshes, memória, listeners e templates. Simular modelo indisponível; verificar aviso e substituto simples, sem tratar fallback como qualidade final aprovada.
+12. Só teclado: foco visível, ordem de leitura, Tab preso no modal, Esc e retorno ao canvas. Verificar texto maior, redução de movimento, qualidade econômica e contraste. Em viewport menor, registrar limitações: controles de toque para exploração ainda não existem.
+
+Critérios de falha: tela encoberta, ator invisível, alvo inacessível, softlock, recurso gratuito, passo de tempo em leitura/background, duplicação no reload, erro de carregamento sem feedback, crescimento contínuo de memória ou texto ilegível. Corrigir e repetir o percurso afetado antes de expandir o mundo.

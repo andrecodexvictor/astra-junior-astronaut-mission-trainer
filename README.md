@@ -1,49 +1,49 @@
-# ASTRA — Lunar Frontier
+# ASTRA — Lunar Frontier demo
 
-**An educational exploration RPG with a deterministic scientific outpost simulation, designed for Babylon.js.**
+A public, independent and disposable Babylon.js prototype for a scientific exploration RPG. Start at the Earth academy, reach a fictional lunar outpost, restore interdependent systems, repair and recruit Scout, bring back ice, grow food and protect the crew through a storm. No account, API key or backend is required.
 
-> Repository state: **research, specification and agent handoff only**. No playable build is included. This is not an official NASA submission, proof of eligibility or a claim of completed features.
+This repository now contains executable source, eight local GLB models and a deterministic simulation. It is **not an official NASA submission**. Browser/GPU acceptance and human playtesting are still pending; passing Node tests does not certify the visual result.
 
-ASTRA is pivoting from dialogue-led scenes toward a world-first adventure: travel through readable routes, investigate equipment and samples, restore original robotic companions, assemble a small field team and keep a lunar outpost alive. Short visual-novel scenes support the journey. Power, water, oxygen, food and radiation decisions remain consequential.
+## Run
 
-The inspiration is the exploration, party attachment and discovery loop of recent creature-collection RPGs. ASTRA uses original characters, robots, environments and systems; it does not reproduce Pokémon characters, maps, music or assets.
+Use Node 24 and npm:
 
-## Start here
+```sh
+git clone https://github.com/andrecodexvictor/astra-lunar-frontier.git
+cd astra-lunar-frontier
+npm ci
+npm run check
+npm run dev
+```
 
-| Document | Purpose |
-|---|---|
-| [Agent goal](GOAL.md) | Standalone execution brief, gates and definition of done |
-| [Repository agent rules](AGENTS.md) | Ownership, integration and evidence requirements |
-| [Game specification](docs/GAME_SPEC.md) | Gameplay, scientific rules, requirements and scope |
-| [World bible](docs/WORLD_BIBLE.md) | Routes, companions, art, encounters and ten missions |
-| [Babylon world architecture](docs/BABYLON_WORLD_ARCHITECTURE.md) | Engine decisions, verified examples, asset pipeline and budgets |
-| [Space Apps rules review](docs/SPACE_APPS_COMPLIANCE.md) | Confirmed requirements, uncertainty and event timing |
-| [Prior-work audit](docs/PRIOR_WORK.md) | Existing prototype provenance and limitations |
-| [Execution backlog](docs/EXECUTION_BACKLOG.md) | Work packages and dependency order |
-| [Design references](docs/DESIGN_REFERENCES.md) | Inspiration translated into original mechanics |
-| [AI usage](AI_USAGE.md) | Current authoring disclosure and future asset obligations |
-| [Submission draft](docs/SUBMISSION_TEMPLATE_EN.md) | English project-page draft; unimplemented claims remain placeholders |
+Open the Vite address in Chrome with WebGL 2. `npm run build` produces a static `dist/` directory for public hosting. There is no authentication in the application. The older Sites deployment is a separate legacy artifact, not a release of this source.
 
-Planning documents are in Portuguese for the team; this entry point and the submission draft are in English. Full project-page language and demo limits must be checked against the current 2026 submission guide before submission.
+WASD/arrows move, mouse drag rotates the camera, Shift runs, Space jumps and E inspects nearby equipment. Tab opens objectives; J opens science; M opens the region map; Esc pauses. Reading panels, hidden tabs and a closed game freeze mission time. Settings provide larger text, reduced decorative motion, lower resolution and an explicit 3× mission clock. Saving is local to this browser, including a full checkpoint.
 
-## Space Apps status
+## Current scope
 
-The relevant 2026 challenge is [Build a Junior Astronaut Mission Trainer](https://www.spaceappschallenge.org/2026/challenges/junior-astronaut-mission-trainer/). The official [participant terms](https://www.spaceappschallenge.org/legal/) require open availability/licensing and attribution. The organizers' [timing guidance](https://github.com/nasa/spaceapps/discussions/1827) warns against starting project work before the event.
+- Five finite streamed regions: academy, assisted orbital cabin, Aurora habitat, ice canyon and greenhouse.
+- Original local glTF models, articulated procedural gait, third-person camera, selective obstacle collision, PIP follower and Scout recruitment.
+- Fixed one-second ticks; kW/kWh, charge/discharge losses, water recycling losses, electrolysis mass accounting, delayed repairs, ice processing, crop growth, radiation warning, failure/retry and evidence export.
+- Short authored dialogue, proximity interactions, a local science journal, reference links, observable objectives and a mission report.
+- **13 local agent skills**: 10 permissive upstream skills and 3 original ASTRA guides, with pinned commits, licenses and file hashes.
 
-The previous ASTRA prototype predates the event window. It is **not imported into this repository**, and its code, generated art and this pre-event planning must not be represented as newly produced hackathon work. Participation details and treatment of prior work remain unresolved. See the compliance review before starting a competition track.
+The orbital cabin currently uses floor-assisted movement, not six-degree-of-freedom physics. The terrain is authored fiction, not measured lunar geography. Crop biomass and safety are disclosed abstractions. Freeform construction, vehicles, team abilities, a mass-budget manifest, skeletal animation, combat, additional planets and AI chat are not implemented.
 
-A future independent product track may evolve the idea without claiming competition eligibility. Merely making a public GitHub repository does not submit a project to Space Apps.
+## Continue with Gemini
 
-## What exists elsewhere
+Read [GEMINI.md](GEMINI.md), then give the agent [MASTER_GOAL.md](MASTER_GOAL.md). It directs bounded batches, preserves the working slice, and uses skills under `.agents/skills/`. Current evidence is in [TEST_REPORT.md](TEST_REPORT.md), [ACCEPTANCE.json](ACCEPTANCE.json), and [HANDOFF.md](HANDOFF.md). The next gate is actual Chrome traversal and visual profiling before enlarging the world.
 
-An independently developed [legacy prototype](https://astra-lunar-frontier-academy.andrevictorandrade.chatgpt.site) exists. It is reference material, not this repository's runnable release or submission demo. Its source snapshot is recorded in [PRIOR_WORK.md](docs/PRIOR_WORK.md). Do not reuse it for a competition entry without resolving eligibility and attribution.
+The design draws original principles from Space Engineers, Subnautica, Pokémon, Scrap Mechanic, Journey to the Savage Planet and Deliver Us The Moon. See [design pillars](docs/demo/DESIGN_PILLARS.md); no proprietary assets, characters, maps or music are copied.
 
-## Planned engineering baseline
+## Checks and documentation
 
-Vite + TypeScript + modular Babylon.js; separate simulation, quest, companion, input, world-streaming and UI modules. WebGL 2 is the baseline, with WebGPU as progressive enhancement after parity testing. Real glTF animation, documented collision behavior, bounded regions and measured budgets take priority over a planet-sized map.
+`npm run check` runs TypeScript, unit/integration tests, glTF/provenance audit, skill audit and production build. `npm run test:e2e` deliberately reports **pending** with exit status 2 until real browser evidence is supplied; it is not a passing browser suite. Follow [the browser walkthrough](docs/demo/BROWSER_SMOKE.md).
 
-There is intentionally no `npm install` / `npm run dev` instruction yet: the application has not been scaffolded here. The execution goal requires the team to add and verify build, typecheck, unit, asset-audit and real-browser commands as part of its first implementation milestone.
+- [Game specification](docs/GAME_SPEC.md), [world bible](docs/WORLD_BIBLE.md), [Babylon research](docs/BABYLON_WORLD_ARCHITECTURE.md)
+- [Implemented science assumptions](docs/demo/SCIENCE_ASSUMPTIONS.md), [level design](docs/demo/LEVEL_DESIGN.md)
+- [Skill sources and licenses](docs/skills/SOURCE_REVIEW.md), [local skill guide](docs/skills/README.md)
+- [NASA rules review and unresolved official items](docs/SPACE_APPS_COMPLIANCE.md)
+- [Prior-work provenance](docs/PRIOR_WORK.md), [AI disclosure](AI_USAGE.md), [asset manifest](public/assets/manifest.json)
 
-## License and credits
-
-Original repository contributions: [Apache 2.0](LICENSE). Engine and external resources must retain their own licenses and notices. NASA data usage and every imported asset require provenance; a blanket repository license does not relicense third-party content. AI assistance is disclosed in [AI_USAGE.md](AI_USAGE.md).
+Original contributions are Apache-2.0. Vendored skills keep their Apache/MIT licenses and notices; NASA imagery keeps its usage terms. The Stanestane Noncommercial bundle is bibliography only, not vendored or relicensed. No endorsement by NASA or any referenced game company is implied.

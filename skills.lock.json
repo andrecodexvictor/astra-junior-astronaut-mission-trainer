@@ -1,0 +1,273 @@
+{
+  "version": 1,
+  "generatedDate": "2026-11-14",
+  "purpose": "Pinned development-only skill pack; no remote code execution or claim of implementation readiness",
+  "sources": [
+    {
+      "repository": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+      "license": "Apache-2.0",
+      "id": "awesome",
+      "commit": "c6ca6c41c839b68319ffc08430b99ab768debc32",
+      "licenseFile": "vendor/skills/licenses/awesome.txt",
+      "licenseSha256": "6f82dcfeb95a1c0a0452180a3b16f21bf82111780018fed59d95a052b5b75f6c",
+      "noticeFile": "vendor/skills/licenses/awesome-NOTICE.txt",
+      "noticeSha256": "2dcb65b1c5be24e5ba11e937f3996100f4e980d8cf8ac5b30ba1d70dae6c40f8"
+    },
+    {
+      "repository": "https://github.com/witnesstodark/mr-mak-workspace",
+      "license": "MIT",
+      "id": "mr-mak",
+      "commit": "57adc6016d8886ae9cf926df00f89106c7b71deb",
+      "licenseFile": "vendor/skills/licenses/mr-mak.txt",
+      "licenseSha256": "0f5d97c88bc20aa6dbcef9b6b1afd1fe49439d77d1fd47f2a962b6dbe9c95522"
+    },
+    {
+      "id": "astra-original",
+      "license": "Apache-2.0",
+      "origin": "Original project-specific guidance authored in this repository",
+      "licenseFile": "LICENSE",
+      "licenseSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    }
+  ],
+  "skills": [
+    {
+      "id": "level-design",
+      "entrypoint": ".agents/skills/level-design/SKILL.md",
+      "sourceId": "awesome",
+      "sourceCommit": "c6ca6c41c839b68319ffc08430b99ab768debc32",
+      "license": "Apache-2.0",
+      "files": [
+        {
+          "path": ".agents/skills/level-design/SKILL.md",
+          "upstreamPath": "skills/disciplines/level-design/SKILL.md",
+          "sha256": "aa5d7a8f97987e12b7127460735da9ec73141452068c15801965057006ba8bec"
+        },
+        {
+          "path": ".agents/skills/level-design/references/pacing-and-flow.md",
+          "upstreamPath": "skills/disciplines/level-design/references/pacing-and-flow.md",
+          "sha256": "5f3aa345ac8c165530598e540dcfa89cb9b8cdfe3c0622dc548c336cce71347c"
+        }
+      ],
+      "modified": false
+    },
+    {
+      "id": "game-feel",
+      "entrypoint": ".agents/skills/game-feel/SKILL.md",
+      "sourceId": "awesome",
+      "sourceCommit": "c6ca6c41c839b68319ffc08430b99ab768debc32",
+      "license": "Apache-2.0",
+      "files": [
+        {
+          "path": ".agents/skills/game-feel/SKILL.md",
+          "upstreamPath": "skills/disciplines/game-feel/SKILL.md",
+          "sha256": "a3591662e732f1540887570f584bd18778f4f728708afa013a33e20bcc949a06"
+        },
+        {
+          "path": ".agents/skills/game-feel/references/feedback-recipes.md",
+          "upstreamPath": "skills/disciplines/game-feel/references/feedback-recipes.md",
+          "sha256": "dd084164150a75f84ce7d8459956ef35b1d3e5270aa7421612ab2671a9da0740"
+        }
+      ],
+      "modified": false
+    },
+    {
+      "id": "game-ui-ux",
+      "entrypoint": ".agents/skills/game-ui-ux/SKILL.md",
+      "sourceId": "awesome",
+      "sourceCommit": "c6ca6c41c839b68319ffc08430b99ab768debc32",
+      "license": "Apache-2.0",
+      "files": [
+        {
+          "path": ".agents/skills/game-ui-ux/SKILL.md",
+          "upstreamPath": "skills/disciplines/game-ui-ux/SKILL.md",
+          "sha256": "69140650cd9a28dc208bd1540358f47829aabb3f0834311c3d39b7a451e8b163"
+        },
+        {
+          "path": ".agents/skills/game-ui-ux/references/layout-and-flow.md",
+          "upstreamPath": "skills/disciplines/game-ui-ux/references/layout-and-flow.md",
+          "sha256": "2adc76f28f305e44afd90667e25e65b129b21433966e9b0fbedc48dd7ab1af4f"
+        }
+      ],
+      "modified": false
+    },
+    {
+      "id": "performance-optimization",
+      "entrypoint": ".agents/skills/performance-optimization/SKILL.md",
+      "sourceId": "awesome",
+      "sourceCommit": "c6ca6c41c839b68319ffc08430b99ab768debc32",
+      "license": "Apache-2.0",
+      "files": [
+        {
+          "path": ".agents/skills/performance-optimization/SKILL.md",
+          "upstreamPath": "skills/disciplines/performance-optimization/SKILL.md",
+          "sha256": "61538ac2e3ef68aca3194aec7eb9f54510762e86ac81ff1a4451e9fead31a3be"
+        },
+        {
+          "path": ".agents/skills/performance-optimization/references/profiling-and-budgets.md",
+          "upstreamPath": "skills/disciplines/performance-optimization/references/profiling-and-budgets.md",
+          "sha256": "010ab745097b48f14b0843ef95b2745895c154c1829e923764caee822b9c0a65"
+        }
+      ],
+      "modified": false
+    },
+    {
+      "id": "save-systems",
+      "entrypoint": ".agents/skills/save-systems/SKILL.md",
+      "sourceId": "awesome",
+      "sourceCommit": "c6ca6c41c839b68319ffc08430b99ab768debc32",
+      "license": "Apache-2.0",
+      "files": [
+        {
+          "path": ".agents/skills/save-systems/SKILL.md",
+          "upstreamPath": "skills/disciplines/save-systems/SKILL.md",
+          "sha256": "84620777d23dd018665ba86254fcf52fbd88e517d4cfe41b112c720711d6c908"
+        },
+        {
+          "path": ".agents/skills/save-systems/references/versioning-and-migration.md",
+          "upstreamPath": "skills/disciplines/save-systems/references/versioning-and-migration.md",
+          "sha256": "f648f75adcf0c3028f350f07ea4202ff433ab170da4859748e2a675092c71768"
+        }
+      ],
+      "modified": false
+    },
+    {
+      "id": "camera-systems",
+      "entrypoint": ".agents/skills/camera-systems/SKILL.md",
+      "sourceId": "awesome",
+      "sourceCommit": "c6ca6c41c839b68319ffc08430b99ab768debc32",
+      "license": "Apache-2.0",
+      "files": [
+        {
+          "path": ".agents/skills/camera-systems/SKILL.md",
+          "upstreamPath": "skills/disciplines/camera-systems/SKILL.md",
+          "sha256": "a240892c3a049e19f3fb011c1648896d35fc2bf907906c5f6fcffa1fd37f5f3c"
+        },
+        {
+          "path": ".agents/skills/camera-systems/references/follow-and-framing.md",
+          "upstreamPath": "skills/disciplines/camera-systems/references/follow-and-framing.md",
+          "sha256": "d4eae82aeda34969ba1465db9da2bc412eae4e3161418bde7a439fac3c049dae"
+        }
+      ],
+      "modified": false
+    },
+    {
+      "id": "input-systems",
+      "entrypoint": ".agents/skills/input-systems/SKILL.md",
+      "sourceId": "awesome",
+      "sourceCommit": "c6ca6c41c839b68319ffc08430b99ab768debc32",
+      "license": "Apache-2.0",
+      "files": [
+        {
+          "path": ".agents/skills/input-systems/SKILL.md",
+          "upstreamPath": "skills/disciplines/input-systems/SKILL.md",
+          "sha256": "3fccea4c4d81061538d5844b918f1193ceb5e753d4e4b2fa8ef53a853742c949"
+        },
+        {
+          "path": ".agents/skills/input-systems/references/buffering-and-accessibility.md",
+          "upstreamPath": "skills/disciplines/input-systems/references/buffering-and-accessibility.md",
+          "sha256": "0bf447427d7c05fa1fb702fce4d866df4cecc8e1643d6bfeeb1e27b7648372ea"
+        }
+      ],
+      "modified": false
+    },
+    {
+      "id": "rpg",
+      "entrypoint": ".agents/skills/rpg/SKILL.md",
+      "sourceId": "awesome",
+      "sourceCommit": "c6ca6c41c839b68319ffc08430b99ab768debc32",
+      "license": "Apache-2.0",
+      "files": [
+        {
+          "path": ".agents/skills/rpg/SKILL.md",
+          "upstreamPath": "skills/genres/rpg/SKILL.md",
+          "sha256": "d62e3327dba436b697bfbecf34e7af022e54d3eca451d9fea5d814fe6f791caa"
+        },
+        {
+          "path": ".agents/skills/rpg/references/stats-combat-quests.md",
+          "upstreamPath": "skills/genres/rpg/references/stats-combat-quests.md",
+          "sha256": "f22e49ff1727b82db624d36fa6138c308da9c58b0d769e73f6d63b4c65ec468e"
+        }
+      ],
+      "modified": false
+    },
+    {
+      "id": "game-level-design",
+      "entrypoint": ".agents/skills/game-level-design/SKILL.md",
+      "sourceId": "mr-mak",
+      "sourceCommit": "57adc6016d8886ae9cf926df00f89106c7b71deb",
+      "license": "MIT",
+      "files": [
+        {
+          "path": ".agents/skills/game-level-design/SKILL.md",
+          "upstreamPath": ".agents/skills/game-level-design/SKILL.md",
+          "sha256": "98899eab7501c01614ffe2567e1176e267ee31316d7426ae93f13e2dac01db57"
+        }
+      ],
+      "modified": false
+    },
+    {
+      "id": "game-animation-integration",
+      "entrypoint": ".agents/skills/game-animation-integration/SKILL.md",
+      "sourceId": "mr-mak",
+      "sourceCommit": "57adc6016d8886ae9cf926df00f89106c7b71deb",
+      "license": "MIT",
+      "files": [
+        {
+          "path": ".agents/skills/game-animation-integration/SKILL.md",
+          "upstreamPath": ".agents/skills/game-animation-integration/SKILL.md",
+          "sha256": "a50971f36c026c921e79643528b865d38fbb9d65e78948c7ee518f761b824fe2"
+        }
+      ],
+      "modified": false
+    },
+    {
+      "id": "astra-science-gameplay",
+      "entrypoint": ".agents/skills/astra-science-gameplay/SKILL.md",
+      "sourceId": "astra-original",
+      "license": "Apache-2.0",
+      "modified": false,
+      "files": [
+        {
+          "path": ".agents/skills/astra-science-gameplay/SKILL.md",
+          "sha256": "c732b9af6baef2026f283fb37a36673028a61cf7e0c2492e269f689aebc8ff2c"
+        }
+      ]
+    },
+    {
+      "id": "astra-babylon-review",
+      "entrypoint": ".agents/skills/astra-babylon-review/SKILL.md",
+      "sourceId": "astra-original",
+      "license": "Apache-2.0",
+      "modified": false,
+      "files": [
+        {
+          "path": ".agents/skills/astra-babylon-review/SKILL.md",
+          "sha256": "d6192859cfbc18ebeff7c5953b99692716d39976d065fd1b0669d9d271c45986"
+        }
+      ]
+    },
+    {
+      "id": "astra-batch-delivery",
+      "entrypoint": ".agents/skills/astra-batch-delivery/SKILL.md",
+      "sourceId": "astra-original",
+      "license": "Apache-2.0",
+      "modified": false,
+      "files": [
+        {
+          "path": ".agents/skills/astra-batch-delivery/SKILL.md",
+          "sha256": "3d26a2c268504a1c7fc975a9398ecf80e0fe490ad22c5640622e2ce73db89e04"
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "repository": "https://github.com/Stanestane/game-design-skills-bundle",
+      "commit": "1868c5635d1937f599ebc918904533e69a194039",
+      "license": "PolyForm-Noncommercial-1.0.0",
+      "decision": "Reference only; no SKILL.md or support text redistributed. Noncommercial terms are not an OSI open-source license and are not covered by this repository Apache-2.0 grant.",
+      "requiredNotice": "Copyright Stanislav Stankovic (https://www.stane-island.net/)",
+      "licenseUrl": "https://github.com/Stanestane/game-design-skills-bundle/blob/master/LICENSE"
+    }
+  ]
+}
