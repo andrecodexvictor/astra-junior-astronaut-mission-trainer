@@ -1,6 +1,6 @@
 # Test report — independent demo v0.2
 
-Execution date: 2026-11-14. Authoring environment: Linux x86_64, Node v24.22.1, npm 11.9.0. No browser version, GPU, device frame rate or human playtime is available; those fields are **not measured**. Exact implementation reference and final check output are recorded in `ACCEPTANCE.json`.
+Execution date: 2026-11-14. Authoring environment: Linux x86_64, Node v24.22.1, npm 11.9.0. No browser version, GPU, device frame rate or human playtime is available; those fields are **not measured**. Implementation commit: `2076c9689b22c7e8424bd68c5f50547c22a1e4da`. Exact acceptance and build file hashes are recorded in `ACCEPTANCE.json` and `docs/demo/BUILD_MANIFEST.json`.
 
 ## Executed checks
 

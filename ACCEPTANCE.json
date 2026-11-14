@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "scope": "Independent disposable ASTRA first demo slice; extended campaign not complete",
   "executionMode": "independent_demo",
-  "implementationCommit": null,
+  "implementationCommit": "2076c9689b22c7e8424bd68c5f50547c22a1e4da",
   "buildArtifact": "npm run build -> dist/ (generated, not committed)",
   "date": "2026-11-14",
   "environment": {
@@ -569,7 +569,7 @@
       "total": 0
     },
     "browserE2E": "not_run_exit_2",
-    "viteMainChunkBytes": 1758590,
+    "viteMainChunkBytes": 1758589,
     "viteMainChunkGzipApproxBytes": 454180,
     "buildWarning": "Main chunk exceeds Vite 1600 kB warning threshold; no device performance inferred."
   },
