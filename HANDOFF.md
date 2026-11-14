@@ -4,7 +4,7 @@ O proprietário escolheu uma demo descartável, separada da entrega oficial. A p
 
 ## Rodar e continuar
 
-Node 24 → `npm ci` → `npm run check` → `npm run dev`. Chrome com WebGL 2. Build estático em `dist/`; não precisa login, backend, CDN ou chave. O antigo site Sites continua um artefato separado e não foi substituído por este repositório.
+Node 24 → `npm ci` → `npm run check` → `npm run dev`. Chrome com WebGL 2. Build estático em `dist/`; não precisa login, backend, CDN ou chave. A pedido explícito do proprietário, o site existente agora publica esta demo sem login: https://astra-lunar-frontier-academy.andrevictorandrade.chatgpt.site . A versão anterior permanece no histórico da fonte Sites; ver `docs/SITE_RELEASE.md`.
 
 Para o Gemini, carregar `GEMINI.md` e `MASTER_GOAL.md`, inspecionar `ACCEPTANCE.json`, então seguir o primeiro gate incompleto. As 13 skills estão no clone com lock e licenças; não reinstalar o catálogo inteiro. As seis referências atuais estão traduzidas em mecânicas originais em `docs/demo/DESIGN_PILLARS.md`.
 

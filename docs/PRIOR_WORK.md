@@ -4,7 +4,7 @@ O ASTRA 1.1 foi construído nesta conversa antes da abertura competitiva padrão
 
 ## Snapshot auditado
 
-- Aplicação legada: https://astra-lunar-frontier-academy.andrevictorandrade.chatgpt.site
+- URL auditada do legado: https://astra-lunar-frontier-academy.andrevictorandrade.chatgpt.site . Em uma solicitação posterior de 14/11/2026, esse mesmo endereço foi atualizado para a nova demo; o commit abaixo identifica o snapshot antigo.
 - Commit de referência: `aae650ff37c5f0a22c14c4dcfeaee55fb32b03bd`.
 - Versão: expansão 1.1, em checkout separado de Sites.
 - Stack observada: Babylon.js 9.35, JavaScript estático, oito GLBs próprios, seis zonas compactas, 17 cenas, simulação pura, NPCs e progressão de RPG.

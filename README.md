@@ -2,6 +2,8 @@
 
 A public, independent and disposable Babylon.js prototype for a scientific exploration RPG. Start at the Earth academy, reach a fictional lunar outpost, restore interdependent systems, repair and recruit Scout, bring back ice, grow food and protect the crew through a storm. No account, API key or backend is required.
 
+**Play the public demo:** https://astra-lunar-frontier-academy.andrevictorandrade.chatgpt.site
+
 This repository now contains executable source, eight local GLB models and a deterministic simulation. It is **not an official NASA submission**. Browser/GPU acceptance and human playtesting are still pending; passing Node tests does not certify the visual result.
 
 ## Run
@@ -16,7 +18,7 @@ npm run check
 npm run dev
 ```
 
-Open the Vite address in Chrome with WebGL 2. `npm run build` produces a static `dist/` directory for public hosting. There is no authentication in the application. The older Sites deployment is a separate legacy artifact, not a release of this source.
+Open the Vite address in Chrome with WebGL 2. `npm run build` produces a static `dist/` directory for public hosting. There is no authentication in the application. The existing public Site now serves this demo (Sites version 4). Its previous prototype remains in the Site source history; see [publication record](docs/SITE_RELEASE.md).
 
 WASD/arrows move, mouse drag rotates the camera, Shift runs, Space jumps and E inspects nearby equipment. Tab opens objectives; J opens science; M opens the region map; Esc pauses. Reading panels, hidden tabs and a closed game freeze mission time. Settings provide larger text, reduced decorative motion, lower resolution and an explicit 3× mission clock. Saving is local to this browser, including a full checkpoint.
 
