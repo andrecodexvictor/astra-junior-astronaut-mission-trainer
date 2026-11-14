@@ -14,7 +14,7 @@
     "test": "vitest run",
     "audit:assets": "node scripts/audit-assets.mjs",
     "audit:skills": "node scripts/audit-skills.mjs",
-    "test:e2e": "node scripts/e2e-status.mjs",
+    "test:e2e": "node scripts/e2e-runner.mjs",
     "check": "npm run typecheck && npm test && npm run audit:assets && npm run audit:skills && npm run audit:docs && npm run audit:art && npm run build",
     "audit:docs": "node scripts/audit-docs.mjs",
     "audit:deps": "npm audit --audit-level=moderate",

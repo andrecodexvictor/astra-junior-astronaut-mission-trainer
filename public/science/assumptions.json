@@ -1,13 +1,18 @@
 {
-  "version": 2,
-  "classification": "Didactic fictional demo parameters, NOT NASA habitat specifications",
+  "version": 3,
+  "classification": "didactic_hypothesis",
+  "disclaimer": "Parâmetros ficcionais e hipóteses didáticas de gameplay; NÃO representam especificações de engenharia da NASA nem dosimetria clínica.",
   "time": {
+    "classification": "didactic_hypothesis",
+    "sourceRef": "eia-energy",
     "fixed_step_seconds": 1,
     "mission_hours_per_tick": 0.01,
     "paused_while_reading_or_hidden": true,
     "offline_progress": false
   },
   "power": {
+    "classification": "didactic_hypothesis",
+    "sourceRef": "eia-energy",
     "solar_kw": 5,
     "critical_kw": 1.2,
     "recycler_kw": 0.7,
@@ -19,17 +24,38 @@
     "initial_kwh": 8,
     "charge_efficiency": 0.9,
     "discharge_efficiency": 0.9,
+    "cumulative_loss_tracked_field": "energyLossKwh",
     "storm_solar_fraction": 0.45
   },
   "academy": {
+    "classification": "didactic_hypothesis",
+    "sourceRef": "eia-energy",
     "generation_kw": 20,
     "demand_kw": 38,
     "shed_demand_kw": 12,
     "battery_capacity_kwh": 10,
     "initial_kwh": 6,
+    "academy_shed_rate_kwh_per_tick": 0.08,
+    "academy_excess_drain_kwh_per_tick": -0.18,
     "observation_ticks": 15
   },
+  "orbit": {
+    "classification": "didactic_hypothesis",
+    "sourceRef": "nasa-station-microgravity",
+    "orbit_assisted": true,
+    "six_dof_implemented": false,
+    "cargo_capacity_kg": 45,
+    "default_cargo_mass_kg": 40,
+    "note": "Cabine orbital assistida no plano; não simula física orbital completa ou seis graus de liberdade."
+  },
+  "loadout": {
+    "classification": "didactic_hypothesis",
+    "capacity_kg": 18,
+    "default_loadout_mass_kg": 15
+  },
   "rates_per_mission_hour": {
+    "classification": "didactic_hypothesis",
+    "sourceRef": "nasa-eclss",
     "crew_water_kg": 0.18,
     "crew_oxygen_kg": 0.08,
     "crew_food_kg": 0.025,
@@ -38,29 +64,150 @@
     "electrolysis_water_kg": 0.18,
     "electrolysis_oxygen_kg": 0.16,
     "electrolysis_hydrogen_kg": 0.02,
+    "electrolysis_source_ref": "nasa-electrolysis",
     "crop_irrigation_kg": 0.012
   },
+  "crew_aggregate": {
+    "classification": "didactic_hypothesis",
+    "sourceRef": "nasa-eclss",
+    "includes_optional_cometa_when_active": true,
+    "per_actor_metabolic_model": false,
+    "note": "Consumo agregado da tripulação inclui a presença opcional de Cometa até que um modelo metabólico individual validado seja implementado."
+  },
+  "ice_and_repairs": {
+    "classification": "didactic_hypothesis",
+    "finite_ice_deposit_kg": 8,
+    "sample_transfer_kg": 0.5,
+    "sample_processing_ticks": 10,
+    "module_repair_kwh": 0.2,
+    "module_repair_ticks": 5,
+    "initial_parts": 2
+  },
   "crop": {
+    "classification": "didactic_hypothesis",
+    "sourceRef": "nasa-plants",
     "powered_ticks": 180,
     "yield_kg": 3,
-    "limitation": "Abstract biomass yield; carbon, nutrients, CO2 and full growth mass accounting omitted. Irrigation is retained in a ledger."
+    "strategies": [
+      "early_plant",
+      "deferred_plant"
+    ],
+    "limitation": "Produtividade biológica abstrata; carbono, nutrientes, remoção de CO2 e balanço completo de biomassa omitidos. Irrigação registrada em ledger."
   },
   "storm": {
+    "classification": "didactic_hypothesis",
+    "sourceRef": "nasa-radiation",
+    "shelter_source_ref": "nasa-storm-shelter",
     "warning_lunar_tick": 180,
     "active_lunar_ticks": [
       300,
       379
     ],
     "repeat_period_ticks": 600,
-    "risk": "Qualitative hazard and safety margin; not a dose/health model"
+    "unsheltered_health_loss_per_tick": 1.4,
+    "deprivation_health_loss_per_tick": 0.15,
+    "risk": "Risco qualitativo e margem de segurança reproduzível; não é modelo de dose (sieverts) nem previsão espacial."
   },
-  "geography": "Artist-authored flat ground and fictional canyon; no DEM is loaded.",
+  "companions": {
+    "classification": "didactic_hypothesis",
+    "pip": {
+      "battery_capacity_kwh": 1.5,
+      "base_telemetry_range_m": 35,
+      "low_power_range_m": 15,
+      "diagnostic_scan_cost_kwh": 0.02,
+      "softlocks_hints_when_low": false
+    },
+    "scout": {
+      "repair_parts": 1,
+      "repair_kwh": 0.3,
+      "repair_ticks": 5,
+      "battery_capacity_kwh": 2,
+      "scan_cost_kwh": 0.4,
+      "stranded_threshold_kwh": 0.1,
+      "rescue_recharge_kwh": 0.5,
+      "trickle_charge_per_tick_kwh": 0.002,
+      "creates_free_resources": false
+    },
+    "cometa": {
+      "optional_to_player": true,
+      "required_for_main_victory": false,
+      "pressurized_sniff_only": true,
+      "vacuum_sniff_allowed": false,
+      "creates_resources": false,
+      "suit_fiction": "Traje e capacete ficcionais para gameplay; sem certificação ou missão real de animal pela NASA."
+    }
+  },
+  "aux_bay": {
+    "classification": "didactic_hypothesis",
+    "ports": [
+      "power",
+      "water",
+      "o2"
+    ],
+    "install_cost_kwh": 0.15,
+    "power_solar_bonus_kw": 0.5,
+    "water_throughput_bonus_kg_h": 0.04,
+    "water_demand_kw": 0.15,
+    "o2_water_bonus_kg_h": 0.04,
+    "o2_demand_kw": 0.2
+  },
+  "field_kit": {
+    "classification": "didactic_hypothesis",
+    "slots": 3,
+    "pieces": [
+      "relay_mast",
+      "thermal_shield",
+      "sensor_pylon"
+    ],
+    "install_escrow_kwh": 0.2,
+    "refund_on_remove": true,
+    "relay_mast_range_bonus_m": 20,
+    "thermal_shield_critical_saving_kw": 0.1,
+    "thermal_shield_unsheltered_health_loss_per_tick": 1.25,
+    "sensor_pylon_solar_bonus_kw": 0.3
+  },
+  "field_discoveries": {
+    "classification": "didactic_hypothesis",
+    "probe_cost_kwh": 0.05,
+    "xp_per_unique_discovery": 25,
+    "creates_resources": false,
+    "traces": [
+      {
+        "id": "com03_unplugged_cable",
+        "sourceKind": "fictional_abstraction"
+      },
+      {
+        "id": "canyon_ice_strata",
+        "sourceKind": "fictional_abstraction"
+      },
+      {
+        "id": "solar_dust_attenuation",
+        "sourceKind": "verified_telemetry"
+      }
+    ]
+  },
+  "gravity_ms2": {
+    "earth_and_orbit_assisted": 9.81,
+    "lunar_surface": 1.62,
+    "sourceRef": "nasa-moon-gravity",
+    "classification": "official_reference_adjusted_for_controls"
+  },
+  "geography": {
+    "classification": "fictional_abstraction",
+    "sourceRef": "nasa-lola",
+    "note": "Chão caminhável autoral e cânion ficcional; nenhum DEM LRO/LOLA foi carregado."
+  },
   "sources": [
     "eia-energy",
     "nasa-eclss",
     "nasa-electrolysis",
     "nasa-radiation",
+    "nasa-storm-shelter",
+    "nasa-station-microgravity",
     "nasa-plants",
-    "nasa-moon"
+    "nasa-moon",
+    "nasa-moon-gravity",
+    "nasa-lola",
+    "nasa-blue-marble"
   ]
 }

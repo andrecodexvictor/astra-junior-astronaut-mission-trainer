@@ -106,6 +106,66 @@
       "source": "https://svs.gsfc.nasa.gov/2915/",
       "classification": "NASA satellite mosaic, converted to JPEG; artistic illumination in scene, not AI generated",
       "aiAssisted": false
+    },
+    {
+      "id": "astronaut-animated",
+      "path": "assets/models/characters/astronaut-animated.glb",
+      "sha256": "902ffeb537654bdbd33ab93368ecf9ba3b345957375c7b3b502ef6590c6a1af7",
+      "credit": "ASTRA contributors; AI-assisted parametric skeletal modeling 2026-11-14",
+      "rights": "Original ASTRA contribution, Apache-2.0; Node ESM generator requires no runtime dependency.",
+      "source": "tools/models/build_characters.mjs",
+      "method": "Deterministic parametric glTF 2.0 binary (human rig, 23 joints, 15 keyframed clips, shared PBR + COLOR_0).",
+      "classification": "Original fictional engineering/stylized character asset, not measured NASA equipment",
+      "aiAssisted": true,
+      "review": "Structural glTF validation (0 errors/0 warnings), skin weights, bounds, and NullEngine skeletal checks verified; browser GPU inspection pending."
+    },
+    {
+      "id": "human-npc-animated",
+      "path": "assets/models/characters/human-npc-animated.glb",
+      "sha256": "c6e8cea2059ef28d8d4e85585a3d50e2ef61f28f4fb5014707f7a4e084896e48",
+      "credit": "ASTRA contributors; AI-assisted parametric skeletal modeling 2026-11-14",
+      "rights": "Original ASTRA contribution, Apache-2.0; Node ESM generator requires no runtime dependency.",
+      "source": "tools/models/build_characters.mjs",
+      "method": "Deterministic parametric glTF 2.0 binary (human rig, 22 joints, 7 keyframed clips, shared PBR + COLOR_0).",
+      "classification": "Original fictional engineering/stylized character asset, not measured NASA equipment",
+      "aiAssisted": true,
+      "review": "Structural glTF validation (0 errors/0 warnings), skin weights, bounds, and NullEngine skeletal checks verified; browser GPU inspection pending."
+    },
+    {
+      "id": "pip-animated",
+      "path": "assets/models/characters/pip-animated.glb",
+      "sha256": "cf073c6f6ff725c9899a2073191d5d184901f73dfe76a529b399e40387c45b0a",
+      "credit": "ASTRA contributors; AI-assisted parametric skeletal modeling 2026-11-14",
+      "rights": "Original ASTRA contribution, Apache-2.0; Node ESM generator requires no runtime dependency.",
+      "source": "tools/models/build_characters.mjs",
+      "method": "Deterministic parametric glTF 2.0 binary (mechanical rig, 9 joints, 6 keyframed clips, shared PBR + COLOR_0).",
+      "classification": "Original fictional engineering/stylized character asset, not measured NASA equipment",
+      "aiAssisted": true,
+      "review": "Structural glTF validation (0 errors/0 warnings), skin weights, bounds, and NullEngine skeletal checks verified; browser GPU inspection pending."
+    },
+    {
+      "id": "scout-animated",
+      "path": "assets/models/characters/scout-animated.glb",
+      "sha256": "77d00713fddd75d4bf29bf93cda24796c7259746af56f239cf8fc4ff2e981847",
+      "credit": "ASTRA contributors; AI-assisted parametric skeletal modeling 2026-11-14",
+      "rights": "Original ASTRA contribution, Apache-2.0; Node ESM generator requires no runtime dependency.",
+      "source": "tools/models/build_characters.mjs",
+      "method": "Deterministic parametric glTF 2.0 binary (mechanical rig, 13 joints, 6 keyframed clips, shared PBR + COLOR_0).",
+      "classification": "Original fictional engineering/stylized character asset, not measured NASA equipment",
+      "aiAssisted": true,
+      "review": "Structural glTF validation (0 errors/0 warnings), skin weights, bounds, and NullEngine skeletal checks verified; browser GPU inspection pending."
+    },
+    {
+      "id": "cometa-animated",
+      "path": "assets/models/characters/cometa-animated.glb",
+      "sha256": "843395605449ba577ac4991f6046e7b580b0d1e571f1f29f2bfd4854ca0149f5",
+      "credit": "ASTRA contributors; AI-assisted parametric skeletal modeling 2026-11-14",
+      "rights": "Original ASTRA contribution, Apache-2.0; Node ESM generator requires no runtime dependency.",
+      "source": "tools/models/build_characters.mjs",
+      "method": "Deterministic parametric glTF 2.0 binary (quadruped rig, 28 joints, 18 keyframed clips, shared PBR + COLOR_0).",
+      "classification": "Original fictional engineering/stylized character asset, not measured NASA equipment",
+      "aiAssisted": true,
+      "review": "Structural glTF validation (0 errors/0 warnings), skin weights, bounds, and NullEngine skeletal checks verified; browser GPU inspection pending."
     }
   ]
 }

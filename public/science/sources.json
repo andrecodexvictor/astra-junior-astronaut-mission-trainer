@@ -1,9 +1,13 @@
 {
-  "version": 1,
+  "version": 2,
   "retrievedAt": "2026-11-14",
+  "parameterProvenance": "didactic_hypothesis",
+  "didacticParametersNote": "Todas as capacidades, taxas horárias, custos de reparo, tempos de crescimento e ciclos de tempestade são hipóteses didáticas de gameplay (didactic_hypothesis); as fontes abaixo fornecem apenas conceitos científicos e proveniência de imagem.",
   "sources": [
     {
       "id": "eia-energy",
+      "classification": "official_conceptual_reference",
+      "parameterProvenance": "didactic_hypothesis",
       "title": "EIA — Measuring electricity",
       "url": "https://www.eia.gov/energyexplained/electricity/measuring-electricity.php",
       "concepts": [
@@ -12,12 +16,14 @@
         "autonomia"
       ],
       "fact": "Quilowatt (kW) mede potência. Quilowatt-hora (kWh) mede energia: 1 kW durante 1 hora corresponde a 1 kWh.",
-      "simplification": "Capacidades, cargas e eficiências da base são hipóteses de jogo. A autonomia estimada muda quando geração ou demanda mudam.",
+      "simplification": "Capacidades (10/12 kWh), cargas (kW) e eficiências de 90% da base são hipóteses didáticas de jogo. A autonomia estimada muda quando geração ou demanda mudam.",
       "usageNotes": "Referência educacional governamental; paráfrase autoral, sem reprodução de imagens.",
       "excerptId": "energy-units-01"
     },
     {
       "id": "nasa-eclss",
+      "classification": "official_conceptual_reference",
+      "parameterProvenance": "didactic_hypothesis",
       "title": "NASA — Environmental Control and Life Support Systems",
       "url": "https://www.nasa.gov/reference/environmental-control-and-life-support-systems-eclss/",
       "concepts": [
@@ -27,12 +33,14 @@
         "dependências"
       ],
       "fact": "O suporte à vida inclui controle do ar, abastecimento de água e tratamento de resíduos; esses subsistemas precisam trabalhar em conjunto.",
-      "simplification": "A base omite química detalhada, pressão, remoção de CO₂, nutrientes e manutenção real. Taxas e reservas são didáticas, não especificações da NASA.",
+      "simplification": "A base omite química detalhada, pressão, remoção de CO₂, nutrientes e manutenção real. Taxas (0,18 kg/h água, 0,08 kg/h O₂, 80% reciclagem) e o agregado com Cometa são hipóteses didáticas.",
       "usageNotes": "Página oficial da NASA, usada como referência conceitual. Paráfrase autoral.",
       "excerptId": "eclss-functions-01"
     },
     {
       "id": "nasa-moon",
+      "classification": "official_conceptual_reference",
+      "parameterProvenance": "didactic_hypothesis",
       "title": "NASA Science — Moon Facts",
       "url": "https://science.nasa.gov/moon/facts/",
       "concepts": [
@@ -40,12 +48,14 @@
         "ambiente lunar"
       ],
       "fact": "A gravidade superficial lunar é aproximadamente um sexto da terrestre. A Lua possui uma exosfera muito tênue.",
-      "simplification": "Tração, velocidade, câmera e saltos são ajustados para controle acessível. A base e sua localização são ficcionais; o terreno é artisticamente reescalado.",
+      "simplification": "Tração, velocidade, câmera e saltos são ajustados para controle acessível. A base Aurora, os depósitos de gelo e o cânion são ficção didática sem neblina atmosférica ou nuvens.",
       "usageNotes": "Referência oficial da NASA. Sem uso de emblemas ou alegação de endosso.",
       "excerptId": "moon-environment-01"
     },
     {
       "id": "nasa-radiation",
+      "classification": "official_conceptual_reference",
+      "parameterProvenance": "didactic_hypothesis",
       "title": "NASA — Hazard: Space Radiation",
       "url": "https://www.nasa.gov/hrp/hazard-space-radiation/",
       "concepts": [
@@ -54,12 +64,14 @@
         "abrigo"
       ],
       "fact": "A radiação espacial é um risco para astronautas e exige avaliação, monitoramento e medidas de proteção.",
-      "simplification": "Alerta e abrigo são qualitativos. O temporizador não representa dose, prognóstico de saúde ou procedimento operacional real.",
+      "simplification": "Alerta, radiação invisível e abrigo são qualitativos. O ciclo determinístico (180/300–379/600 ticks) é hipótese didática e não representa dose em sieverts.",
       "usageNotes": "Referência oficial. O modelo do jogo não calcula sieverts nem eficácia clínica de blindagem.",
       "excerptId": "radiation-risk-01"
     },
     {
       "id": "nasa-storm-shelter",
+      "classification": "official_conceptual_reference",
+      "parameterProvenance": "didactic_hypothesis",
       "title": "NASA — Protecting astronauts from space radiation at the Moon",
       "url": "https://science.nasa.gov/science-research/heliophysics/how-nasa-will-protect-astronauts-from-space-radiation-at-the-moon/",
       "concepts": [
@@ -68,12 +80,14 @@
         "abrigo"
       ],
       "fact": "Eventos de partículas solares podem exigir que a tripulação busque uma área com proteção adicional.",
-      "simplification": "O habitat é um abrigo abstrato. A tempestade tem horário fixo para que estratégias sejam reproduzíveis; não é uma previsão de clima espacial.",
+      "simplification": "O habitat é um abrigo abstrato. A tempestade tem horário fixo para que estratégias (plantio cedo/adiado) sejam reproduzíveis; não é previsão de clima espacial.",
       "usageNotes": "Paráfrase de referência oficial da NASA. Cenário narrativo fictício.",
       "excerptId": "shelter-planning-01"
     },
     {
       "id": "nasa-station-microgravity",
+      "classification": "official_conceptual_reference",
+      "parameterProvenance": "didactic_hypothesis",
       "title": "NASA — What Is Microgravity? (Grades 5–8)",
       "url": "https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-microgravity-grades-5-8/",
       "concepts": [
@@ -82,12 +96,14 @@
         "inércia"
       ],
       "fact": "Objetos em órbita parecem flutuar porque nave e ocupantes estão juntos em queda livre. Há gravidade na órbita terrestre.",
-      "simplification": "A cabine atual usa deslocamento assistido no plano. Inércia e seis graus de liberdade ainda não estão implementados; viagem e descida são comprimidas.",
+      "simplification": "A cabine atual usa deslocamento assistido no plano (orbitAssisted = true) e orçamento de carga de 45 kg. Inércia e 6DoF não estão implementados.",
       "usageNotes": "Material educacional oficial; resumo autoral em português.",
       "excerptId": "orbit-free-fall-01"
     },
     {
       "id": "nasa-plants",
+      "classification": "official_conceptual_reference",
+      "parameterProvenance": "didactic_hypothesis",
       "title": "NASA Science — VEGGIE",
       "url": "https://science.nasa.gov/mission/veggie/",
       "concepts": [
@@ -96,12 +112,14 @@
         "crescimento"
       ],
       "fact": "O experimento Veggie estuda plantas em microgravidade e pode complementar a alimentação com vegetais frescos.",
-      "simplification": "O cultivo do jogo usa um ciclo muito acelerado, omite nutrientes e doenças e não representa uma dieta completa ou uma estufa lunar comprovada.",
+      "simplification": "O cultivo usa ciclo acelerado de 180 ticks, 0,8 kW, 0,012 kg/h de água e rendimento abstrato de 3 kg (hipótese didática), omitindo nutrientes e doenças.",
       "usageNotes": "Referência científica oficial; sem alegação de que a estufa ficcional existe na Lua.",
       "excerptId": "space-crops-01"
     },
     {
       "id": "nasa-lola",
+      "classification": "official_conceptual_reference",
+      "parameterProvenance": "didactic_hypothesis",
       "title": "NASA SVS — CGI Moon Kit / LRO LOLA",
       "url": "https://svs.gsfc.nasa.gov/4720/",
       "concepts": [
@@ -110,12 +128,14 @@
         "modelos"
       ],
       "fact": "O instrumento LOLA do Lunar Reconnaissance Orbiter mede a topografia lunar; o CGI Moon Kit oferece mapas derivados para visualização.",
-      "simplification": "Referência para o pipeline futuro. Esta demo NÃO usa mapas LOLA nem DEM medido: todo o chão caminhável é autoral.",
+      "simplification": "Referência para pipeline futuro. Esta demo NÃO usa mapas LOLA nem DEM medido: o cânion e os estratos de gelo são abstrações ficcionais autorais.",
       "usageNotes": "Fonte conceitual oficial. Nenhum dado deste produto foi incorporado ao terreno desta demo.",
       "excerptId": "lola-terrain-01"
     },
     {
       "id": "nasa-electrolysis",
+      "classification": "official_conceptual_reference",
+      "parameterProvenance": "didactic_hypothesis",
       "title": "NASA — ECLSS Fact Sheet: Oxygen Generation",
       "url": "https://www.nasa.gov/wp-content/uploads/2020/10/g-281237_eclss_0.pdf",
       "concepts": [
@@ -123,12 +143,14 @@
         "balanço de massa"
       ],
       "fact": "Uma corrente elétrica pode separar a água em hidrogênio e oxigênio; assim, gerar oxigênio também depende de água e energia.",
-      "simplification": "O jogo registra entrada de água, oxigênio produzido e hidrogênio separado, mas omite pressão, temperatura e processamento químico detalhado.",
-      "usageNotes": "Referência oficial NASA; taxas da simulação são hipóteses didáticas.",
+      "simplification": "O jogo conserva razão ideal 8:1 em massa (O₂:H₂) como hipótese didática, omitindo pressão, temperatura e perdas químicas reais.",
+      "usageNotes": "Referência oficial NASA; taxas da simulação (0,18 kg água/h e +0,04 kg/h na porta auxiliar) são hipóteses didáticas.",
       "excerptId": "water-splitting-01"
     },
     {
       "id": "nasa-blue-marble",
+      "classification": "official_media_provenance",
+      "parameterProvenance": "verified_source_media",
       "title": "NASA SVS — Blue Marble, Terra/MODIS",
       "url": "https://svs.gsfc.nasa.gov/2915/",
       "concepts": [
@@ -136,12 +158,14 @@
         "proveniência"
       ],
       "fact": "O mosaico Blue Marble combina observações de satélite para representar a superfície terrestre.",
-      "simplification": "A Terra no cenário usa uma textura estática e iluminação artística; não é uma visualização meteorológica ao vivo.",
+      "simplification": "A Terra no cenário usa textura estática derivada de Blue Marble 2048x1024 e iluminação artística; não é visualização meteorológica ao vivo.",
       "usageNotes": "NASA/Goddard Space Flight Center Scientific Visualization Studio; Reto Stockli, NASA Earth Observatory; Terra/MODIS.",
       "excerptId": "earth-mosaic-01"
     },
     {
       "id": "nasa-moon-gravity",
+      "classification": "official_reference_adjusted_for_controls",
+      "parameterProvenance": "didactic_hypothesis",
       "title": "NASA Glenn — Moon",
       "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/moon/",
       "concepts": [
@@ -149,7 +173,7 @@
         "salto lunar"
       ],
       "fact": "A aceleração gravitacional lunar é aproximadamente 1,62 m/s².",
-      "simplification": "O salto usa esse valor com impulso e tração ajustados para gameplay; traje, equilíbrio e biomecânica não são simulados.",
+      "simplification": "O salto usa 1,62 m/s² com impulso (2,4 m/s) e tração ajustados como hipótese didática de controle; traje e biomecânica não são simulados.",
       "usageNotes": "Referência técnica oficial NASA Glenn, consultada em 14/11/2026.",
       "excerptId": "moon-gravity-01"
     }
