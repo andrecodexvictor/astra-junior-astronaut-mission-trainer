@@ -1,4 +1,5 @@
 import './presentation/style.css';
+import { SOURCE_REPOSITORY_URL, RELEASE_LABEL } from './app/release';
 import type {
   AuxBayPortType,
   AuxVisualState,
@@ -1441,7 +1442,7 @@ export function mountAstraApp(): void {
           <button type="button" class="${hasSave ? '' : 'primary'}" data-start="new" data-testid="btn-start-new">Nova expedição</button>
           <button type="button" data-menu="settings" data-testid="btn-intro-settings">Acessibilidade e gráficos</button>
         </div>
-        <p class="fine">Sem login • save v4 apenas neste navegador • modelos 3D locais. Mundo fictício e parâmetros rotulados como hipótese didática. A cabine orbital usa locomoção assistida (sem 6DoF). ${escapeHtml(saveNotice)}</p>`,
+        <p class="fine">Sem login • save v4 apenas neste navegador • modelos 3D locais. Mundo fictício e parâmetros rotulados como hipótese didática. A cabine orbital usa locomoção assistida (sem 6DoF). ${escapeHtml(saveNotice)}</p><p class="fine"><a data-testid="source-repository-link" href="${escapeHtml(SOURCE_REPOSITORY_URL)}" target="_blank" rel="noopener noreferrer">Código e histórico no GitHub ↗</a> • ${escapeHtml(RELEASE_LABEL)}</p>`,
         true,
         'intro-modal',
         focusSelector,

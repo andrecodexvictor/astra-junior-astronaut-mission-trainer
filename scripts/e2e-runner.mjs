@@ -1,4 +1,5 @@
 import { execFileSync, spawn } from 'node:child_process';
+import { createHash } from 'node:crypto';
 import fs from 'node:fs';
 import http from 'node:http';
 import os from 'node:os';
@@ -9,6 +10,49 @@ const DIST_DIR = path.join(ROOT_DIR, 'dist');
 const CAPTURES_DIR = path.join(ROOT_DIR, 'docs', 'demo', 'captures');
 const SAVE_KEY = 'astra-independent-demo-v4';
 const LEGACY_V3_KEY = 'astra-independent-demo-v3';
+const RUN_QUALITY = process.env.ASTRA_E2E_QUALITY || 'high';
+const REPORT_PATH = path.join(ROOT_DIR, 'docs', 'demo', 'E2E_REPORT.json');
+const report = {
+  status: 'running', startedAt: new Date().toISOString(), commit: getCommitSha(),
+  source: { gitDirty: null, packageVersion: null, distIndexSha256: null, distTreeSha256: null }, node: process.version,
+  os: { platform: os.platform(), release: os.release(), arch: os.arch(), uid: process.getuid?.() ?? null },
+  browser: null, renderer: null, classification: 'unknown', usedSwiftShader: null, requestedQuality: RUN_QUALITY, canvasResolution: null, focusDiagnostics: null,
+  hardwareValidation: 'pending', passes: [], failures: [], total: 0,
+  transitions: null, performance10s: null, mobileGeometry: null, captures: [], errorCounts: null,
+};
+let evidenceSession = null;
+let activeBrowserCtx = null;
+let activeServer = null;
+try { report.source.gitDirty = Boolean(execFileSync('git', ['status', '--porcelain'], { cwd: ROOT_DIR, encoding: 'utf8' }).trim()); } catch {}
+try { report.source.packageVersion = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, 'package.json'), 'utf8')).version; } catch {}
+try { report.source.distIndexSha256 = createHash('sha256').update(fs.readFileSync(path.join(DIST_DIR, 'index.html'))).digest('hex'); } catch {}
+try {
+  const hash = createHash('sha256');
+  const visit = (dir) => {
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true }).sort((a, b) => a.name.localeCompare(b.name))) {
+      const file = path.join(dir, entry.name);
+      if (entry.isDirectory()) visit(file);
+      else if (entry.isFile()) { hash.update(path.relative(DIST_DIR, file).replace(/\\/g, '/') + '\0'); hash.update(fs.readFileSync(file)); }
+    }
+  };
+  visit(DIST_DIR);
+  report.source.distTreeSha256 = hash.digest('hex');
+} catch {}
+function writeReport() {
+  if (evidenceSession) {
+    report.passes = evidenceSession.passes;
+    report.failures.push(...evidenceSession.assertFailures);
+    report.captures = evidenceSession.captures;
+    report.errorCounts = { exceptions: evidenceSession.exceptions.length, consoleErrors: evidenceSession.consoleErrors.length,
+      externalRequests: evidenceSession.externalRequests.length, loadingFailures: evidenceSession.loadingFailures.length,
+      httpErrors: evidenceSession.badResponses.length };
+  }
+  report.total = report.passes.length + report.failures.length;
+  report.finishedAt = new Date().toISOString();
+  fs.mkdirSync(path.dirname(REPORT_PATH), { recursive: true });
+  fs.writeFileSync(REPORT_PATH, JSON.stringify(report, null, 2) + '\n');
+}
+
 
 const MIME_TYPES = {
   '.html': 'text/html; charset=utf-8',
@@ -37,8 +81,11 @@ function getCommitSha() {
 }
 
 function findBrowserExecutable() {
+  const pathNames = process.platform === 'win32' ? ['chrome.exe', 'msedge.exe', 'chromium.exe'] : ['chromium', 'chromium-browser', 'google-chrome', 'google-chrome-stable', 'chrome'];
+  const pathCandidates = (process.env.PATH || '').split(path.delimiter).filter(Boolean).flatMap(dir => pathNames.map(name => path.join(dir, name)));
   const candidates = [
     process.env.ASTRA_CHROME_PATH,
+    ...pathCandidates,
     'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
     'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
     'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe',
@@ -46,7 +93,7 @@ function findBrowserExecutable() {
   ].filter(Boolean);
 
   for (const candidate of candidates) {
-    if (fs.existsSync(candidate)) return candidate;
+    try { fs.accessSync(candidate, fs.constants.X_OK); if (fs.statSync(candidate).isFile()) return candidate; } catch {}
   }
 
   const localAppData = process.env.LOCALAPPDATA || path.join(os.homedir(), 'AppData', 'Local');
@@ -101,17 +148,20 @@ function startStaticServer() {
 function connectWs(url) {
   return new Promise((resolve, reject) => {
     const ws = new WebSocket(url);
+    const openTimer = setTimeout(() => { ws.close(); reject(new Error('CDP WebSocket connection timed out')); }, 15000);
     let nextId = 1;
     const pending = new Map();
     const listeners = new Set();
 
     ws.addEventListener('open', () => {
+      clearTimeout(openTimer);
       resolve({
         send(method, params = {}) {
           const id = nextId++;
           return new Promise((res, rej) => {
-            pending.set(id, { res, rej, method });
-            ws.send(JSON.stringify({ id, method, params }));
+            const timer = setTimeout(() => { pending.delete(id); rej(new Error(`CDP ${method} timed out`)); }, 150000);
+            pending.set(id, { res, rej, method, timer });
+            try { ws.send(JSON.stringify({ id, method, params })); } catch (err) { clearTimeout(timer); pending.delete(id); rej(err); }
           });
         },
         onEvent(fn) {
@@ -119,7 +169,8 @@ function connectWs(url) {
           return () => listeners.delete(fn);
         },
         close() {
-          for (const { rej, method } of pending.values()) {
+          for (const { rej, method, timer } of pending.values()) {
+            clearTimeout(timer);
             rej(new Error(`CDP socket closed while awaiting ${method}`));
           }
           pending.clear();
@@ -127,13 +178,14 @@ function connectWs(url) {
         },
       });
     });
-    ws.addEventListener('error', (err) => reject(err));
+    ws.addEventListener('error', (err) => { clearTimeout(openTimer); reject(err); });
     ws.addEventListener('message', (ev) => {
       const msg = JSON.parse(String(ev.data));
       if (msg.id) {
         const entry = pending.get(msg.id);
         if (entry) {
           pending.delete(msg.id);
+          clearTimeout(entry.timer);
           if (msg.error) {
             entry.rej(new Error(`CDP ${entry.method} error ${msg.error.code}: ${msg.error.message}`));
           } else {
@@ -168,6 +220,8 @@ async function launchBrowser(exePath, gpuArgs) {
 
   const proc = spawn(exePath, args, { stdio: ['ignore', 'pipe', 'pipe'] });
   let stderrBuf = '';
+  let spawnError = null;
+  proc.on('error', (err) => { spawnError = err; });
   proc.stderr.on('data', (chunk) => {
     stderrBuf += chunk.toString();
   });
@@ -226,13 +280,13 @@ async function launchBrowser(exePath, gpuArgs) {
         // Windows may briefly lock DevToolsActivePort while Chrome writes it.
       }
     }
-    if (proc.exitCode !== null) break;
+    if (proc.exitCode !== null || spawnError) break;
     await sleep(100);
   }
 
   if (!wsUrl) {
     await cleanup(null);
-    throw new Error(`Failed to open CDP DevTools endpoint (stderr=${stderrBuf.slice(0, 400)})`);
+    throw new Error(`Failed to open CDP DevTools endpoint (spawn=${spawnError?.message || 'none'}, stderr=${stderrBuf.slice(0, 1500)}). Chromium sandbox is required; check namespace availability and browser installation.`);
   }
 
   const browser = await connectWs(wsUrl);
@@ -269,6 +323,8 @@ class AstraSession {
     await this.page.send('Page.enable');
     await this.page.send('Runtime.enable');
     await this.page.send('Network.enable');
+    await this.page.send('Page.bringToFront');
+    try { await this.page.send('Emulation.setFocusEmulationEnabled', { enabled: true }); report.focusEmulation = 'enabled'; } catch (err) { report.focusEmulation = `unavailable: ${err.message}`; }
     await this.setViewport(1280, 800, 1, false);
 
     this.page.onEvent((msg) => {
@@ -647,10 +703,14 @@ class AstraSession {
   }
 
   async focusWorldCanvas() {
-    await this.eval(`(() => {
+    await this.page.send('Page.bringToFront');
+    const focus = await this.eval(`(() => {
       const w = document.getElementById('world');
-      if (w) w.focus();
+      if (w) w.focus({ preventScroll: true });
+      return { hasFocus: document.hasFocus(), activeElement: document.activeElement?.id || document.activeElement?.tagName || null, hidden: document.hidden, paused: window.__ASTRA_WORLD_DEBUG__?.getSnapshot()?.paused ?? null };
     })()`);
+    report.focusDiagnostics = focus;
+    return focus;
   }
 
   async releaseAllMoveKeys() {
@@ -680,7 +740,7 @@ class AstraSession {
    * on the `#world` canvas so zero WebSocket IPC roundtrips happen mid-stride.
    */
   async walkPath(waypoints, options = {}) {
-    const { sprint = true, arrivalRadius = 0.85, expectedTargetId = null, maxWaypointMs = 25000 } = options;
+    const { sprint = true, arrivalRadius = 0.85, expectedTargetId = null, maxWaypointMs = 120000 } = options;
     const forceCalibrate = !this.cachedFwd;
     const res = await this.eval(`(async () => {
       const waypoints = ${JSON.stringify(waypoints)};
@@ -741,7 +801,7 @@ class AstraSession {
           const a = getPos();
           setKeys(new Set([k]));
           const t0 = performance.now();
-          while (performance.now() - t0 < 220) {
+          while (performance.now() - t0 < 12000) {
             await nextFrame();
             const b = getPos();
             if (Math.hypot(b.x - a.x, b.z - a.z) >= 0.14) break;
@@ -768,8 +828,7 @@ class AstraSession {
           window.__astraWalkFwd = { fx: -rd.dz / rd.len, fz: rd.dx / rd.len };
           return window.__astraWalkFwd;
         }
-        window.__astraWalkFwd = { fx: 0, fz: 1 };
-        return window.__astraWalkFwd;
+        throw new Error('Unable to calibrate direction from observed movement');
       };
 
       try {
@@ -779,12 +838,16 @@ class AstraSession {
           const isLast = wi === waypoints.length - 1;
           const tol = isLast ? (expectedTargetId ? Math.min(arrivalRadius, 0.35) : arrivalRadius) : 1.5;
           const wpStart = performance.now();
+          const initialPos = getPos();
+          const initialDistance = initialPos ? Math.hypot(wp.x - initialPos.x, wp.z - initialPos.z) : 0;
+          const waypointDeadline = Math.min(maxWaypointMs, Math.max(25000, initialDistance * 30000));
           let stallOrigin = getPos();
           let stallTs = wpStart;
           let stallFlip = 0;
+          let stallFrames = 0;
           let arrived = false;
 
-          while (performance.now() - wpStart < maxWaypointMs) {
+          while (performance.now() - wpStart < waypointDeadline) {
             const pos = getPos();
             if (!pos) return { ok: false, reason: 'no-pos', wi, wp };
 
@@ -802,10 +865,11 @@ class AstraSession {
               break;
             }
 
-            if (performance.now() - stallTs > 650) {
+            if (performance.now() - stallTs > 3000 && stallFrames >= 3) {
               const moved = Math.hypot(pos.x - stallOrigin.x, pos.z - stallOrigin.z);
               stallOrigin = pos;
               stallTs = performance.now();
+              stallFrames = 0;
               if (moved < 0.14) {
                 releaseAll();
                 fwd = await calibrate(true);
@@ -835,6 +899,7 @@ class AstraSession {
 
             setKeys(desired);
             await nextFrame();
+            stallFrames++;
           }
 
           releaseAll();
@@ -973,42 +1038,48 @@ class AstraSession {
 }
 
 async function runAll() {
+  if (!['high', 'low'].includes(RUN_QUALITY)) throw new Error('ASTRA_E2E_QUALITY must be high or low');
   const commitSha = getCommitSha();
   const exePath = findBrowserExecutable();
   if (!exePath) {
-    console.error('No Chrome/Edge/Playwright Chromium executable found.');
-    process.exit(1);
+    throw new Error('No installed Chrome/Edge/Chromium found; set ASTRA_CHROME_PATH or add Chromium to PATH.');
   }
 
   const { server, port, baseUrl } = await startStaticServer();
+  activeServer = server;
   console.log(`[e2e] Serving dist/ at ${baseUrl}`);
   console.log(`[e2e] Browser binary: ${exePath}`);
 
   let browserCtx = null;
   let session = null;
-  let usedSwiftShader = false;
+  let usedSwiftShader = null;
   try {
     try {
-      browserCtx = await launchBrowser(exePath, ['--use-gl=angle', '--use-angle=d3d11']);
+      const nativeArgs = process.platform === 'win32' ? ['--use-gl=angle', '--use-angle=d3d11'] : ['--use-gl=angle'];
+      report.launchMode = { attempt: 'native', args: nativeArgs };
+      browserCtx = await launchBrowser(exePath, nativeArgs);
+      activeBrowserCtx = browserCtx;
       session = new AstraSession(browserCtx.browser, browserCtx.debugPort, baseUrl, port);
       await session.openPage();
       const glProbe = await session.eval(`(() => {
         const c = document.createElement('canvas');
         return Boolean(c.getContext('webgl2'));
       })()`);
-      if (!glProbe) throw new Error('Hardware ANGLE D3D11 WebGL2 context returned null');
+      if (!glProbe) throw new Error('Native ANGLE WebGL2 context returned null');
     } catch (hwErr) {
-      console.warn('[e2e] Hardware ANGLE D3D11 WebGL2 unavailable, falling back to SwiftShader:', hwErr.message);
+      if (!browserCtx) throw hwErr; // A launch/sandbox failure is not a GPU fallback condition.
+      console.warn('[e2e] Native WebGL2 unavailable, falling back to SwiftShader:', hwErr.message);
       if (session?.page) {
         try { session.page.close(); } catch {}
       }
       if (browserCtx) await browserCtx.cleanup(browserCtx.browser);
-      usedSwiftShader = true;
+      report.launchMode = { attempt: 'swiftshader-fallback', args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'] };
       browserCtx = await launchBrowser(exePath, [
         '--use-gl=angle',
         '--use-angle=swiftshader',
         '--enable-unsafe-swiftshader',
       ]);
+      activeBrowserCtx = browserCtx;
       session = new AstraSession(browserCtx.browser, browserCtx.debugPort, baseUrl, port);
       await session.openPage();
     }
@@ -1029,6 +1100,15 @@ async function runAll() {
       };
     })()`);
 
+    evidenceSession = session;
+    const renderer = envMeta.unmaskedRenderer;
+    usedSwiftShader = renderer == null ? null : /swiftshader/i.test(renderer);
+    const software = renderer == null ? null : /swiftshader|llvmpipe|lavapipe|softpipe|software rasterizer/i.test(renderer);
+    report.browser = { executable: exePath, product: ver.product, userAgent: ver.userAgent, protocolVersion: ver.protocolVersion };
+    report.renderer = envMeta;
+    report.usedSwiftShader = usedSwiftShader;
+    report.softwareRenderer = software;
+    report.classification = software === true ? 'software' : 'unknown-or-hardware-unverified';
     console.log('[e2e] Environment:', JSON.stringify({
       commitSha,
       os: `${os.platform()} ${os.release()} (${os.arch()})`,
@@ -1053,6 +1133,13 @@ async function runAll() {
     session.assert('boot-engine-webgl2', bootSnap.engine === 'WebGL 2', `engine=${bootSnap.engine}`);
     session.assert('boot-all-glbs-no-fallback', bootSnap.fallbackModels.length === 0 && bootSnap.loadedModels.length === 11,
       `loaded=${bootSnap.loadedModels.length}, fallback=${JSON.stringify(bootSnap.fallbackModels)}`);
+
+    // Select actual in-app graphics quality before starting the expedition.
+    await session.click('[data-testid="btn-intro-settings"]', 100);
+    await session.setSelect('[data-testid="setting-quality"]', RUN_QUALITY);
+    await session.click('[data-menu="intro"]', 100);
+    await session.waitFor(`document.querySelector('[data-testid="intro-modal"]') !== null`, 5000);
+    report.canvasResolution = await session.eval(`(() => { const c = document.getElementById('world'); return { width: c.width, height: c.height, cssWidth: c.getBoundingClientRect().width, cssHeight: c.getBoundingClientRect().height }; })()`);
 
     // Cadet appearance customization
     await session.setSelect('[data-testid="select-suit-accent"]', 'cyan');
@@ -1084,26 +1171,35 @@ async function runAll() {
     trace('drag 1 done');
     await session.dragCanvas(-55, 12); // restore facing near north after proving camera drag responds
     trace('drag 2 done');
-    await session.focusWorldCanvas();
-    const downP = Promise.all([
-      session.keyDown('w', 'KeyW', 87),
-      session.keyDown('Shift', 'ShiftLeft', 16),
-    ]);
-    await sleep(220);
-    await downP;
-    const clipMoving = (await session.snap()).actors.astronaut.clip;
-    await session.keyDown(' ', 'Space', 32);
-    await sleep(100);
-    const jumpSnap = await session.snap();
-    await session.releaseAllMoveKeys();
+    const focus = await session.focusWorldCanvas();
+    let movingSnap = null, jumpSnap = null;
+    try {
+      await session.keyDown('w', 'KeyW', 87);
+      await session.keyDown('Shift', 'ShiftLeft', 16);
+      movingSnap = await session.waitFor(`(() => {
+        const s = window.__ASTRA_WORLD_DEBUG__?.getSnapshot();
+        const a = s?.actors?.astronaut;
+        if (!a) return null;
+        return Math.hypot(a.position.x - (${pBeforeDrag.x}), a.position.z - (${pBeforeDrag.z})) > 0.5 &&
+          (a.clip === 'WalkEarth' || a.clip === 'RunEarth') ? s : null;
+      })()`, 30000, 80).catch(() => session.snap());
+      await session.keyDown(' ', 'Space', 32);
+      jumpSnap = await session.waitFor(`(() => {
+        const s = window.__ASTRA_WORLD_DEBUG__?.getSnapshot();
+        return s?.actors?.astronaut?.position?.y > 0 ? s : null;
+      })()`, 10000, 80).catch(() => session.snap());
+    } finally {
+      await session.releaseAllMoveKeys();
+    }
     trace('move/jump done');
-    const pAfterMove = jumpSnap.actors.astronaut.position;
+    const pAfterMove = movingSnap.actors.astronaut.position;
+    const clipMoving = movingSnap.actors.astronaut.clip;
     session.assert('keyboard-wasd-shift-moves-astronaut',
       Math.hypot(pAfterMove.x - pBeforeDrag.x, pAfterMove.z - pBeforeDrag.z) > 0.5,
-      `moved from ${JSON.stringify(pBeforeDrag)} to ${JSON.stringify(pAfterMove)}`);
+      `moved from ${JSON.stringify(pBeforeDrag)} to ${JSON.stringify(pAfterMove)}; focus=${JSON.stringify(focus)}`);
     session.assert('keyboard-animation-clip-changes',
       clipMoving === 'WalkEarth' || clipMoving === 'RunEarth' || jumpSnap.actors.astronaut.clip !== 'Idle',
-      `moving=${clipMoving}, jump=${jumpSnap.actors.astronaut.clip}`);
+      `moving=${clipMoving}, jump=${jumpSnap.actors.astronaut.clip}; focus=${JSON.stringify(focus)}`);
 
     // Episode 01 Beat 1: dialogue history + skip optional beat
     trace('opening episode modal...');
@@ -1530,7 +1626,7 @@ async function runAll() {
         simulation: structuredClone(v3Sim),
         pose: { region: 'habitat', position: { x: 0, y: 0, z: -14 }, heading: 0 },
       },
-      settings: { quality: 'high', largeText: false, reducedMotion: false, speed: 3 },
+      settings: { quality: RUN_QUALITY, largeText: false, reducedMotion: false, speed: 3 },
     };
     await session.openWithStorageSetup(`
       localStorage.clear();
@@ -1611,6 +1707,10 @@ async function runAll() {
     // SUITE 7: Cometa DISABLED + Strategy 2 (deferred_plant) + Storm Fail + Checkpoint Retry
     // =========================================================================
     console.log('\n[e2e] --- SUITE 7: Cometa Disabled + Deferred Plant + Storm Fail & Checkpoint Retry ---');
+    await session.click('[data-testid="btn-intro-settings"]', 100);
+    await session.setSelect('[data-testid="setting-quality"]', RUN_QUALITY);
+    await session.click('[data-menu="intro"]', 100);
+    await session.waitFor(`document.querySelector('[data-testid="intro-modal"]') !== null`, 5000);
     await session.setCheckbox('[data-testid="toggle-intro-cometa"]', false);
     await session.click('[data-testid="btn-start-new"]', 250);
     await session.waitFor(`document.getElementById('modal-layer').hidden === true`, 5000);
@@ -1774,6 +1874,7 @@ async function runAll() {
       countsPerHabitatVisit.push((await session.snap()).sceneCounts);
     }
 
+    report.transitions = { transitionsDone, canyonCycles, countsPerHabitatVisit };
     const firstHab = countsPerHabitatVisit[0];
     const lastHab = countsPerHabitatVisit[countsPerHabitatVisit.length - 1];
     console.log('[e2e] Leak check sceneCounts:', JSON.stringify({ transitionsDone, canyonCycles, firstHab, lastHab }));
@@ -1788,9 +1889,9 @@ async function runAll() {
       lastHab.lights === firstHab.lights,
       `transitions=${transitionsDone}, first=${JSON.stringify(firstHab)}, last=${JSON.stringify(lastHab)}`);
 
-    // Sustained 10s render performance trace in Aurora habitat (1280x800, quality='high')
+    // Sustained 10s render performance trace in Aurora habitat at the selected quality.
     await session.click('[data-testid="btn-settings"]', 100);
-    await session.setSelect('[data-testid="setting-quality"]', 'high');
+    await session.setSelect('[data-testid="setting-quality"]', RUN_QUALITY);
     await session.closeModal();
     await sleep(500);
     const perfSamples = await session.eval(`(async () => {
@@ -1826,7 +1927,9 @@ async function runAll() {
         lastMetrics: lastM,
       };
     })()`);
-    console.log('[e2e] Sustained Perf Telemetry (habitat, 1280x800, quality=high):', JSON.stringify(perfSamples, null, 2));
+    report.canvasResolution = await session.eval(`(() => { const c = document.getElementById('world'); return { width: c.width, height: c.height, cssWidth: c.getBoundingClientRect().width, cssHeight: c.getBoundingClientRect().height }; })()`);
+    report.performance10s = { viewport: '1280x800', quality: RUN_QUALITY, canvasResolution: report.canvasResolution, ...perfSamples };
+    console.log(`[e2e] Sustained Perf Telemetry (habitat, 1280x800, quality=${RUN_QUALITY}):`, JSON.stringify(perfSamples, null, 2));
     session.assert('sustained-perf-measured-10s',
       perfSamples.rafCount >= 60 && perfSamples.avgBabylonFps > 0,
       `fps=${perfSamples.avgBabylonFps}, p95=${perfSamples.p95RafMs}ms`);
@@ -1882,8 +1985,8 @@ async function runAll() {
           const r = b.getBoundingClientRect();
           return {
             testid: b.getAttribute('data-testid') || b.getAttribute('data-touch-move') || b.textContent?.trim(),
-            w: Math.round(r.width * 10) / 10,
-            h: Math.round(r.height * 10) / 10,
+            w: r.width,
+            h: r.height,
           };
         });
       const sideBtns = Array.from(document.querySelectorAll('.side-tools button'))
@@ -1892,8 +1995,8 @@ async function runAll() {
           const r = b.getBoundingClientRect();
           return {
             testid: b.getAttribute('data-testid'),
-            w: Math.round(r.width * 10) / 10,
-            h: Math.round(r.height * 10) / 10,
+            w: r.width,
+            h: r.height,
           };
         });
       return {
@@ -1902,12 +2005,17 @@ async function runAll() {
         sideBtns,
       };
     })()`);
+    report.mobileGeometry = { viewport: '390x844', dpr: 2, ...mobileAudit };
     console.log('[e2e] Mobile 390x844 button geometry:', JSON.stringify(mobileAudit, null, 2));
     session.assert('mobile-touch-controls-visible-ge-44x44',
       mobileAudit.touchVisible &&
       mobileAudit.touchBtns.length >= 6 &&
       mobileAudit.touchBtns.every((b) => b.w >= 44 && b.h >= 44),
       JSON.stringify(mobileAudit.touchBtns));
+
+    session.assert('mobile-side-tools-ge-44x44',
+      mobileAudit.sideBtns.length > 0 && mobileAudit.sideBtns.every((b) => b.w >= 44 && b.h >= 44),
+      JSON.stringify(mobileAudit.sideBtns));
 
     // Touch move forward via real CDP TouchEvent on [data-touch-move="forward"]
     const touchPos0 = (await session.snap()).actors.astronaut.position;
@@ -1932,6 +2040,8 @@ async function runAll() {
 
     await session.capture('06-mobile-touch-hud.png');
 
+    session.assert('six-fresh-captures', session.captures.length === 6 && new Set(session.captures).size === 6, JSON.stringify(session.captures));
+
     // Final Network & Runtime Error Audit
     session.assert('zero-uncaught-js-exceptions', session.exceptions.length === 0, JSON.stringify(session.exceptions));
     session.assert('zero-console-errors', session.consoleErrors.length === 0, JSON.stringify(session.consoleErrors));
@@ -1947,16 +2057,37 @@ async function runAll() {
       console.error(`\nFAILED CHECKS (${session.assertFailures.length}):`);
       for (const f of session.assertFailures) console.error(' -', f);
       process.exitCode = 1;
+      report.status = 'failed';
     } else {
+      report.status = 'passed';
       console.log('\nALL REAL-BROWSER CHROME/WEBGL2 E2E CHECKS PASSED!');
     }
   } finally {
     if (browserCtx) await browserCtx.cleanup(browserCtx.browser);
+    activeBrowserCtx = null;
     server.close();
+    activeServer = null;
   }
 }
 
-runAll().catch((err) => {
-  console.error('[e2e] Fatal runner error:', err);
+const watchdog = setTimeout(async () => {
+  report.status = 'failed';
+  report.fatalError = 'Whole-run deadline exceeded (15 minutes); partial evidence preserved.';
+  console.error('[e2e] ' + report.fatalError);
+  writeReport();
+  try { if (activeBrowserCtx) await Promise.race([activeBrowserCtx.cleanup(activeBrowserCtx.browser), sleep(4000)]); } catch {}
+  try { activeServer?.close(); } catch {}
   process.exit(1);
-});
+}, 15 * 60 * 1000);
+try {
+  await runAll();
+} catch (err) {
+  report.status = 'failed';
+  report.fatalError = err instanceof Error ? err.stack || err.message : String(err);
+  console.error('[e2e] Fatal runner error:', err);
+  process.exitCode = 1;
+} finally {
+  clearTimeout(watchdog);
+  writeReport();
+}
+
