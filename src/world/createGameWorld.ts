@@ -2967,7 +2967,8 @@ export async function createGameWorld(
     },
     setQuality(v) {
       quality = v;
-      engine.setHardwareScalingLevel(v === 'low' ? 1.5 : 1);
+      engine.setHardwareScalingLevel(v === 'low' ? 3 : 1);
+      scene.shadowsEnabled = v === 'high';
       shadows.useBlurExponentialShadowMap = v === 'high';
       for (const l of accentLights) {
         l.setEnabled(v === 'high');

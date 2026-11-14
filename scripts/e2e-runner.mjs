@@ -179,6 +179,11 @@ function connectWs(url) {
       });
     });
     ws.addEventListener('error', (err) => { clearTimeout(openTimer); reject(err); });
+    ws.addEventListener('close', () => {
+      clearTimeout(openTimer);
+      for (const { rej, method, timer } of pending.values()) { clearTimeout(timer); rej(new Error(`CDP connection closed while awaiting ${method}`)); }
+      pending.clear();
+    });
     ws.addEventListener('message', (ev) => {
       const msg = JSON.parse(String(ev.data));
       if (msg.id) {

@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "tsc --noEmit && vite build",
+    "build": "tsc --noEmit && vite build && node scripts/refresh-build-manifest.mjs",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "audit:assets": "node scripts/audit-assets.mjs",
