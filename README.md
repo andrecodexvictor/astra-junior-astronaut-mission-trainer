@@ -32,11 +32,17 @@ WASD/arrows move, mouse drag rotates the camera, Shift runs, Space jumps and E i
 
 The orbital cabin currently uses floor-assisted movement, not six-degree-of-freedom physics. The terrain is authored fiction, not measured lunar geography. Crop biomass and safety are disclosed abstractions. Freeform construction, vehicles, team abilities, a mass-budget manifest, skeletal animation, combat, additional planets and AI chat are not implemented.
 
+## Visual targets and next character goal
+
+Open [the four original concept boards](docs/art/README.md): environment atlas, Aurora exploration vista, Cometa turnaround and character keyposes. They are AI-generated, visibly labelled references for implementation, **not current game screenshots or animation clips**. [The Horizon Zero Dawn / No Man’s Sky research](docs/research/HORIZON_NMS_WORLDBUILDING.md) translates primary sources into scoped Babylon worldbuilding.
+
+The next goal requires humanoid and robot animation work plus **Cometa, an astronaut dachshund buddy**. His selection is optional for the player; creating his real GLB/rig/clips and integration is required for that goal. See [animation specification](docs/animation/CHARACTER_ANIMATION_SPEC.md), [Cometa](docs/characters/COMETA_BUDDY.md) and MASTER_GOAL batches 4A–4C. These characters/animations are not yet added to the live demo. `npm run audit:art` verifies the concept files and provenance.
+
 ## Continue with Gemini
 
 Read [GEMINI.md](GEMINI.md), then give the agent [MASTER_GOAL.md](MASTER_GOAL.md). It directs bounded batches, preserves the working slice, and uses skills under `.agents/skills/`. Current evidence is in [TEST_REPORT.md](TEST_REPORT.md), [ACCEPTANCE.json](ACCEPTANCE.json), and [HANDOFF.md](HANDOFF.md). The next gate is actual Chrome traversal and visual profiling before enlarging the world.
 
-The design draws original principles from Space Engineers, Subnautica, Pokémon, Scrap Mechanic, Journey to the Savage Planet and Deliver Us The Moon. See [design pillars](docs/demo/DESIGN_PILLARS.md); no proprietary assets, characters, maps or music are copied.
+The design draws original principles from Space Engineers, Subnautica, Pokémon, Scrap Mechanic, Journey to the Savage Planet Deliver Us The Moon, Horizon Zero Dawn and No Man’s Sky. See [design pillars](docs/demo/DESIGN_PILLARS.md); no proprietary assets, characters, maps or music are copied.
 
 ## Checks and documentation
 

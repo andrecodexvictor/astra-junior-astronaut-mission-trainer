@@ -10,6 +10,12 @@ Este repositório é um **protótipo independente e descartável**, com Babylon.
 4. Execute as verificações realmente disponíveis. O pacote atual usa Node 24, `npm ci`, `npm run check`; confirme antes de executar. `test:e2e` só vale como teste de navegador se executar um percurso de fato: um script que reporta pendência não é evidência de aprovação.
 5. Escolha o próximo lote incompleto em `MASTER_GOAL.md`. Não recomece o projeto se o primeiro corte já estiver funcionando.
 
+## Antes da próxima autoria: imagens e novos personagens
+
+Abra visualmente os quatro arquivos de `docs/art/README.md`, depois leia `docs/art/ART_TO_BABYLON.md` e `docs/research/HORIZON_NMS_WORLDBUILDING.md`. Eles integram Horizon Zero Dawn/No Man’s Sky às referências existentes por princípios originais e escopo finito. Preserve rótulos de IA e diferencie meta visual de screenshot do jogo.
+
+Os novos lotes 4A–4C de `MASTER_GOAL.md` exigem refinamento de mundo, rigs/animações de astronauta e NPCs (além dos robôs) e o buddy Cometa: cachorro salsicha astronauta. A ativação do cachorro é opcional para o jogador; implementá-lo é parte requerida desta goal. `docs/animation/CHARACTER_ANIMATION_SPEC.md`, `docs/characters/COMETA_BUDDY.md` e manifests em `content-design/` são contratos propostos; não trate paths futuros como modelos existentes. Primeiro autorar/importar/validar os GLBs e clips, depois integrar. Cometa e as novas animações ainda não estão no site atual.
+
 ## Skills locais, carregadas por tarefa
 
 As skills estão em `.agents/skills/`. Gemini e outros agentes podem não descobri-las automaticamente: abra o `SKILL.md` explicitamente e só os recursos referenciados relevantes. Não injete as 13 skills em todo contexto.

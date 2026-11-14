@@ -1,4 +1,4 @@
-# Direção de jogo — seis referências, uma identidade ASTRA
+# Direção de jogo — oito referências, uma identidade ASTRA
 
 Decisão do proprietário em 14/11/2026. As referências orientam princípios; não autorizam copiar personagens, criaturas, histórias, assets, mapas, UI, música, marcas ou código proprietário. A ficção original é a recuperação de Aurora por uma jovem equipe de astronautas e robôs. Descobrir algo deve mudar o que o jogador entende ou consegue fazer; manter o habitat vivo dá sentido à viagem.
 
@@ -10,6 +10,12 @@ Decisão do proprietário em 14/11/2026. As referências orientam princípios; n
 | Scrap Mechanic | Experimentar montagem com peças que fazem algo | Reparo fixo é a fundação; montagem ainda ausente | Kit de três peças: painel, cabo e bateria em encaixes. Construção livre/rover só após provar esse kit |
 | Journey to the Savage Planet | Exploração acessível, observação e humor leve | PIP, marco de pesquisa e descrição de geografia fictícia | Uma ferramenta de análise com evidência e descoberta ambiental; não caça violenta |
 | Deliver Us The Moon | Investigar vestígios e restaurar uma instalação | Equipamentos desconectados, telemetria, cadeia de reparos, abrigo e reativação | Um vestígio espacial explica causa e oferece uma hipótese testável, sem monólogo obrigatório |
+| Horizon Zero Dawn | Identidade ambiental, detalhe distribuído com controle e história espacial | Pesquisa e conceitos novos; nenhuma implementação de Decima ou cenário copiado | Refinar Aurora com marcos, camadas e scatter por seed, sem bloquear caminho; ver [pesquisa](../research/HORIZON_NMS_WORLDBUILDING.md) |
+| No Man’s Sky | Variedade de lugares e prazer da descoberta | Referência e conceitos; não há universo procedural | Diferenciar os setores finitos por forma/atividade e reservar mundos exóticos para ficção explícita futura |
+
+## Buddy e animações requeridos
+
+A nova goal inclui Cometa, dachshund astronauta marrom/caramelo, corpo alongado e patas curtas, adicional aos robôs. O jogador pode desativá-lo, mas o modelo/rig/integração são entregas requeridas. [Pranchas visuais](../art/README.md), [Cometa](../characters/COMETA_BUDDY.md) e [animação](../animation/CHARACTER_ANIMATION_SPEC.md) orientam o próximo corte. Astronauta, NPC humano, mecânico e quadrúpede têm clips específicos; as imagens e contratos ainda não são assets de runtime.
 
 ## Ciclo e ritmo
 

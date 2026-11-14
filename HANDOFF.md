@@ -39,3 +39,7 @@ Consulte `TEST_REPORT.md` para comandos e `ACCEPTANCE.json` para aceite por requ
 3. Introduzir uma pequena rede de três conectores; depois um kit com painel/cabo/bateria. Montagem livre e veículo entram só após provar custos, rede e colisões. `MASTER_GOAL.md` contém os lotes e portas restantes.
 
 Preservar a proveniência: oito GLBs e Blue Marble foram reutilizados do legado autorizado, enquanto núcleo modular e integração foram implementados nesta fase. As dúvidas de competição não são bloqueios desta demo e não foram convertidas em aprovação NASA.
+
+## Próxima goal visual — 14/11/2026
+
+O novo pacote [arte](docs/art/README.md) contém quatro PNGs originais, pesquisa Horizon/NMS e tradução para Babylon. `MASTER_GOAL.md` 4A–4C exige mundo refinado, animações de humanos/robôs e Cometa, buddy dachshund astronauta. [Manifests de design](content-design/animation-manifest.json) são propostas; não são assets ou clips de runtime. O site publicado continua no primeiro corte, sem Cometa ou novos rigs. Começar abrindo as imagens e preservar a simulação e o caminho completo.

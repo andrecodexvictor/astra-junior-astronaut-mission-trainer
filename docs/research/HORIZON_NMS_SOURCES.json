@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "reviewDate": "2026-11-14",
+  "timezone": "America/Sao_Paulo",
+  "screenshotsRedistributed": false,
+  "allAstraApplicationsAreOriginalDesignInferences": true,
+  "sources": [
+    {
+      "id": "HZD-01",
+      "publisher": "Guerrilla",
+      "title": "GPU-Based Procedural Placement in Horizon Zero Dawn",
+      "url": "https://www.guerrilla-games.com/read/gpu-based-procedural-placement-in-horizon-zero-dawn",
+      "access": "indexed_primary_excerpt; direct_open_timeout",
+      "rights": "External reference only; no text, game asset or screenshot relicensed or redistributed."
+    },
+    {
+      "id": "HZD-02",
+      "publisher": "GDC / Guerrilla",
+      "title": "GPU-Based Run-Time Procedural Placement",
+      "url": "https://www.gdcvault.com/play/1024700/",
+      "access": "primary_session_synopsis_read; full_video_not_watched",
+      "rights": "External reference only; no text, game asset or screenshot relicensed or redistributed."
+    },
+    {
+      "id": "HZD-03",
+      "publisher": "PlayStation",
+      "title": "Horizon Zero Dawn Remastered",
+      "url": "https://www.playstation.com/en-us/games/horizon-zero-dawn/",
+      "access": "official_page_and_index_consulted",
+      "rights": "External reference only; no text, game asset or screenshot relicensed or redistributed."
+    },
+    {
+      "id": "HZD-04",
+      "publisher": "PlayStation Blog",
+      "title": "Announcing Horizon Zero Dawn",
+      "url": "https://blog.playstation.com/2015/06/15/announcing-horizon-zero-dawn/",
+      "access": "primary_index_excerpt_consulted",
+      "rights": "External reference only; no text, game asset or screenshot relicensed or redistributed."
+    },
+    {
+      "id": "NMS-01",
+      "publisher": "Hello Games",
+      "title": "Worlds Part I Update",
+      "url": "https://www.nomanssky.com/worlds-part-i-update/",
+      "access": "official_page_read",
+      "rights": "External reference only; no text, game asset or screenshot relicensed or redistributed."
+    },
+    {
+      "id": "NMS-02",
+      "publisher": "Hello Games",
+      "title": "No Man’s Sky: Worlds Part II",
+      "url": "https://www.nomanssky.com/2025/01/no-mans-sky-worlds-part-ii/",
+      "access": "official_page_read",
+      "rights": "External reference only; no text, game asset or screenshot relicensed or redistributed."
+    },
+    {
+      "id": "BAB-ANIM-01",
+      "publisher": "Babylon.js",
+      "title": "Animating Characters",
+      "url": "https://doc.babylonjs.com/features/featuresDeepDive/animation/animatedCharacter/",
+      "access": "official_documentation_read",
+      "rights": "External reference only; no text, game asset or screenshot relicensed or redistributed."
+    },
+    {
+      "id": "BAB-ANIM-02",
+      "publisher": "Babylon.js",
+      "title": "Advanced Animation Methods",
+      "url": "https://doc.babylonjs.com/features/featuresDeepDive/animation/advanced_animations",
+      "access": "official_documentation_read; local_9.35.0_types_checked",
+      "rights": "External reference only; no text, game asset or screenshot relicensed or redistributed."
+    },
+    {
+      "id": "BAB-WORLD-01",
+      "publisher": "Babylon.js",
+      "title": "Thin Instances",
+      "url": "https://doc.babylonjs.com/features/featuresDeepDive/mesh/copies/thinInstances",
+      "access": "official_documentation_read",
+      "rights": "External reference only; no text, game asset or screenshot relicensed or redistributed."
+    },
+    {
+      "id": "BAB-WORLD-02",
+      "publisher": "Babylon.js",
+      "title": "Levels of Detail",
+      "url": "https://doc.babylonjs.com/features/featuresDeepDive/mesh/LOD",
+      "access": "official_documentation_read",
+      "rights": "External reference only; no text, game asset or screenshot relicensed or redistributed."
+    }
+  ]
+}

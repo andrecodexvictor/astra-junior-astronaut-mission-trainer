@@ -28,3 +28,16 @@ Cortar variantes, cenas, efeitos, regiões extras e robôs adicionais antes de c
 ## Board sugerido
 
 Planejado → Contrato pronto → Em implementação → Em revisão → Evidência aprovada → Integrado. `Bloqueado` deve identificar a dependência concreta e a próxima ação. Um teste não executado fica pendente, não aprovado por inferência.
+
+## Revisão visual e personagens — continuação requerida
+
+A nova entrada é `MASTER_GOAL.md` 4A–4C. Abrir primeiro as quatro imagens em `docs/art/README.md`, a pesquisa Horizon/NMS e os contratos de personagem/animação.
+
+| Frente | Entrega | Dependência / aceite |
+| --- | --- | --- |
+| Arte/mundo | Aurora em geometria Babylon, relevo e kit, marcos, instâncias/LOD com orçamento | Preservar alvos/caminho; comparação de captura real com pranchas 01/02 e teste de retorno |
+| Personagens/rig | Fontes/GLBs e clips reais de humano, mecânico e quadrúpede | Rigs distintos, manifesto real com frames/contatos, transições/pausa/instâncias independentes |
+| Buddy | Cometa, dachshund astronauta, seguir/esperar/chamar/carinho | Caminho sem cão continua válido; recall seguro, contabilidade e save sem duplicação |
+| QA | Auditoria de arte/GLB/clips e percurso de câmera/contatos em Chrome | Imagens de conceito não equivalem a assets/capturas do jogo; documentar GPU pendente quando indisponível |
+
+Essas entregas são requeridas na nova goal, mas ainda não estão implementadas no jogo publicado. Não iniciar construção livre/planetas extras para substituir esse escopo.

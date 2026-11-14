@@ -10,9 +10,17 @@ Leia `AGENTS.md` e `GEMINI.md`. Inspecione README, status atual, contratos, cód
 
 O projeto precisa funcionar em navegador público sem login obrigatório. Não é necessário servidor ou IA para concluir a campanha. Não substitua uma implantação Sites antiga, publique um novo serviço, faça submissão oficial nem envie convites automaticamente. Uma eventual publicação exige autorização correspondente; desenvolvimento local, revisão e correções reversíveis já estão autorizados.
 
+## 1A. Primeiro: abrir as referências visuais
+
+Antes de continuar a autoria de cenário/personagem, abrir os quatro PNGs em `docs/art/README.md`: atlas de ambientes, vista de exploração Aurora, turnaround do salsichinha Cometa e keyposes de animação. As imagens já foram criadas nesta revisão; preservar hashes/rótulos e não gerar outro pacote para adiar implementação. Ler `docs/art/ART_TO_BABYLON.md`, `docs/research/HORIZON_NMS_WORLDBUILDING.md`, `docs/animation/CHARACTER_ANIMATION_SPEC.md` e `docs/characters/COMETA_BUDDY.md`.
+
+Se a ferramenta não puder ver imagens locais, declarar o limite, usar as descrições e continuar o que independe de visão. Não alegar comparação visual inexistente. A arte é alvo, não gameplay ou modelo pronto. A prancha 02 corrigida governa gelo não emissivo/iluminação lunar; a 03 governa proporções de Cometa. O humano ilustrado é uma opção de aparência original, não bloqueio à personalização prevista.
+
+**Nova entrega requerida:** criar os modelos/rigs e animações de astronauta, NPCs humanos, PIP/Scout e Cometa. O cachorro é obrigatório como entrega desta goal, mas opcional na equipe do jogador; não relegá-lo ao roadmap de veículos/planetas. O jogo hoje não tem Cometa nem os novos clips. Os manifests em `content-design/` são propostas e não podem ser publicados como assets executáveis. Fechar os lotes 4A–4C abaixo antes de declarar essa entrega pronta.
+
 ## 2. Produto e limite protegido
 
-ASTRA é uma aventura espacial em terceira pessoa com estrutura RPG, companheiros PIP/Scout, encontros narrativos no estilo visual novel e engenharia que produz consequências. A direção combina engenharia interdependente, exploração curiosa, vínculo com companheiros, montagem modular, descobertas de campo e investigação ambiental. As referências são Space Engineers, Subnautica, Pokémon, Scrap Mechanic, Journey to the Savage Planet e Deliver Us The Moon. Elas orientam princípios, sem copiar assets, mapas, criaturas, personagens, diálogos, músicas, marcas ou interfaces. A identidade própria é uma expedição jovem que recupera um posto lunar por observação científica, cuidado da tripulação e colaboração com robôs.
+ASTRA é uma aventura espacial em terceira pessoa com estrutura RPG, companheiros PIP/Scout e o buddy cachorro Cometa a implementar, encontros narrativos no estilo visual novel e engenharia que produz consequências. A direção combina engenharia interdependente, exploração curiosa, vínculo com companheiros, montagem modular, descobertas de campo e investigação ambiental. As referências são Space Engineers, Subnautica, Pokémon, Scrap Mechanic, Journey to the Savage Planet, Deliver Us The Moon, Horizon Zero Dawn e No Man’s Sky. Elas orientam princípios, sem copiar assets, mapas, criaturas, personagens, diálogos, músicas, marcas ou interfaces. A identidade própria é uma expedição jovem que recupera um posto lunar por observação científica, cuidado da tripulação e colaboração com robôs.
 
 | Pilar | Tradução concreta para ASTRA | Limite do primeiro corte e evolução |
 | --- | --- | --- |
@@ -22,10 +30,14 @@ ASTRA é uma aventura espacial em terceira pessoa com estrutura RPG, companheiro
 | Montagem e invenção — Scrap Mechanic | Futuramente montar módulos funcionais com encaixe, custo e efeito na rede | Construção livre e veículos ainda não estão implementados. Começar depois com um único kit de encaixe e poucas peças; não um sandbox simultâneo à campanha. |
 | Descoberta de campo — Journey to the Savage Planet | Inspecionar uma formação, registrar observação e usar uma ferramenta para testar hipótese | Descoberta leve e bem-humorada, sem caça violenta como loop. Fenômeno inventado deve ser identificado como ficção. |
 | Investigação e reparo — Deliver Us The Moon | Ler vestígios ambientais, reconstruir o que falhou e reativar uma instalação por ações espaciais | Narrativa ambiental curta e original, apoiada por telemetria, objetos e personagens; evitar longos monólogos antes de jogar. |
+| Ambiente com identidade — Horizon Zero Dawn | Compor camadas, marcos e vestígios; detalhe procedural subordinado a caminho e narrativa autorais | Seed/máscaras e kit finito em Babylon; sem portar Decima, máquinas ou vegetação ao exterior lunar. |
+| Variedade e descoberta — No Man’s Sky | Regiões reconhecíveis por silhueta, atividade e descoberta; vontade de explorar e voltar | Refinar Lua/Terra; mundos exóticos só como expansão ficcional explícita, sem prometer galáxia infinita. |
 
-**Baseline material a preservar:** a demo em integração contém cinco regiões (`academy`, `orbit`, `habitat`, `canyon`, `greenhouse`), oito GLB locais (`astronaut`, `robot`, `habitat`, `solar`, `battery`, `oxygen`, `water`, `greenhouse`) e um simulador puro de ticks fixos. A órbita é um exercício assistido, não um controlador físico de seis graus de liberdade. O percurso inclui reparar/recrutar Scout, obter gelo, cultivar, reagir à tempestade e chegar ao relatório. Confirmar no código e nas evidências quais partes estão testadas; este inventário não substitui QA. Não declarar construção livre, veículos, geometria medida da Lua ou fidelidade cinematográfica às imagens como implementados.
+**Baseline material a preservar:** a demo em integração contém cinco regiões (`academy`, `orbit`, `habitat`, `canyon`, `greenhouse`), oito GLB locais (`astronaut`, `robot`, `habitat`, `solar`, `battery`, `oxygen`, `water`, `greenhouse`) e um simulador puro de ticks fixos. A órbita é um exercício assistido, não um controlador físico de seis graus de liberdade. O percurso inclui reparar/recrutar Scout, obter gelo, cultivar, reagir à tempestade e chegar ao relatório. Confirmar no código e nas evidências quais partes estão testadas; este inventário não substitui QA. Não declarar construção livre, veículos, Cometa, animações esqueléticas novas, geometria medida da Lua ou fidelidade cinematográfica às imagens como implementados.
 
 O objetivo protegido é uma campanha curta e completa: academia terrestre jogável → preparação/viagem narrativa → um exercício orbital simplificado → base lunar explorável → crise integrada → relatório e retry. As limitações de um exercício de microgravidade, flutuabilidade, gravidade, escalas de tempo e terreno devem ser declaradas. A academia e a base podem ser compactas; não cortar diagnóstico, causalidade ou recuperação para aumentar área.
+
+A extensão de personagens inclui Cometa: um dachshund marrom/caramelo de corpo alongado e patas curtas, capacete transparente fechado com orelhas dentro, traje de quatro patas e mochila baixa. Ele acompanha, espera, retorna a um ponto seguro e recebe carinho; não substitui o raciocínio nem gera recursos. A trilha principal permanece concluível sem selecioná-lo. Custos de suporte à vida devem ser contabilizados ou explicitamente incluídos no agregado didático da tripulação até existir modelo por ator testado.
 
 A crise lunar precisa exigir decisões reais sobre energia, água/oxigênio, alimento e radiação. O jogador observa, inspeciona, planeja e age nos equipamentos; diálogos não concluem o reparo por ele. Duas estratégias devem ser viáveis, uma falha deve ser alcançável com feedback e um checkpoint deve permitir tentar outra ordem de ações. O relatório explica os comandos e resultados reais. Não alegue eficácia pedagógica ainda não medida.
 
@@ -85,11 +97,33 @@ Aceite: testes de conservação/limites, falta de entrada, ordem determinística
 
 Só expanda depois dos lotes anteriores. Refine primeiro as cinco regiões existentes: academia, órbita assistida, habitat, canyon e estufa. Use uma vista/sinal para conduzir ao gelo no canyon, um retorno legível ao habitat e o cultivo na estufa; um upgrade posterior deve abrir uma ação observável, não uma porta arbitrária sem relação com o equipamento. Estabeleça origem, eixos, metros, medidas do controlador, largura de portais, landmarks e orçamento de cada região. Bloqueie primeiro o circuito com trajetos curtos, alturas/declives acessíveis e retorno garantido; refine a arte mantendo o percurso. Autore portais e âncoras com IDs estáveis.
 
-Use modelos glTF/GLB reais com licença verificada e mídia local; quando não houver asset adequado, faça um fallback procedural identificado. Verifique rig, bind pose, escala, materiais, clip names e bounds no modelo concreto. Faça transições idle/walk/run/turn, pés/stride coerentes, pouso/salto lunar simplificado e caminhos de PIP sem obstruir a eclusa. NPCs podem começar com retratos/poses e receber rigs depois; não anunciar animação esquelética sem asset/teste correspondente.
+Use modelos glTF/GLB reais com licença verificada e mídia local; quando não houver asset adequado, faça um fallback procedural identificado. Verifique rig, bind pose, escala, materiais, clip names e bounds no modelo concreto. Faça transições idle/walk/run/turn, pés/stride coerentes, pouso/salto lunar simplificado e caminhos de PIP sem obstruir a eclusa. Retratos/poses podem servir de fallback de transição, mas os rigs e clips humanos são entregáveis dos novos lotes 4B–4C; não encerrar esta goal com humanos estáticos ou anunciar animação esquelética sem asset/teste correspondente.
 
 Use AssetContainers, instancing onde adequado, PBR compartilhado, iluminação e sombras com orçamento, céu e fundo coerentes. Navegar entre academia e Lua não deve reter cenas descartadas ou anexar loads atrasados a uma cena morta. Um cenário estilizado não é topografia lunar medida sem pipeline de dados e metadados que provem isso.
 
 Aceite: caminho completo validado no controlador real; colisões simples consistentes; animações não duplicam movimento; load/unload e reentrada estáveis. Comparação visual entre captura real e referências registra lacunas, sem prometer imagem cinematográfica equivalente. Performance exige medição de dispositivo, não apenas orçamento.
+
+### Lote 4A — produzir Aurora a partir das pranchas
+
+Executar `docs/art/ART_TO_BABYLON.md`: um hub finito com terreno/collision, três planos de profundidade, antena como marco, módulos legíveis e trilhas sem obstáculos aleatórios. Preservar IDs de objetivos e volta segura. Colocação decorativa determinística por seed/máscaras; instances/thin instances e LOD usados conforme o caso. Materiais PBR e luz local, sem screenshots de franquias como textura. Plantas ficam na Terra/ambiente pressurizado; Lua sem neblina atmosférica, chuva, vento terrestre ou gelo emissivo.
+
+Aceite: captura real comparada à prancha 02, todas as interações continuam alcançáveis, a imagem não é um plano de fundo que finge 3D. Perf, descarte e acessibilidade medidos/declarados. Sem GPU, entregar o incremento e o roteiro pendente; não fabricar captura.
+
+### Lote 4B — criar rigs e animações de todos os tipos de personagem
+
+Criar fontes editáveis e GLBs locais com rigs de humano, mecânico e quadrúpede separados. Usar `docs/animation/CHARACTER_ANIMATION_SPEC.md` e `content-design/animation-manifest.json`. Astronauta: idle, caminhada/corrida Terra/Lua, giros, parada, inspeção/reparo e takeoff/airborne/land; NPCs: idle, fala e gestos, locomoção só quando necessária. PIP/Scout: corpo/cabeça/olhos/esteiras e Travel/Scan/Acknowledge mecânicos. Cometa recebe o conjunto quadrúpede próprio. Não retargetar rig humano para cão ou robô.
+
+Atualizar o manifesto proposto com os nomes reais, nós/bones, bind pose, unidades, frames, duração, loops, contatos e hashes quando o asset existir. Usar `AnimationGroup` com instâncias independentes e blends verificados na versão fixada. Uma só autoridade para translação e yaw; não somar root motion ao controlador nem deixar o antigo seno dos pivôs atuar sobre os mesmos alvos simultaneamente. Frames/eventos de contato cancelam na interrupção e nunca debitam/concedem recurso.
+
+Aceite: glTF/skins/clip bounds válidos, loops e transições finitos, contatos de pés/patas e capacete/orelhas sem interseção, dois atores do mesmo rig com poses independentes, pausa/retomada e descarte. Um desenho/thumbnail ou clip de nome correto sem movimento não satisfaz. Registrar revisão em câmera real; não chamar NullEngine de prova de animação visual.
+
+### Lote 4C — implementar Cometa, o buddy salsichinha
+
+Modelar a prancha 03 em GLB local original e integrá-lo adicionalmente aos robôs. Entregar quadrúpede com quatro patas/botas, coluna com deformação moderada, orelhas dentro do capacete e mochila baixa. Idle/Walk/Trot/Turn/Stop/Sit/Wait/Recall são o core; carinho/cauda/olhar para marco são extensões de encontro. Farejar só no ambiente pressurizado; não farejar através do vácuo. Rotas com rampas, colisão compatível, seguir/esperar/retorno seguro e recuperação de separação, sem depender de longos saltos ou sofrimento animal.
+
+UI permite ativar/desativar buddy e chamar/esperar; o personagem reage a carinho sem alterar física ou concluir quest. Validar recall no mundo, não teletransportar para dentro de parede. Versionar/migrar save de estado opcional, região, modo e destino seguro; restaurar não duplica companions/custos/eventos. A mesma missão deve ser concluível com Cometa ativo e desativado. Documentar contabilidade de suporte à vida antes de prometer taxas por ator. Cometa é ficção autoral, não traje/animal aprovado pela NASA.
+
+Aceite: asset e animações reais, controles e presença no jogo, bloqueio/recall/airlock/retorno/pausa/reload testados e captura mostrando caminhada/trote/sentar/carinho em contexto. Marcar pendente o que não puder medir; não dar baixa por haver apenas concept art.
 
 ### Lote 5 — RPG, visual novel e exploração
 

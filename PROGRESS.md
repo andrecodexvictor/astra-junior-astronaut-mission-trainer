@@ -13,3 +13,13 @@
 - [ ] Campanha ampliada, ferramentas/equipe avançada, construção e veículos: próximos lotes, não parte pronta.
 
 O produto atual é um primeiro corte de demo, não a entrega final do mundo nem uma submissão. Continuar por `GEMINI.md` e `MASTER_GOAL.md`; validar o circuito antes de expandir.
+
+## Pacote de arte e próxima goal de personagens
+
+- [x] Quatro PNGs originais com rótulo de IA, hashes, guia de uso e tradução para Babylon.
+- [x] Pesquisa primária Horizon Zero Dawn/No Man’s Sky, acessos/limites registrados.
+- [x] Spec e manifests propostos de rigs/animações de astronauta, NPCs, PIP/Scout e Cometa.
+- [x] MASTER_GOAL e GEMINI atualizados; Cometa requerido na implementação e opcional para o jogador.
+- [ ] Modelos/rigs/clips novos, integração do cachorro e comparações de GPU: ainda não implementados.
+
+Esta revisão muda referências e contratos de design, não o jogo publicado.

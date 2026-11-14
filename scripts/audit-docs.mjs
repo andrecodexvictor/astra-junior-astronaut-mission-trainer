@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-const directories=['docs','src','public','tests','scripts'];
+const directories=['docs','src','public','tests','scripts','content-design'];
 async function walk(dir){const entries=await fs.readdir(dir,{withFileTypes:true});return (await Promise.all(entries.map(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]))).flat();}
 let files=(await Promise.all(directories.map(walk))).flat();files.push(...(await fs.readdir('.')).filter(f=>f.endsWith('.md')||f.endsWith('.json')));
 let json=0,links=0;

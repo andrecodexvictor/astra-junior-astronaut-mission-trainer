@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "status": "proposed",
+  "runtimeAsset": false,
+  "id": "cometa",
+  "displayName": "Cometa",
+  "nameProvisional": true,
+  "species": "domestic dachshund",
+  "appearance": {
+    "coat": "brown and tan",
+    "body": "elongated body, short legs, floppy ears",
+    "helmet": "clear pressure helmet with ear clearance",
+    "suit": "ivory and orange four-legged pressure suit with four boots, tail sleeve and low pack"
+  },
+  "fiction": "Gameplay fiction; no claim of a NASA animal-space mission or real suit safety.",
+  "optional": true,
+  "inAdditionTo": [
+    "pip",
+    "scout"
+  ],
+  "roles": [
+    "companionship",
+    "follow or wait",
+    "safe recall",
+    "receive a pet",
+    "point toward a beacon already visible to the player"
+  ],
+  "constraints": {
+    "mainPathRequiresCompanion": false,
+    "discoversHiddenResources": false,
+    "smellsThroughVacuum": false,
+    "createsResources": false,
+    "dogHarm": false,
+    "forcedLongJumps": false,
+    "routes": "dog-sized clearance, ramps, safe reachable recall; wait if no safe destination",
+    "lifeSupport": "Account explicitly per actor, or explicitly include Cometa in crew aggregate until per-actor accounting is implemented and tested.",
+    "movementAuthority": "independent collision controller owns translation and yaw; animation is visual only",
+    "sniff": "pressurized areas only"
+  },
+  "persistenceRequired": [
+    "enabled",
+    "region",
+    "safe position",
+    "heading",
+    "follow or recall mode",
+    "target identity or safe waypoint"
+  ],
+  "proposedGlbPath": "public/assets/models/characters/cometa-animated.glb",
+  "assetExists": false,
+  "animationManifest": "content-design/animation-manifest.json",
+  "tests": "pending",
+  "coreClips": [
+    "Idle",
+    "Walk",
+    "Trot",
+    "TurnLeft",
+    "TurnRight",
+    "Stop",
+    "Sit",
+    "Wait",
+    "Recall"
+  ],
+  "extendedClips": [
+    "Sniff",
+    "WagTail",
+    "ReceivePet",
+    "LookAtBeacon",
+    "WatchRepair"
+  ],
+  "conceptImages": "Turnaround, pose board and lunar hero depict design and target poses, not exported clips.",
+  "implementationRequiredByOwner": true,
+  "playerCanDisable": true,
+  "visualReference": "docs/art/03-cometa-turnaround.png"
+}

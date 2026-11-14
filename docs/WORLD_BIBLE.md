@@ -42,6 +42,12 @@ Hub -- caminho C --> Cânion de gelo -- Observatório -- retorno --> Hub
 
 **WB-06.** Encontros usam a máquina de estados G-10 e companheiros usam G-12. Um encontro é reconhecível por geometria, som opcional e rótulo, e não aparece resolvido por atravessar seu volume. Após resolver, a área mantém evidência e consequências; revisitar mostra o registro sem duplicar peça, XP ou recurso.
 
+## WB-10 — extensão requerida: Cometa e atuação dos personagens
+
+Cometa (nome provisório) é um dachshund astronauta marrom/caramelo: corpo comprido e baixo, patas curtas, orelhas contidas no capacete e traje branco/laranja. O novo corte deve implementá-lo; selecioná-lo é opcional ao jogador. Ele acompanha, espera e retorna com segurança; não encontra recurso por magia ou faro no vácuo, não executa reparo humano e não decide resultados. Caminho principal e consumo didático precisam permanecer consistentes com buddy ativo/inativo. Respeitar o limite de equipe ao integrá-lo com PIP e Scout.
+
+O astronauta e NPCs humanos precisam de atuação própria, não só retratos ou um robô animado. Clips, rig, transições e contatos estão em [animação](animation/CHARACTER_ANIMATION_SPEC.md); roupa, comportamento e recall de Cometa em [buddy](characters/COMETA_BUDDY.md). [As quatro imagens](art/README.md) dão a direção de cenário/forma. Hoje esses novos rigs, clips e o cão não existem no runtime; ver `MASTER_GOAL.md` 4A–4C. Horizonte e variedade evocam Horizon Zero Dawn/No Man’s Sky como princípios, sem alterar fatos lunares ou copiar suas obras.
+
 ## Catálogo de missões
 
 Todas as missões seguem S-01 e o contrato G-13; números de missão não impõem ordem onde os pré-requisitos permitem escolha. Leitura dos instrumentos e resultado registrado constituem evidência de jogo, não avaliação clínica ou pedagógica validada. Custos, quantidades e tempos serão calibrados como dados explícitos antes da implementação. Toda ação com custo exige confirmação clara.

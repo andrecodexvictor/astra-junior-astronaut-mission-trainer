@@ -573,5 +573,17 @@
     "viteMainChunkGzipApproxBytes": 454180,
     "buildWarning": "Main chunk exceeds Vite 1600 kB warning threshold; no device performance inferred."
   },
-  "buildManifest": "docs/demo/BUILD_MANIFEST.json"
+  "buildManifest": "docs/demo/BUILD_MANIFEST.json",
+  "designAdditions": {
+    "date": "2026-11-14",
+    "status": "reference_pack_delivered_runtime_pending",
+    "references": "docs/art/README.md",
+    "worldResearch": "docs/research/HORIZON_NMS_WORLDBUILDING.md",
+    "animationSpec": "docs/animation/CHARACTER_ANIMATION_SPEC.md",
+    "cometaSpec": "docs/characters/COMETA_BUDDY.md",
+    "runtimeChanged": false,
+    "newRigsImplemented": false,
+    "cometaImplemented": false,
+    "visualTargetReached": false
+  }
 }
