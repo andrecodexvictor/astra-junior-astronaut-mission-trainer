@@ -1,0 +1,92 @@
+{
+  "checked_date": "2026-11-14",
+  "checked_timezone": "America/Sao_Paulo",
+  "verification": "HTTP 200 checked for linked rendered documentation and repository except the two source files: raw GitHub files were fetched successfully; embedded Playground runtime, third-party assets, licensing and browser behavior were not tested. Sources are documentation or the official BabylonJS organization, not claims of production readiness. Mansion loader and serialized scene, and 3D Tiles source, were fetched and inspected on November 14; no runtime verification or third-party rights clearance.",
+  "sources": [
+    {
+      "id": "1",
+      "title": "Vite with Babylon.js",
+      "url": "https://doc.babylonjs.com/guidedLearning/usingVite",
+      "relevance": "Vanilla TypeScript and Babylon modular build setup."
+    },
+    {
+      "id": "2",
+      "title": "Asset containers",
+      "url": "https://doc.babylonjs.com/features/featuresDeepDive/importers/assetContainers",
+      "relevance": "Template instantiation returns root nodes, skeletons and animation groups; links Playground #S7E00P#439."
+    },
+    {
+      "id": "3",
+      "title": "Animation retargeting",
+      "url": "https://doc.babylonjs.com/features/featuresDeepDive/animation/animationRetargeting",
+      "relevance": "AnimatorAvatar retargeting, rest pose and mapping limitations; links Playground #K1QFZD#2."
+    },
+    {
+      "id": "4",
+      "title": "Physics V2 character controller",
+      "url": "https://github.com/BabylonJS/Documentation/blob/master/content/features/featuresDeepDive/physics/v2/characterController.md",
+      "relevance": "Physics character controller, shape casts and movement, including Playground WO0H1U#165; source URL used because the checked documentation route returned 404."
+    },
+    {
+      "id": "5",
+      "title": "Using Havok and Havok plugin",
+      "url": "https://github.com/BabylonJS/Documentation/blob/master/content/features/featuresDeepDive/physics/v2/usingHavok.md",
+      "relevance": "Separate MIT Havok package, WASM SIMD, initialization and CDN warning; source URL used because the checked documentation route returned 404."
+    },
+    {
+      "id": "6",
+      "title": "WebGPU support",
+      "url": "https://doc.babylonjs.com/setup/support/webGPU",
+      "relevance": "WebGPU engine support and differences; select engine before scene creation."
+    },
+    {
+      "id": "7",
+      "title": "Level of detail",
+      "url": "https://doc.babylonjs.com/features/featuresDeepDive/mesh/LOD",
+      "relevance": "Distance or screen coverage LOD and example #QE7KM."
+    },
+    {
+      "id": "8",
+      "title": "Thin instances",
+      "url": "https://doc.babylonjs.com/features/featuresDeepDive/mesh/copies/thinInstances",
+      "relevance": "Efficient instancing and batching tradeoffs."
+    },
+    {
+      "id": "9",
+      "title": "Optimizing a scene with octrees",
+      "url": "https://doc.babylonjs.com/features/featuresDeepDive/scene/optimizeOctrees",
+      "relevance": "Spatial selection structures and their update implications."
+    },
+    {
+      "id": "10",
+      "title": "Scene optimizer",
+      "url": "https://doc.babylonjs.com/features/featuresDeepDive/scene/sceneOptimizer",
+      "relevance": "Optimization passes and measurable tradeoffs."
+    },
+    {
+      "id": "11",
+      "title": "Babylon GUI",
+      "url": "https://doc.babylonjs.com/features/featuresDeepDive/gui/gui",
+      "relevance": "GUI controls for canvas-based interfaces."
+    },
+    {
+      "id": "12",
+      "title": "Summer Festival game repository",
+      "url": "https://github.com/BabylonJS/SummerFestival",
+      "relevance": "Official tutorial game repository: study gameplay organization and traversal; older teaching code is not a production benchmark."
+    },
+    {
+      "id": "13",
+      "title": "Mansion scene loader and serialized environment",
+      "url": "https://github.com/BabylonJS/Website/blob/master/src/compiledDemos/Mansion/scene.ts",
+      "relevance": "Loads /Scenes/Mansion/Mansion.babylon and enables collisions; serialized scene inspected at https://github.com/BabylonJS/Website/blob/master/static/Scenes/Mansion/Mansion.babylon for fog, lighting and material textures. Source inspected, no runtime or asset-rights verification."
+    },
+    {
+      "id": "14",
+      "title": "Babylon 3D Tiles geospatial demonstration source",
+      "url": "https://github.com/BabylonJS/Demos/blob/main/3d-tiles/src/index.ts",
+      "relevance": "Geospatial camera, tile error selection, bounded mobile cache and queues, and attribution. External token and network required; source inspected, no runtime test."
+    }
+  ],
+  "research_began_date": "2026-11-13"
+}

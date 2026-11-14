@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "scope": "TO_BE_SELECTED",
+  "executionMode": "not_selected",
+  "commit": null,
+  "buildArtifact": null,
+  "checks": [
+    {
+      "id": "AC01",
+      "status": "not_started",
+      "owner": null,
+      "evidence": [],
+      "limitations": []
+    },
+    {
+      "id": "AC02",
+      "status": "not_started",
+      "owner": null,
+      "evidence": [],
+      "limitations": []
+    },
+    {
+      "id": "AC03",
+      "status": "not_started",
+      "owner": null,
+      "evidence": [],
+      "limitations": []
+    },
+    {
+      "id": "AC04",
+      "status": "not_started",
+      "owner": null,
+      "evidence": [],
+      "limitations": []
+    },
+    {
+      "id": "AC05",
+      "status": "not_started",
+      "owner": null,
+      "evidence": [],
+      "limitations": []
+    },
+    {
+      "id": "AC06",
+      "status": "not_started",
+      "owner": null,
+      "evidence": [],
+      "limitations": []
+    },
+    {
+      "id": "AC07",
+      "status": "not_started",
+      "owner": null,
+      "evidence": [],
+      "limitations": []
+    },
+    {
+      "id": "AC08",
+      "status": "not_started",
+      "owner": null,
+      "evidence": [],
+      "limitations": []
+    },
+    {
+      "id": "AC09",
+      "status": "not_started",
+      "owner": null,
+      "evidence": [],
+      "limitations": []
+    },
+    {
+      "id": "AC10",
+      "status": "not_started",
+      "owner": null,
+      "evidence": [],
+      "limitations": []
+    },
+    {
+      "id": "AC11",
+      "status": "not_started",
+      "owner": null,
+      "evidence": [],
+      "limitations": []
+    },
+    {
+      "id": "AC12",
+      "status": "not_started",
+      "owner": null,
+      "evidence": [],
+      "limitations": []
+    }
+  ]
+}

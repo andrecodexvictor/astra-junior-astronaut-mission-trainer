@@ -1,0 +1,218 @@
+{
+  "version": 1,
+  "checkedDate": "2026-11-14",
+  "timezone": "America/Sao_Paulo",
+  "state": "planning-only",
+  "requirements": [
+    {
+      "id": "G-01",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-01.",
+      "status": "planned"
+    },
+    {
+      "id": "G-02",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-02.",
+      "status": "planned"
+    },
+    {
+      "id": "G-03",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-03.",
+      "status": "planned"
+    },
+    {
+      "id": "G-04",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-04 — vertical slice:",
+      "status": "planned"
+    },
+    {
+      "id": "G-05",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-05 — horizonte de produto:",
+      "status": "planned"
+    },
+    {
+      "id": "G-06",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-06 — plano de 48 horas:",
+      "status": "planned"
+    },
+    {
+      "id": "G-07",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-07 — produção de 1–2 semanas:",
+      "status": "planned"
+    },
+    {
+      "id": "S-01",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "S-01.",
+      "status": "planned"
+    },
+    {
+      "id": "G-08",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-08.",
+      "status": "planned"
+    },
+    {
+      "id": "G-09",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-09.",
+      "status": "planned"
+    },
+    {
+      "id": "G-10",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-10 — encontro de descoberta:",
+      "status": "planned"
+    },
+    {
+      "id": "G-11",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-11 — equipe:",
+      "status": "planned"
+    },
+    {
+      "id": "G-12",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-12 — estados de companheiro:",
+      "status": "planned"
+    },
+    {
+      "id": "S-02",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "S-02.",
+      "status": "planned"
+    },
+    {
+      "id": "W-01",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "W-01.",
+      "status": "planned"
+    },
+    {
+      "id": "W-02",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "W-02.",
+      "status": "planned"
+    },
+    {
+      "id": "S-03",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "S-03 — modelo físico:",
+      "status": "planned"
+    },
+    {
+      "id": "S-04",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "S-04.",
+      "status": "planned"
+    },
+    {
+      "id": "G-13",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "G-13 — contrato de missão:",
+      "status": "planned"
+    },
+    {
+      "id": "A-01",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "A-01.",
+      "status": "planned"
+    },
+    {
+      "id": "A-02",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "A-02.",
+      "status": "planned"
+    },
+    {
+      "id": "A-03",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "A-03.",
+      "status": "planned"
+    },
+    {
+      "id": "A-04",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "A-04 — orçamento de arte:",
+      "status": "planned"
+    },
+    {
+      "id": "N-01",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "N-01.",
+      "status": "planned"
+    },
+    {
+      "id": "N-02",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "N-02 — critérios de aceite:",
+      "status": "planned"
+    },
+    {
+      "id": "N-03",
+      "document": "docs/GAME_SPEC.md",
+      "heading": "N-03 — rubrica de prontidão:",
+      "status": "planned"
+    },
+    {
+      "id": "WB-01",
+      "document": "docs/WORLD_BIBLE.md",
+      "heading": "WB-01.",
+      "status": "planned"
+    },
+    {
+      "id": "WB-02",
+      "document": "docs/WORLD_BIBLE.md",
+      "heading": "WB-02.",
+      "status": "planned"
+    },
+    {
+      "id": "WB-03",
+      "document": "docs/WORLD_BIBLE.md",
+      "heading": "WB-03.",
+      "status": "planned"
+    },
+    {
+      "id": "WB-04",
+      "document": "docs/WORLD_BIBLE.md",
+      "heading": "WB-04.",
+      "status": "planned"
+    },
+    {
+      "id": "WB-05",
+      "document": "docs/WORLD_BIBLE.md",
+      "heading": "WB-05.",
+      "status": "planned"
+    },
+    {
+      "id": "WB-06",
+      "document": "docs/WORLD_BIBLE.md",
+      "heading": "WB-06.",
+      "status": "planned"
+    },
+    {
+      "id": "WB-07",
+      "document": "docs/WORLD_BIBLE.md",
+      "heading": "WB-07.",
+      "status": "planned"
+    },
+    {
+      "id": "WB-08",
+      "document": "docs/WORLD_BIBLE.md",
+      "heading": "WB-08.",
+      "status": "planned"
+    },
+    {
+      "id": "WB-09",
+      "document": "docs/WORLD_BIBLE.md",
+      "heading": "WB-09 — validação de cenário:",
+      "status": "planned"
+    }
+  ]
+}

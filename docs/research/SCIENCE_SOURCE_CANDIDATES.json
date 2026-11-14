@@ -1,0 +1,12 @@
+{
+  "version":1,
+  "status":"Candidates for future implementation; not proof of challenge-resource eligibility",
+  "checkedDate":"2026-11-14",
+  "sources":[
+    {"id":"nasa-eclss","title":"Environmental Control and Life Support Systems","url":"https://www.nasa.gov/reference/environmental-control-and-life-support-systems-eclss/","role":"Background concepts for connected air and water systems","challengeResourceVerified":false,"challengeListingEvidence":null,"datasetUsedInNewRepo":false},
+    {"id":"nasa-moon","title":"Moon Facts","url":"https://science.nasa.gov/moon/facts/","role":"Environment and gravity context; not operational habitat parameters","challengeResourceVerified":false,"challengeListingEvidence":null,"datasetUsedInNewRepo":false},
+    {"id":"nasa-radiation","title":"Hazard: Space Radiation","url":"https://www.nasa.gov/hrp/hazard-space-radiation/","role":"Qualitative radiation hazard background, not a dose model","challengeResourceVerified":false,"challengeListingEvidence":null,"datasetUsedInNewRepo":false},
+    {"id":"nasa-veggie","title":"VEGGIE","url":"https://science.nasa.gov/mission/veggie/","role":"Plant research context; not proof of a self-sufficient lunar diet","challengeResourceVerified":false,"challengeListingEvidence":null,"datasetUsedInNewRepo":false},
+    {"id":"nasa-lola","title":"CGI Moon Kit / LRO LOLA","url":"https://svs.gsfc.nasa.gov/4720/","role":"Candidate cached terrain input; needs version, projection, units, transformation and credit","challengeResourceVerified":false,"challengeListingEvidence":null,"datasetUsedInNewRepo":false}
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "checkedDate": "2026-11-14",
+  "timezone": "America/Sao_Paulo",
+  "scope": "Operational research, not eligibility certification",
+  "sources": [
+    {"id":"rules-terms-2026","url":"https://www.spaceappschallenge.org/legal/","type":"official_terms","documentUpdated":"2026-08-07","access":"Full indexed text retrieved; direct HTTP returned 502","supports":["open licensing","attribution","registration","third-party rights"],"status":"reviewed_indexed_text"},
+    {"id":"rules-event-2026","url":"https://www.spaceappschallenge.org/2026/","type":"official_event_page","access":"Indexed event text retrieved","supports":["November 14-15 2026","local event timing","project submission through team page","team size"],"status":"reviewed_indexed_text"},
+    {"id":"rules-timing-resources","url":"https://github.com/nasa/spaceapps/discussions/1827","type":"organizer_identified_forum_response","author":"Paula-GO-Team","authorAssociation":"NONE","access":"GitHub GraphQL body/comments read","supports":["pre-event work warning","preparation guidance","NASA resource from challenge list","resource citation"],"status":"reviewed_forum_guidance"},
+    {"id":"rules-ai-guidance","url":"https://github.com/nasa/spaceapps/discussions/1849","type":"organizer_identified_forum_response","author":"Nick-GO-Team","authorAssociation":"NONE","access":"GitHub GraphQL body/comments read","supports":["AI assistance disclosure","visible generated-image/video watermark","audio/code/data acknowledgement","no NASA branding in generated content"],"status":"reviewed_forum_guidance"},
+    {"id":"rules-submission-community","url":"https://github.com/nasa/spaceapps/discussions/1973","type":"community_response_not_binding_guide","author":"kharevanai","authorAssociation":"NONE","access":"GitHub GraphQL body/comments read","supports":["provisional English/demo production target"],"status":"provisional_do_not_treat_as_formal_rule"},
+    {"id":"rules-submission-guide","url":"https://www.spaceappschallenge.org/resources/","type":"official_guide_index","access":"Direct HTTP returned 502; current 2026 guide file not obtained","supports":[],"status":"pending_current_guide"},
+    {"id":"challenge-junior-2026","url":"https://www.spaceappschallenge.org/2026/challenges/junior-astronaut-mission-trainer/","type":"official_challenge","access":"Indexed challenge statement retrieved; full resources tab not obtained","supports":["life support","radiation shielding","power","food production","consequential student decisions"],"status":"statement_reviewed_resource_list_pending"}
+  ]
+}
