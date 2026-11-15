@@ -16,8 +16,8 @@
 
  Test Files  8 passed (8)
       Tests  64 passed (64)
-   Start at  00:17:15
-   Duration  22.52s (transform 1.42s, setup 0ms, import 3.06s, tests 16.78s, environment 2ms)
+   Start at  00:23:04
+   Duration  20.32s (transform 1.88s, setup 0ms, import 3.31s, tests 14.77s, environment 1ms)
 
 
 > astra-lunar-frontier-demo@0.2.0 audit:assets
@@ -81,5 +81,5 @@ dist/assets/babylon-webgpu-BqrH-B6G.js            238.48 kB │ gzip:  58.66 kB
 dist/assets/babylon-shaders-BrV0TE12.js           492.42 kB │ gzip:  94.96 kB
 dist/assets/babylon-shaders-wgsl-4y41GaUY.js      529.35 kB │ gzip:  98.11 kB
 dist/assets/babylon-core-CRq0Owvr.js            1,584.13 kB │ gzip: 416.98 kB
-✓ built in 1m 7s
+✓ built in 1m 12s
 Build inventory: 30 files; SHA-256 recorded.

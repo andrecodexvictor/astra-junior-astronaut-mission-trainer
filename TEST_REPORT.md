@@ -4,7 +4,7 @@ Application commit: `a239c952675598253a4c5fa4497f7c45273714f9` (Waves 0–3A plu
 
 ## CPU, assets and build
 
-Clean `npm ci` succeeded. `npm run check` passed with **64 tests in eight files**, strict TypeScript, assets, skills, documentation, art and production build. `npm run audit:deps` reported **zero known vulnerabilities**. The final post-documentation gate is recorded below after completion.
+Clean `npm ci` succeeded. `npm run check` passed with **64 tests in eight files**, strict TypeScript, assets, skills, documentation, art and production build. `npm run audit:deps` reported **zero known vulnerabilities**. The post-documentation gate and exact command exits are recorded in the generated final-check evidence.
 
 The tests cover deterministic fixed ticks, resource dependencies and accounting, equipment costs, quests and failure/recovery, save migration, character controllers, world-layout reachability and GLB loading/disposal in NullEngine. Thirteen GLBs pass Khronos validation with zero errors and warnings: eight legacy originals and five skinned, keyframed characters. Thirteen skill entrypoints and 25 pinned hashes pass. Eight concept boards remain labelled AI references. None of these CPU checks establishes visual quality or hardware performance.
 
@@ -42,3 +42,7 @@ Orbital movement is assisted, not 6DoF. Terrain is procedural artistic geography
 ## Delivery repository variant
 
 This checkout preserves the complete demo history. The candidate variant changes only `README.md` and `source.config.json` (public source URL/label); runtime simulation, models, world and controls are shared with the tested application commit. The browser reports identify the original tested build and are not a separate browser run of this candidate URL. Its own final check/dependency evidence and regenerated build inventory are recorded in this checkout.
+
+## Published snapshots
+
+The original public Site is version 5 and the candidate Site is version 1. `docs/PUBLICATIONS.json` maps each native successful deployment to its exact Sites source commit and GitHub snapshot. Later changes record publication metadata and verification only; the game source is unchanged. The final `npm run check` and `npm run audit:deps -- --json` are run after these documentation updates, with outputs in `docs/demo/evidence/`. No GitHub Actions result or new physical-GPU test is implied.
