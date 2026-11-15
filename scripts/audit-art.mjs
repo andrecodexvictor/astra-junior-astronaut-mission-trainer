@@ -37,4 +37,4 @@ for(const entry of production.images){
  if(data.subarray(0,8).toString('hex')!=='89504e470d0a1a0a'||createHash('sha256').update(data).digest('hex')!==entry.sha256||data.length!==entry.bytes)throw Error('Production art integrity mismatch: '+entry.path);
  if(data.readUInt32BE(16)!==entry.width||data.readUInt32BE(20)!==entry.height||entry.runtimeAsset!==false||entry.aiGenerated!==true||entry.visibleAiLabel!==true||!entry.credit||!entry.rights)throw Error('Incomplete production concept provenance: '+entry.path);
 }
-console.log(`${production.images.length} additional production concept boards verified; NASA uniform marks are third-party references, not ASTRA branding or endorsement.`);
+console.log(`${production.images.length} additional production concept boards verified; current hashes and disclosure metadata verified; logo absence and character continuity require the recorded visual review.`);

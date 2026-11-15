@@ -6,5 +6,8 @@
     "20-worlds-next-destinations.png": "Patches on fictional astronaut arms in four panels; outdoor helmets and enclosed Mars greenhouse retained.",
     "21-character-motion-adventure.png": "Patch on main fictional astronaut arm; motion poses retained."
   },
-  "context": "Each board retains AI concept label and adds projeto independente; NASA insignia appears as costume detail, separate from ASTRA branding."
+  "context": "Each board retains AI concept label and adds projeto independente; NASA insignia appears as costume detail, separate from ASTRA branding.",
+  "status": "superseded_historical_record",
+  "supersededBy": "manifest.json revision 2",
+  "currentState": "NASA identifiers removed from current production PNGs; original patch-addition notes describe only historical revisions retained in Git."
 }
