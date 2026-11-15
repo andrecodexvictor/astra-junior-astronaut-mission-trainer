@@ -1,0 +1,464 @@
+{
+  "title": "ASTRA — Mission decisions become learning",
+  "language": "en",
+  "totalDurationSeconds": 180,
+  "slides": [
+    {
+      "id": "01",
+      "stage": "hook",
+      "durationSeconds": 6,
+      "headline": "What if the learner is the astronaut?",
+      "subtitle": "A mission begins with a decision.",
+      "narration": "What if a learner stepped into the spacesuit, and every choice shaped the mission?",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../art/production-vision/09-partner-lunar-journey.png",
+      "layout": "fullbleed",
+      "status": "Concept",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "02",
+      "stage": "hook",
+      "durationSeconds": 6,
+      "headline": "Curiosity has a destination",
+      "subtitle": "Explore a lunar world.",
+      "narration": "ASTRA invites young explorers into a lunar world built around questions and action.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../art/production-vision/09-partner-lunar-journey.png",
+      "layout": "fullbleed",
+      "status": "Concept",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "03",
+      "stage": "hook",
+      "durationSeconds": 6,
+      "headline": "A mission needs a crew",
+      "subtitle": "The child leads; PIP guides.",
+      "narration": "The child is the astronaut. PIP is a mentor who helps the mission move forward.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../art/production-vision/11-playful-tasks-dialogue.png",
+      "layout": "fullbleed",
+      "status": "Concept",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "04",
+      "stage": "hook",
+      "durationSeconds": 6,
+      "headline": "A decision has a cost",
+      "subtitle": "Power, water and oxygen matter.",
+      "narration": "A mission turns abstract resources into choices with visible consequences.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../art/production-vision/17-resource-care-alert.png",
+      "layout": "fullbleed",
+      "status": "Concept",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "05",
+      "stage": "hook",
+      "durationSeconds": 6,
+      "headline": "The question for judges",
+      "subtitle": "Can play make science actionable?",
+      "narration": "We are exploring how play can connect space science to engineering decisions.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../art/production-vision/16-museum-science-discovery.png",
+      "layout": "fullbleed",
+      "status": "Concept",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "06",
+      "stage": "problem",
+      "durationSeconds": 6,
+      "headline": "The learning gap",
+      "subtitle": "Real engineering can feel simplified or overwhelming.",
+      "narration": "The challenge asks how young learners can encounter space engineering without oversimplifying it or becoming overwhelmed.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../art/production-vision/16-museum-science-discovery.png",
+      "layout": "fullbleed",
+      "status": "Challenge context",
+      "sourceIds": [
+        "challenge"
+      ]
+    },
+    {
+      "id": "07",
+      "stage": "problem",
+      "durationSeconds": 6,
+      "headline": "Four systems. Connected decisions.",
+      "subtitle": "Power · life support · radiation · food",
+      "narration": "A mission connects power, life support including water and oxygen, radiation protection, and food production.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../art/production-vision/17-resource-care-alert.png",
+      "layout": "fullbleed",
+      "status": "Challenge context",
+      "sourceIds": [
+        "challenge",
+        "science"
+      ]
+    },
+    {
+      "id": "08",
+      "stage": "problem",
+      "durationSeconds": 6,
+      "headline": "Engagement needs purpose",
+      "subtitle": "A task gives a reason to investigate.",
+      "narration": "An engaging, age-appropriate environment can give exploration a purpose and invite persistence.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../art/production-vision/11-playful-tasks-dialogue.png",
+      "layout": "fullbleed",
+      "status": "Design hypothesis",
+      "sourceIds": [
+        "unicef"
+      ]
+    },
+    {
+      "id": "09",
+      "stage": "problem",
+      "durationSeconds": 6,
+      "headline": "Trust and connection matter",
+      "subtitle": "Design for people, context and choice.",
+      "narration": "Educators need an appropriate experience, and learners need opportunities to share discoveries with people.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../art/production-vision/09-partner-lunar-journey.png",
+      "layout": "fullbleed",
+      "status": "Design hypothesis",
+      "sourceIds": [
+        "unicef"
+      ]
+    },
+    {
+      "id": "10",
+      "stage": "problem",
+      "durationSeconds": 6,
+      "headline": "Our opportunity",
+      "subtitle": "Make the consequences tangible.",
+      "narration": "The opportunity is to let learners see a choice, its cost and what happens next.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../art/production-vision/17-resource-care-alert.png",
+      "layout": "fullbleed",
+      "status": "Design hypothesis",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "11",
+      "stage": "solution",
+      "durationSeconds": 6,
+      "headline": "Meet ASTRA",
+      "subtitle": "A playable lunar mission trainer.",
+      "narration": "ASTRA is an independent Babylon.js demo of a lunar mission trainer.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../demo/fixture-captures/fixture-02-habitat.png",
+      "layout": "fullbleed",
+      "status": "Current demo",
+      "sourceIds": [
+        "demo"
+      ]
+    },
+    {
+      "id": "12",
+      "stage": "solution",
+      "durationSeconds": 6,
+      "headline": "Observe the mission",
+      "subtitle": "Read the world and its resources.",
+      "narration": "The learner explores a finite world and checks graphical resource indicators linked to simulation state.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../demo/fixture-captures/fixture-03-habitat-crew.png",
+      "layout": "fullbleed",
+      "status": "Current demo",
+      "sourceIds": [
+        "demo",
+        "fixture"
+      ]
+    },
+    {
+      "id": "13",
+      "stage": "solution",
+      "durationSeconds": 6,
+      "headline": "Choose an action",
+      "subtitle": "Tasks connect action to resources.",
+      "narration": "The mission presents tasks and resource tradeoffs, grounded in a deterministic simulation.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../demo/fixture-captures/fixture-04-canyon.png",
+      "layout": "fullbleed",
+      "status": "Current demo",
+      "sourceIds": [
+        "demo",
+        "science"
+      ]
+    },
+    {
+      "id": "14",
+      "stage": "solution",
+      "durationSeconds": 6,
+      "headline": "Respond to a warning",
+      "subtitle": "A reminder supports the next choice.",
+      "narration": "When reserves run low, an authored offline buddy reminder helps draw attention to the issue.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../demo/fixture-captures/fixture-07-resource-alert.png",
+      "layout": "fullbleed",
+      "status": "Current demo",
+      "sourceIds": [
+        "demo",
+        "fixture"
+      ]
+    },
+    {
+      "id": "15",
+      "stage": "solution",
+      "durationSeconds": 6,
+      "headline": "Learn through the loop",
+      "subtitle": "Observe. Decide. Act. Reflect.",
+      "narration": "Our learning hypothesis is simple: observation and consequences can prompt useful reflection.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../art/production-vision/11-playful-tasks-dialogue.png",
+      "layout": "fullbleed",
+      "status": "Concept",
+      "sourceIds": [
+        "wang"
+      ]
+    },
+    {
+      "id": "16",
+      "stage": "differentiator",
+      "durationSeconds": 6,
+      "headline": "The astronaut is the learner",
+      "subtitle": "Agency is the center of the experience.",
+      "narration": "The learner leads the mission; companions and mentoring support their decisions.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../art/production-vision/09-partner-lunar-journey.png",
+      "layout": "fullbleed",
+      "status": "Concept",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "17",
+      "stage": "differentiator",
+      "durationSeconds": 6,
+      "headline": "A buddy for the journey",
+      "subtitle": "Future vision: choose your companion.",
+      "narration": "A future companion could be a dachshund, human, cat, turtle or robot, customized by the learner.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../art/production-vision/10-create-your-companion.png",
+      "layout": "fullbleed",
+      "status": "Future vision",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "18",
+      "stage": "differentiator",
+      "durationSeconds": 6,
+      "headline": "PIP is the mentor",
+      "subtitle": "Short guidance keeps action in the world.",
+      "narration": "PIP provides a mentoring presence; the current demo uses authored, offline reminders.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../art/production-vision/15-short-dialogue-voice.png",
+      "layout": "fullbleed",
+      "status": "Concept",
+      "sourceIds": [
+        "demo",
+        "vision"
+      ]
+    },
+    {
+      "id": "19",
+      "stage": "differentiator",
+      "durationSeconds": 6,
+      "headline": "Choices connect systems",
+      "subtitle": "Engineering is a balancing act.",
+      "narration": "Resource accounting gives decisions a physical context; rates are teaching assumptions, not flight predictions.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../art/production-vision/17-resource-care-alert.png",
+      "layout": "fullbleed",
+      "status": "Concept",
+      "sourceIds": [
+        "science"
+      ]
+    },
+    {
+      "id": "20",
+      "stage": "differentiator",
+      "durationSeconds": 6,
+      "headline": "A place to show discovery",
+      "subtitle": "Future vision: badges and a home base.",
+      "narration": "Future badges and a customizable home could make discoveries visible and invite conversation.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../art/production-vision/18-knowledge-badges-uniform.png",
+      "layout": "fullbleed",
+      "status": "Future vision",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "21",
+      "stage": "proof",
+      "durationSeconds": 6,
+      "headline": "A demo in the browser",
+      "subtitle": "Explore an independent Babylon mission.",
+      "narration": "A public browser demo already lets judges explore the world and inspect the mission.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../demo/fixture-captures/fixture-01-academy.png",
+      "layout": "evidence",
+      "status": "Current demo",
+      "sourceIds": [
+        "demo"
+      ]
+    },
+    {
+      "id": "22",
+      "stage": "proof",
+      "durationSeconds": 6,
+      "headline": "Resource rules have technical tests",
+      "subtitle": "67 CPU unit tests passed.",
+      "narration": "Sixty-seven CPU unit tests passed, helping protect the resource rules. These tests do not measure learning.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../demo/fixture-captures/fixture-02-habitat.png",
+      "layout": "evidence",
+      "status": "Technical evidence",
+      "sourceIds": [
+        "acceptance"
+      ]
+    },
+    {
+      "id": "23",
+      "stage": "proof",
+      "durationSeconds": 6,
+      "headline": "A world built to communicate",
+      "subtitle": "Resource bars and offline buddy reminders.",
+      "narration": "The demo joins a coherent world, clear resource bars and authored offline reminders. Sixteen staged visual checks passed.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../demo/fixture-captures/fixture-03-habitat-crew.png",
+      "layout": "evidence",
+      "status": "Current demo",
+      "sourceIds": [
+        "demo",
+        "fixture"
+      ]
+    },
+    {
+      "id": "24",
+      "stage": "proof",
+      "durationSeconds": 6,
+      "headline": "Research gives us a reason to test",
+      "subtitle": "33 STEM game studies in a meta-analysis.",
+      "narration": "A meta-analysis of 33 STEM game studies supports investigation; it did not measure ASTRA’s effectiveness.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../demo/fixture-captures/fixture-04-canyon.png",
+      "layout": "evidence",
+      "status": "Research context",
+      "sourceIds": [
+        "wang"
+      ]
+    },
+    {
+      "id": "25",
+      "stage": "proof",
+      "durationSeconds": 6,
+      "headline": "The next validation step",
+      "subtitle": "Full route · hardware GPU · learners",
+      "narration": "Next, complete the full-route and hardware-GPU checks, then evaluate the experience with learners and educators.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../art/production-vision/16-museum-science-discovery.png",
+      "layout": "evidence",
+      "status": "Validation plan",
+      "sourceIds": [
+        "e2e",
+        "acceptance"
+      ]
+    },
+    {
+      "id": "26",
+      "stage": "ask",
+      "durationSeconds": 6,
+      "headline": "Build an institutional pilot",
+      "subtitle": "Co-design a supervised educator experience.",
+      "narration": "We propose a supervised pilot, co-designed with educators around a real teaching context.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../art/production-vision/11-playful-tasks-dialogue.png",
+      "layout": "fullbleed",
+      "status": "Proposed pilot",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "27",
+      "stage": "ask",
+      "durationSeconds": 6,
+      "headline": "Measure the reasoning",
+      "subtitle": "Explain a tradeoff. Transfer the idea.",
+      "narration": "Ask learners to explain a resource tradeoff and apply the idea to a new situation.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../art/production-vision/17-resource-care-alert.png",
+      "layout": "fullbleed",
+      "status": "Proposed pilot",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "28",
+      "stage": "ask",
+      "durationSeconds": 6,
+      "headline": "A phased roadmap",
+      "subtitle": "First mission → pilot evidence → personalization",
+      "narration": "We would strengthen the first mission, gather pilot evidence, then explore personalization.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../art/production-vision/10-create-your-companion.png",
+      "layout": "fullbleed",
+      "status": "Future roadmap",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "29",
+      "stage": "ask",
+      "durationSeconds": 6,
+      "headline": "Evaluate the playable demo",
+      "subtitle": "Explore the world and its resource choices.",
+      "narration": "We invite judges to try the playable demo and evaluate how its choices work.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../demo/fixture-captures/fixture-01-academy.png",
+      "layout": "fullbleed",
+      "status": "Invitation",
+      "sourceIds": [
+        "demo"
+      ]
+    },
+    {
+      "id": "30",
+      "stage": "ask",
+      "durationSeconds": 6,
+      "headline": "Partner on the next mission",
+      "subtitle": "Co-design a supervised educator pilot.",
+      "narration": "Help us co-design a supervised educator pilot and test whether mission decisions support learning.",
+      "visualBrief": "Whole coherent game-world scene integrated as background; maintain readable type and preserve scene context.",
+      "art": "../../art/production-vision/09-partner-lunar-journey.png",
+      "layout": "fullbleed",
+      "status": "Invitation",
+      "sourceIds": [
+        "vision"
+      ]
+    }
+  ]
+}

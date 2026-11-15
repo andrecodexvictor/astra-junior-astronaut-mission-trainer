@@ -1,0 +1,15 @@
+# Evidence and source notes
+
+Source IDs used in the JSON:
+
+- `challenge`: [2026 Junior Astronaut Mission Trainer official challenge](https://www.spaceappschallenge.org/2026/challenges/junior-astronaut-mission-trainer/). The indexed statement was reviewed on 15 November 2026; direct page access returned 502 and the complete Resources tab was not verified. The brief identifies connected power, life support, radiation shielding and food production, and the difficulty of making engineering approachable without oversimplification or overload. This contextualizes the pitch; it does not establish eligibility, endorsement or submission.
+- `demo`: [HANDOFF.md](../../../HANDOFF.md) documents the Babylon demo, graphical HUD, authored offline reminders, and limitations. Current gameplay and visuals are narrower than production concept boards.
+- `acceptance`: [ACCEPTANCE.json](../../../ACCEPTANCE.json) records 67 CPU unit tests, staged visual checks and incomplete acceptance. These tests are not evidence of educational outcomes.
+- `fixture`: [VISUAL_FIXTURE_REPORT.json](../../demo/VISUAL_FIXTURE_REPORT.json) records 16 staged Chromium/SwiftShader checks. Staging and software rendering do not establish a full playable route or hardware performance.
+- `e2e`: [E2E_REPORT.json](../../demo/E2E_REPORT.json) documents an incomplete/failed full-route run. Physical-GPU and human studies remain pending.
+- `science`: [SCIENCE_ASSUMPTIONS.md](../../demo/SCIENCE_ASSUMPTIONS.md) describes simplified simulated systems and teaching assumptions. Do not represent them as validated lunar flight predictions.
+- `vision`: [DESIGN_STRATEGY_EN.md](DESIGN_STRATEGY_EN.md) and [production vision art](../../art/production-vision/) describe concepts, not implemented features. AI-generated concept imagery must be labeled and credited. Buddy variants, badges, home, photo avatar, AI voice, parent controls and multiplayer are future concepts.
+- `wang`: Wang et al. (2022), [Effects of digital game-based STEM education on students’ learning achievement: a meta-analysis](https://doi.org/10.1186/s40594-022-00344-0), 33 studies and 3,894 participants across school and higher education. It did not study ASTRA; no effect size is transferable to this demo.
+- `unicef`: UNICEF Innocenti, [Childhood in a Digital World](https://www.unicef.org/innocenti/reports/childhood-digital-world) (2025), discusses how content, use and experience matter. It does not assess or endorse ASTRA.
+
+[SPACE_APPS_COMPLIANCE.md](../../SPACE_APPS_COMPLIANCE.md) records the prior research: the official challenge and resources pages and the full 2026 submission guide were inaccessible in that review. A community comment about 30 seconds or seven slides is not an official rule. Eligibility, use of prior work, challenge-listed resources and submission format remain unverified. This writing pass did not independently recheck those pages. No submission, partnership or endorsement is claimed. The problem framing and proposed pilot outcomes are hypotheses, not statistics or measured results.

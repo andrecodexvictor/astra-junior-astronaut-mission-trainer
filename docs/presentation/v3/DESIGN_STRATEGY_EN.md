@@ -1,0 +1,13 @@
+# ASTRA pitch design strategy
+
+The audience is hackathon judges and prospective educational institutions. They need to understand the problem, the proposed learning mechanism, what can be played today, limitations, and a concrete next step quickly. The story is a hypothesis and invitation to evaluate an independent demo, not a claim of NASA association or a commercial sale to parents.
+
+Design thinking begins with a learner trying to make sense of abstract science, and an educator seeking a purposeful, age-appropriate activity. The framing is a design hypothesis, not a measured prevalence claim. The proposed intervention links observation, a resource decision, action and reflection. The next research step is a supervised educator pilot: co-design tasks and assess whether learners can explain a choice and its consequence. Attention, trust and social connection inform the experience; they are not diagnoses or promised outcomes.
+
+Thirty slides form six acts of five six-second slides: hook, problem, solution, differentiator, proof and ask. The Portuguese elevator distills those acts into six five-second slides. Progressive disclosure moves from a relatable mission decision to mechanics, the current evidence and an explicit invitation. Avoid adding claims or dense text to compensate for the short pacing; rehearse narration against each timing.
+
+The child is the astronaut and PIP is a mentor. A customizable buddy spanning dachshund, human, cat, turtle and robot is a future concept; badges and home are future too. Current graphical resource meters, offline authored reminders, Babylon world and resource accounting are demo evidence. Photo avatars, AI voice, parent controls and multiplayer remain future ideas. A future pilot is proposed, not underway.
+
+Use full coherent game-world views as backgrounds: no isolated HUD crops or real-world family imagery. Concept boards are illustrative, not screenshots of functionality, and carry a visible concept or future label. Demo screenshots retain scene context and a current-demo label. Preserve AI-media attribution where applicable; do not use NASA logos or suggest endorsement.
+
+For ergonomics use large high-contrast type, short headlines, a stable safe area, and restrained overlays that do not obscure the astronaut or the relevant environment. Keep source and status readable on evidence slides. Dark lunar blues provide depth, warm gold accents invite attention, and restrained cyan can signal resources; use the actual artwork palette and avoid relying on color alone to convey meaning. Visual hierarchy should carry the single idea before decorative detail. Test legibility at presentation size and on small screens.

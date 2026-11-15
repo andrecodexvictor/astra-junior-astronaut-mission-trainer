@@ -1,0 +1,98 @@
+{
+  "title": "ASTRA — Decisões que inspiram descobertas",
+  "language": "pt-BR",
+  "totalDurationSeconds": 30,
+  "slides": [
+    {
+      "id": "01",
+      "stage": "hook",
+      "durationSeconds": 5,
+      "headline": "E se a criança fosse astronauta?",
+      "subtitle": "Uma missão começa com uma escolha.",
+      "narration": "Em ASTRA, a criança é astronauta e suas escolhas conduzem a missão.",
+      "visualBrief": "Cena completa e coerente do mundo do jogo integrada ao fundo; texto legível.",
+      "art": "../../art/production-vision/09-partner-lunar-journey.png",
+      "layout": "fullbleed",
+      "status": "Conceito",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "02",
+      "stage": "problem",
+      "durationSeconds": 5,
+      "headline": "O desafio",
+      "subtitle": "Conectar ciência a decisões.",
+      "narration": "Conceitos espaciais podem parecer abstratos sem decisões e consequências visíveis.",
+      "visualBrief": "Cena completa e coerente do mundo do jogo integrada ao fundo; texto legível.",
+      "art": "../../art/production-vision/16-museum-science-discovery.png",
+      "layout": "fullbleed",
+      "status": "Hipótese de design",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "03",
+      "stage": "solution",
+      "durationSeconds": 5,
+      "headline": "Observe. Decida. Aja.",
+      "subtitle": "Recursos transformam escolhas em missão.",
+      "narration": "Na demo, explorar e acompanhar recursos dá contexto às escolhas da missão.",
+      "visualBrief": "Cena completa e coerente do mundo do jogo integrada ao fundo; texto legível.",
+      "art": "../../demo/fixture-captures/fixture-02-habitat.png",
+      "layout": "fullbleed",
+      "status": "Demo atual",
+      "sourceIds": [
+        "demo"
+      ]
+    },
+    {
+      "id": "04",
+      "stage": "differentiator",
+      "durationSeconds": 5,
+      "headline": "Uma jornada com companhia",
+      "subtitle": "PIP orienta; o astronauta decide.",
+      "narration": "PIP orienta. Na visão futura, cada criança poderá personalizar seu companheiro.",
+      "visualBrief": "Cena completa e coerente do mundo do jogo integrada ao fundo; texto legível.",
+      "art": "../../art/production-vision/10-create-your-companion.png",
+      "layout": "fullbleed",
+      "status": "Visão futura",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "05",
+      "stage": "proof",
+      "durationSeconds": 5,
+      "headline": "A demo já está no navegador",
+      "subtitle": "Testes técnicos; aprendizagem ainda não avaliada.",
+      "narration": "A demo já está no navegador, com recursos visíveis e testes técnicos.",
+      "visualBrief": "Cena completa e coerente do mundo do jogo integrada ao fundo; texto legível.",
+      "art": "../../demo/fixture-captures/fixture-03-habitat-crew.png",
+      "layout": "evidence",
+      "status": "Demo atual",
+      "sourceIds": [
+        "demo",
+        "acceptance"
+      ]
+    },
+    {
+      "id": "06",
+      "stage": "ask",
+      "durationSeconds": 5,
+      "headline": "Avalie e construa conosco",
+      "subtitle": "Demo jogável + piloto supervisionado.",
+      "narration": "Avaliem a demo e cocriem conosco um piloto supervisionado com educadores.",
+      "visualBrief": "Cena completa e coerente do mundo do jogo integrada ao fundo; texto legível.",
+      "art": "../../art/production-vision/09-partner-lunar-journey.png",
+      "layout": "fullbleed",
+      "status": "Convite",
+      "sourceIds": [
+        "vision"
+      ]
+    }
+  ]
+}

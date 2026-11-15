@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-15",
+  "decks": [
+    {
+      "deck": "ASTRA-Pitch-EN-180s",
+      "slides": 30,
+      "totalSeconds": 180,
+      "notesWithNarrationAndSources": 30,
+      "pptxHyperlinks": 1,
+      "pdfPages": 30,
+      "htmlEmbeddedFrames": 30,
+      "editableText": true,
+      "contentLanguage": "en",
+      "narrationWords": 413
+    },
+    {
+      "deck": "ASTRA-Elevator-PT-30s",
+      "slides": 6,
+      "totalSeconds": 30,
+      "notesWithNarrationAndSources": 6,
+      "pptxHyperlinks": 1,
+      "pdfPages": 6,
+      "htmlEmbeddedFrames": 6,
+      "editableText": true,
+      "contentLanguage": "pt-BR",
+      "narrationWords": 68
+    }
+  ],
+  "review": {
+    "wholeGameScenes": true,
+    "isolatedHudCrops": false,
+    "realWorldFamilyImages": false,
+    "conceptAndDemoDistinguished": true,
+    "reviewedContactSheets": true,
+    "nativePowerPointApplication": "not available; XML, rendered PNG and PDF verified",
+    "spokenRehearsal": "not performed; timings are automatic, narration supplied",
+    "gameTestsRerun": false,
+    "reason": "No game code changed; existing evidence referenced without recharacterizing it"
+  },
+  "siteBrowserQA": "unverified; managed browser CUA tool unavailable",
+  "officialSubmission": "not performed; eligibility, media marks and current guide remain team review items"
+}
