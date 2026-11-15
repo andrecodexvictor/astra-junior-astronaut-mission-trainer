@@ -1,0 +1,85 @@
+{
+  "siteVersion": 2,
+  "siteSourceCommit": "1f93bb010ffef381bb107e660a400aaefd389332",
+  "institutionalRepository": "https://github.com/andrecodexvictor/astra-institutional",
+  "verification": [
+    {
+      "url": "https://astra-mission-odyssey.andrevictorandrade.chatgpt.site/",
+      "status": 200,
+      "bytes": 11263,
+      "matchesCommittedAsset": true,
+      "authentication": "none"
+    },
+    {
+      "url": "https://astra-mission-odyssey.andrevictorandrade.chatgpt.site/science-and-art.html",
+      "status": 200,
+      "bytes": 9037,
+      "matchesCommittedAsset": true,
+      "authentication": "none"
+    },
+    {
+      "url": "https://astra-mission-odyssey.andrevictorandrade.chatgpt.site/science/NASA_DATA_REGISTRY.json",
+      "status": 200,
+      "bytes": 7506,
+      "matchesCommittedAsset": true,
+      "authentication": "none"
+    },
+    {
+      "url": "https://astra-mission-odyssey.andrevictorandrade.chatgpt.site/media-provenance.json",
+      "status": 200,
+      "bytes": 5765,
+      "matchesCommittedAsset": true,
+      "authentication": "none"
+    },
+    {
+      "url": "https://astra-mission-odyssey.andrevictorandrade.chatgpt.site/assets/brand/astra-lockup-dark.svg",
+      "status": 200,
+      "bytes": 1058,
+      "matchesCommittedAsset": true,
+      "authentication": "none"
+    },
+    {
+      "url": "https://astra-mission-odyssey.andrevictorandrade.chatgpt.site/assets/brand/favicon.svg",
+      "status": 200,
+      "bytes": 550,
+      "matchesCommittedAsset": true,
+      "authentication": "none"
+    },
+    {
+      "url": "https://astra-mission-odyssey.andrevictorandrade.chatgpt.site/assets/09-partner-lunar-journey.webp",
+      "status": 200,
+      "bytes": 252090,
+      "matchesCommittedAsset": true,
+      "authentication": "none"
+    },
+    {
+      "url": "https://astra-mission-odyssey.andrevictorandrade.chatgpt.site/assets/11-playful-tasks-dialogue.webp",
+      "status": 200,
+      "bytes": 290896,
+      "matchesCommittedAsset": true,
+      "authentication": "none"
+    },
+    {
+      "url": "https://astra-mission-odyssey.andrevictorandrade.chatgpt.site/assets/15-short-dialogue-voice.webp",
+      "status": 200,
+      "bytes": 259480,
+      "matchesCommittedAsset": true,
+      "authentication": "none"
+    },
+    {
+      "url": "https://astra-mission-odyssey.andrevictorandrade.chatgpt.site/assets/17-resource-care-alert.webp",
+      "status": 200,
+      "bytes": 264908,
+      "matchesCommittedAsset": true,
+      "authentication": "none"
+    },
+    {
+      "url": "https://astra-mission-odyssey.andrevictorandrade.chatgpt.site/science/earth.jpg",
+      "status": 200,
+      "bytes": 287413,
+      "matchesCommittedAsset": true,
+      "authentication": "none"
+    }
+  ],
+  "browserQA": "not performed: required managed CUA tool unavailable; HTTP and asset inspection do not establish layout acceptance"
+}

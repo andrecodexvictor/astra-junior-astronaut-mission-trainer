@@ -39,18 +39,21 @@
       "channel": "institutional",
       "projectId": "appgprj_6af9d7bf7c0c819190f83a7fa1b528ee",
       "url": "https://astra-mission-odyssey.andrevictorandrade.chatgpt.site",
-      "repository": null,
-      "repositoryStatus": "Separate public GitHub creation refused by integration; complete source ZIP supplied, awaiting owner-created astra-institutional.",
+      "repository": "https://github.com/andrecodexvictor/astra-institutional",
+      "repositoryStatus": "Public owner-created repository synchronized; GitHub and Sites source commits match.",
       "access": "public",
       "status": "succeeded",
-      "versionNumber": 1,
-      "versionId": "appgprj_6af9d7bf7c0c819190f83a7fa1b528ee~appgver_44ab5d82c6b08191b3e78b8367d58632",
-      "deploymentId": "appgdep_6af9d9fa9c3881918c4375bdcb808be0",
-      "siteSourceCommit": "40c5e9f1250d677c509423707f6c06fa79899b3e",
+      "versionNumber": 2,
+      "versionId": "appgprj_6af9d7bf7c0c819190f83a7fa1b528ee~appgver_a1bffde5c96c8191aaf2c7d809b30b88",
+      "deploymentId": "appgdep_6af9df0b1a088191b7dae872a2f0733f",
+      "siteSourceCommit": "1f93bb010ffef381bb107e660a400aaefd389332",
       "pitchSourceCommit": "fc49d61",
-      "publishedAt": "2026-11-15T16:13:01.788468+00:00",
+      "publishedAt": "2026-11-15T16:34:35.929192+00:00",
       "browserQA": "not performed: managed CUA tool unavailable",
-      "httpAccess": "200 without authentication for landing, downloads and both slide viewers"
+      "httpAccess": "Landing, logo, all four English illustrations, NASA registry, media credits and actual NASA image returned HTTP200 without authentication and match committed files.",
+      "githubSourceCommit": "1f93bb010ffef381bb107e660a400aaefd389332",
+      "archiveContentHash": "sha256:318b6eda25e31881a68d084de1a0879b984a3c88048f16063b9ad238d144ba82",
+      "demoDestination": "https://astra-junior-mission-trainer.vercel.app/"
     }
   ],
   "notes": [
@@ -95,7 +98,24 @@
       "githubSourceCommit": "d7b88479e3b9f206a1ea95d58d6ba233827dc4b5",
       "archiveContentHash": "sha256:0f69de053b06c24d69fa12a027f0a4501492e0a43c34237d53a646c7833dfcb3",
       "publishedAt": "2026-11-15T00:21:48.498113+00:00"
+    },
+    {
+      "channel": "institutional",
+      "projectId": "appgprj_6af9d7bf7c0c819190f83a7fa1b528ee",
+      "url": "https://astra-mission-odyssey.andrevictorandrade.chatgpt.site",
+      "repository": null,
+      "repositoryStatus": "Separate public GitHub creation refused by integration; complete source ZIP supplied, awaiting owner-created astra-institutional.",
+      "access": "public",
+      "status": "succeeded",
+      "versionNumber": 1,
+      "versionId": "appgprj_6af9d7bf7c0c819190f83a7fa1b528ee~appgver_44ab5d82c6b08191b3e78b8367d58632",
+      "deploymentId": "appgdep_6af9d9fa9c3881918c4375bdcb808be0",
+      "siteSourceCommit": "40c5e9f1250d677c509423707f6c06fa79899b3e",
+      "pitchSourceCommit": "fc49d61",
+      "publishedAt": "2026-11-15T16:13:01.788468+00:00",
+      "browserQA": "not performed: managed CUA tool unavailable",
+      "httpAccess": "200 without authentication for landing, downloads and both slide viewers"
     }
   ],
-  "latestBatch": "Institutional English landing and 180-second pitch, 30-second Portuguese elevator, public verified downloads, 2026-11-15"
+  "latestBatch": "Institutional v2: ASTRA identity, English AI-labeled concepts, NASA data registry, owner-selected Vercel demo and removed presentation promotion"
 }
