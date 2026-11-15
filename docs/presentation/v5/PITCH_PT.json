@@ -1,0 +1,467 @@
+{
+  "title": "ASTRA — A criança é o astronauta",
+  "language": "pt-BR",
+  "totalDurationSeconds": 180,
+  "slides": [
+    {
+      "id": "01",
+      "stage": "GANCHO",
+      "durationSeconds": 6,
+      "headline": "E se a criança fosse o astronauta?",
+      "subtitle": "Uma missão começa com uma escolha.",
+      "narration": "E se a criança vestisse o traje espacial e suas escolhas transformassem a missão?",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../art/production-vision/09-partner-lunar-journey.png",
+      "layout": "fullbleed",
+      "status": "Concept",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "02",
+      "stage": "GANCHO",
+      "durationSeconds": 6,
+      "headline": "A curiosidade tem um destino.",
+      "subtitle": "Um mundo lunar para descobrir.",
+      "narration": "No ASTRA, cada descoberta convida a criança a investigar o espaço e seguir explorando.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../art/production-vision/09-partner-lunar-journey.png",
+      "layout": "fullbleed",
+      "status": "Concept",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "03",
+      "stage": "GANCHO",
+      "durationSeconds": 6,
+      "headline": "Toda missão precisa de uma equipe.",
+      "subtitle": "A criança lidera. PIP orienta.",
+      "narration": "A criança é o astronauta. PIP orienta, mas é ela quem toma as decisões.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../art/production-vision/11-playful-tasks-dialogue.png",
+      "layout": "fullbleed",
+      "status": "Concept",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "04",
+      "stage": "GANCHO",
+      "durationSeconds": 6,
+      "headline": "Toda escolha tem um custo.",
+      "subtitle": "Energia, água e oxigênio importam.",
+      "narration": "Recursos deixam de ser conceitos distantes quando uma escolha muda o que acontece na base.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../art/production-vision/17-resource-care-alert.png",
+      "layout": "fullbleed",
+      "status": "Concept",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "05",
+      "stage": "GANCHO",
+      "durationSeconds": 6,
+      "headline": "E se jogar despertasse perguntas?",
+      "subtitle": "Ciência que ganha sentido na ação.",
+      "narration": "Queremos conectar o prazer de explorar às perguntas que movem a ciência e a engenharia.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../art/production-vision/16-museum-science-discovery.png",
+      "layout": "fullbleed",
+      "status": "Concept",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "06",
+      "stage": "PROBLEMA",
+      "durationSeconds": 6,
+      "headline": "Prender a atenção não basta.",
+      "subtitle": "Como transformar interesse em compreensão?",
+      "narration": "O desafio é tornar a engenharia espacial acessível sem perder suas relações e consequências.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../art/production-vision/16-museum-science-discovery.png",
+      "layout": "fullbleed",
+      "status": "Challenge context",
+      "sourceIds": [
+        "challenge"
+      ]
+    },
+    {
+      "id": "07",
+      "stage": "PROBLEMA",
+      "durationSeconds": 6,
+      "headline": "Quatro sistemas. Uma missão.",
+      "subtitle": "Energia · suporte à vida · radiação · alimento",
+      "narration": "Energia, suporte à vida, proteção radiológica e alimento estão conectados. Uma decisão afeta as outras.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../art/production-vision/17-resource-care-alert.png",
+      "layout": "fullbleed",
+      "status": "Challenge context",
+      "sourceIds": [
+        "challenge",
+        "science"
+      ]
+    },
+    {
+      "id": "08",
+      "stage": "PROBLEMA",
+      "durationSeconds": 6,
+      "headline": "Engajar com propósito.",
+      "subtitle": "Uma tarefa dá motivo para investigar.",
+      "narration": "Uma missão concreta dá à criança um motivo para observar, tentar, errar e continuar.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../art/production-vision/11-playful-tasks-dialogue.png",
+      "layout": "fullbleed",
+      "status": "Design hypothesis",
+      "sourceIds": [
+        "unicef"
+      ]
+    },
+    {
+      "id": "09",
+      "stage": "PROBLEMA",
+      "durationSeconds": 6,
+      "headline": "Explorar com companhia.",
+      "subtitle": "Vínculo e orientação fazem parte do caminho.",
+      "narration": "Companheiros apoiam a jornada. A descoberta também deve abrir espaço para conversar com outras pessoas.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../art/production-vision/09-partner-lunar-journey.png",
+      "layout": "fullbleed",
+      "status": "Design hypothesis",
+      "sourceIds": [
+        "unicef"
+      ]
+    },
+    {
+      "id": "10",
+      "stage": "PROBLEMA",
+      "durationSeconds": 6,
+      "headline": "Tornar as consequências visíveis.",
+      "subtitle": "Escolher. Perceber o efeito. Repensar.",
+      "narration": "Nossa oportunidade é mostrar o custo de uma escolha e ajudar a criança a repensá-la.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../art/production-vision/17-resource-care-alert.png",
+      "layout": "fullbleed",
+      "status": "Design hypothesis",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "11",
+      "stage": "SOLUÇÃO",
+      "durationSeconds": 6,
+      "headline": "Conheça o ASTRA.",
+      "subtitle": "Uma aventura lunar jogável no navegador.",
+      "narration": "O ASTRA já tem uma demo independente em Babylon.js, com exploração e sistemas conectados.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../demo/fixture-captures/fixture-02-habitat.png",
+      "layout": "fullbleed",
+      "status": "Current demo",
+      "sourceIds": [
+        "demo"
+      ]
+    },
+    {
+      "id": "12",
+      "stage": "SOLUÇÃO",
+      "durationSeconds": 6,
+      "headline": "Observe a missão.",
+      "subtitle": "Leia o mundo e suas reservas.",
+      "narration": "A criança explora e acompanha barras de recursos que refletem o estado da simulação.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../demo/fixture-captures/fixture-03-habitat-crew.png",
+      "layout": "fullbleed",
+      "status": "Current demo",
+      "sourceIds": [
+        "demo",
+        "fixture"
+      ]
+    },
+    {
+      "id": "13",
+      "stage": "SOLUÇÃO",
+      "durationSeconds": 6,
+      "headline": "Escolha uma ação.",
+      "subtitle": "Cada tarefa mexe com os recursos.",
+      "narration": "Investigar, reparar e administrar recursos produz consequências consistentes nas regras da missão.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../demo/fixture-captures/fixture-04-canyon.png",
+      "layout": "fullbleed",
+      "status": "Current demo",
+      "sourceIds": [
+        "demo",
+        "science"
+      ]
+    },
+    {
+      "id": "14",
+      "stage": "SOLUÇÃO",
+      "durationSeconds": 6,
+      "headline": "Perceba o alerta.",
+      "subtitle": "Uma pista para a próxima escolha.",
+      "narration": "Quando as reservas caem, lembretes preparados do companheiro chamam a atenção para o problema.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../demo/fixture-captures/fixture-07-resource-alert.png",
+      "layout": "fullbleed",
+      "status": "Current demo",
+      "sourceIds": [
+        "demo",
+        "fixture"
+      ]
+    },
+    {
+      "id": "15",
+      "stage": "SOLUÇÃO",
+      "durationSeconds": 6,
+      "headline": "Aprender acontece no caminho.",
+      "subtitle": "Observar. Decidir. Agir. Refletir.",
+      "narration": "Nossa hipótese é que observar consequências e tentar novamente pode estimular uma reflexão útil.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../art/production-vision/11-playful-tasks-dialogue.png",
+      "layout": "fullbleed",
+      "status": "Concept",
+      "sourceIds": [
+        "wang"
+      ]
+    },
+    {
+      "id": "16",
+      "stage": "DIFERENCIAL",
+      "durationSeconds": 6,
+      "headline": "Ela é o astronauta.",
+      "subtitle": "A criança no centro da experiência.",
+      "narration": "A criança conduz a missão. O mundo responde às escolhas que ela faz.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../art/production-vision/09-partner-lunar-journey.png",
+      "layout": "fullbleed",
+      "status": "Concept",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "17",
+      "stage": "DIFERENCIAL",
+      "durationSeconds": 6,
+      "headline": "Um parceiro para a jornada.",
+      "subtitle": "Visão futura: um companheiro do seu jeito.",
+      "narration": "Queremos permitir escolher e personalizar um companheiro: cão, gato, tartaruga, humano ou robô.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../art/production-vision/10-create-your-companion.png",
+      "layout": "fullbleed",
+      "status": "Future vision",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "18",
+      "stage": "DIFERENCIAL",
+      "durationSeconds": 6,
+      "headline": "PIP ajuda a descobrir.",
+      "subtitle": "Conversas curtas. Mais ação no mundo.",
+      "narration": "PIP orienta com pistas curtas. Hoje, a demo usa falas preparadas que funcionam offline.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../art/production-vision/15-short-dialogue-voice.png",
+      "layout": "fullbleed",
+      "status": "Concept",
+      "sourceIds": [
+        "demo",
+        "vision"
+      ]
+    },
+    {
+      "id": "19",
+      "stage": "DIFERENCIAL",
+      "durationSeconds": 6,
+      "headline": "Uma base. Sistemas conectados.",
+      "subtitle": "Cuidar exige equilibrar escolhas.",
+      "narration": "Energia, água e oxigênio compartilham dependências. As taxas são simplificações didáticas, não previsões de voo.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../art/production-vision/17-resource-care-alert.png",
+      "layout": "fullbleed",
+      "status": "Concept",
+      "sourceIds": [
+        "science"
+      ]
+    },
+    {
+      "id": "20",
+      "stage": "DIFERENCIAL",
+      "durationSeconds": 6,
+      "headline": "Cada descoberta pode virar conquista.",
+      "subtitle": "Visão futura: insígnias e uma base sua.",
+      "narration": "Insígnias e uma base personalizável poderão tornar visíveis as descobertas feitas durante a jornada.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../art/production-vision/18-knowledge-badges-uniform.png",
+      "layout": "fullbleed",
+      "status": "Future vision",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "21",
+      "stage": "PROVA",
+      "durationSeconds": 6,
+      "headline": "A demo já abre no navegador.",
+      "subtitle": "Uma missão independente em Babylon.js.",
+      "narration": "A demo pública permite conhecer o mundo e observar como as escolhas da missão funcionam.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../demo/fixture-captures/fixture-01-academy.png",
+      "layout": "evidence",
+      "status": "Current demo",
+      "sourceIds": [
+        "demo"
+      ]
+    },
+    {
+      "id": "22",
+      "stage": "PROVA",
+      "durationSeconds": 6,
+      "headline": "As regras têm testes.",
+      "subtitle": "Verificação técnica da simulação.",
+      "narration": "Sessenta e sete testes de CPU passaram. Eles verificam regras técnicas, não resultados de aprendizagem.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../demo/fixture-captures/fixture-02-habitat.png",
+      "layout": "evidence",
+      "status": "Technical evidence",
+      "sourceIds": [
+        "acceptance"
+      ]
+    },
+    {
+      "id": "23",
+      "stage": "PROVA",
+      "durationSeconds": 6,
+      "headline": "Reservas visíveis. Ajuda na hora.",
+      "subtitle": "Barras de recursos e lembretes offline.",
+      "narration": "As barras e os lembretes conectam os recursos à exploração. Dezesseis verificações visuais preparadas passaram.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../demo/fixture-captures/fixture-03-habitat-crew.png",
+      "layout": "evidence",
+      "status": "Current demo",
+      "sourceIds": [
+        "demo",
+        "fixture"
+      ]
+    },
+    {
+      "id": "24",
+      "stage": "PROVA",
+      "durationSeconds": 6,
+      "headline": "A pesquisa nos convida a testar.",
+      "subtitle": "Uma meta-análise reuniu 33 estudos sobre jogos STEM.",
+      "narration": "Uma meta-análise de trinta e três estudos sustenta investigar jogos educativos. Ela não avaliou o ASTRA.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../art/production-vision/16-museum-science-discovery.png",
+      "layout": "evidence",
+      "status": "Research context",
+      "sourceIds": [
+        "wang"
+      ]
+    },
+    {
+      "id": "25",
+      "stage": "PROVA",
+      "durationSeconds": 6,
+      "headline": "A próxima prova é com pessoas.",
+      "subtitle": "Percurso completo · GPU real · estudantes",
+      "narration": "Precisamos concluir os testes de percurso e hardware e depois avaliar a experiência com estudantes e educadores.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../art/production-vision/16-museum-science-discovery.png",
+      "layout": "evidence",
+      "status": "Validation plan",
+      "sourceIds": [
+        "e2e",
+        "acceptance"
+      ]
+    },
+    {
+      "id": "26",
+      "stage": "PEDIDO",
+      "durationSeconds": 6,
+      "headline": "Vamos construir um piloto.",
+      "subtitle": "Com educadores e acompanhamento.",
+      "narration": "Propomos um piloto supervisionado, cocriado com educadores para um contexto real de aprendizagem.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../art/production-vision/11-playful-tasks-dialogue.png",
+      "layout": "fullbleed",
+      "status": "Proposed pilot",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "27",
+      "stage": "PEDIDO",
+      "durationSeconds": 6,
+      "headline": "Avaliar o raciocínio.",
+      "subtitle": "Explicar uma escolha. Aplicar em outro desafio.",
+      "narration": "Vamos observar se a criança explica uma escolha e aplica a descoberta em uma situação diferente.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../art/production-vision/17-resource-care-alert.png",
+      "layout": "fullbleed",
+      "status": "Proposed pilot",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "28",
+      "stage": "PEDIDO",
+      "durationSeconds": 6,
+      "headline": "Crescer com evidências.",
+      "subtitle": "Missão → piloto → personalização",
+      "narration": "Primeiro, fortalecer a missão. Depois, reunir evidências no piloto e avançar na personalização.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../art/production-vision/10-create-your-companion.png",
+      "layout": "fullbleed",
+      "status": "Future roadmap",
+      "sourceIds": [
+        "vision"
+      ]
+    },
+    {
+      "id": "29",
+      "stage": "PEDIDO",
+      "durationSeconds": 6,
+      "headline": "Experimente a missão.",
+      "subtitle": "Explore o mundo e suas escolhas.",
+      "narration": "Convidamos os avaliadores a explorar a demo e verificar como suas escolhas afetam os recursos.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../demo/fixture-captures/fixture-01-academy.png",
+      "layout": "fullbleed",
+      "status": "Invitation",
+      "sourceIds": [
+        "demo"
+      ]
+    },
+    {
+      "id": "30",
+      "stage": "PEDIDO",
+      "durationSeconds": 6,
+      "headline": "Vamos validar a próxima missão.",
+      "subtitle": "Buscamos parceiros para um piloto com educadores.",
+      "narration": "ASTRA. Um parceiro ao lado. Um universo para descobrir. Vamos construir e avaliar essa jornada juntos.",
+      "visualBrief": "Mesmas artes aprovadas do site, cena inteira, sem regenerar personagens; textos principais editáveis em português.",
+      "art": "../../art/production-vision/09-partner-lunar-journey.png",
+      "layout": "fullbleed",
+      "status": "Invitation",
+      "sourceIds": [
+        "vision"
+      ]
+    }
+  ],
+  "version": "v5-pt",
+  "audience": "Avaliadores do hackathon e parceiros educacionais",
+  "artPolicy": "Reuse approved institutional website art; no new image generation; retain SI / AI attribution and original ASTRA patches."
+}

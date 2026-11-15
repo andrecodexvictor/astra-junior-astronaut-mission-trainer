@@ -1,0 +1,100 @@
+{
+  "version": "v5-pt",
+  "language": "pt-BR",
+  "slides": 30,
+  "secondsPerSlide": 6,
+  "totalSeconds": 180,
+  "narrationWords": 433,
+  "newImagesGenerated": false,
+  "textBoundsChecked": 378,
+  "assets": {
+    "09-partner-lunar-journey": {
+      "path": "/workspace/sites/astra-institutional/dist/assets/09-partner-lunar-journey.webp",
+      "kind": "approved-site-concept-art",
+      "sha256": "50d92080eeb2a538f7c02cd37914649552ee5f63afda28f4e9dd85ecf2df5dde"
+    },
+    "11-playful-tasks-dialogue": {
+      "path": "/workspace/sites/astra-institutional/dist/assets/11-playful-tasks-dialogue.webp",
+      "kind": "approved-site-concept-art",
+      "sha256": "8458cd3cff008e447a841737e012980e8d33efdb079037ddba7948dd3d708a9f"
+    },
+    "17-resource-care-alert": {
+      "path": "/workspace/sites/astra-institutional/dist/assets/17-resource-care-alert.webp",
+      "kind": "approved-site-concept-art",
+      "sha256": "364cbc49c22707939949374ccf9c1eaf2fd68f546b625e442e0a1af87e3e7ac2"
+    },
+    "16-museum-science-discovery": {
+      "path": "/workspace/sites/astra-institutional/art/english/16-museum-science-discovery-en.png",
+      "kind": "approved-site-concept-art",
+      "sha256": "3f59c8aa9f8a01c54881fafee7f873f9eb421dbcffb80aa395929315e4aa44bd"
+    },
+    "fixture-02-habitat": {
+      "path": "/workspace/projects/astra-junior-astronaut-mission-trainer/docs/demo/fixture-captures/fixture-02-habitat.png",
+      "kind": "prepared-demo-capture",
+      "sha256": "e2f0e1b4cc0b090acae9dd3aa1c0244769679e74c67c3147091c1b3ac457d0cc"
+    },
+    "fixture-03-habitat-crew": {
+      "path": "/workspace/projects/astra-junior-astronaut-mission-trainer/docs/demo/fixture-captures/fixture-03-habitat-crew.png",
+      "kind": "prepared-demo-capture",
+      "sha256": "1ea1f99bcaddbc1a4f5fce38451543ae4f635b88e25c63abc8ce2001607fbd45"
+    },
+    "fixture-04-canyon": {
+      "path": "/workspace/projects/astra-junior-astronaut-mission-trainer/docs/demo/fixture-captures/fixture-04-canyon.png",
+      "kind": "prepared-demo-capture",
+      "sha256": "4d49e2e174b76967a8ab0c7116a199c65409c335ee88fd21d8b39482651b1306"
+    },
+    "fixture-07-resource-alert": {
+      "path": "/workspace/projects/astra-junior-astronaut-mission-trainer/docs/demo/fixture-captures/fixture-07-resource-alert.png",
+      "kind": "prepared-demo-capture",
+      "sha256": "47851aed9d0b4d58b3e0cb54a635517acf2b66e4c9642a106ff9adbefc9f2846"
+    },
+    "10-create-your-companion": {
+      "path": "/workspace/sites/astra-institutional/art/english/10-create-your-companion-en.png",
+      "kind": "approved-site-concept-art",
+      "sha256": "e18417a88bbe3d940cf90c3f0afd87d0018f32bcf14719fe2462e71bf37ed6da"
+    },
+    "15-short-dialogue-voice": {
+      "path": "/workspace/sites/astra-institutional/dist/assets/15-short-dialogue-voice.webp",
+      "kind": "approved-site-concept-art",
+      "sha256": "5368e506538161cb4cf3af3778d731c3982480149756040e00969e782bbe6cf8"
+    },
+    "18-knowledge-badges-uniform": {
+      "path": "/workspace/sites/astra-institutional/art/english/18-knowledge-badges-uniform-en.png",
+      "kind": "approved-site-concept-art",
+      "sha256": "b07a7397d7751dd6e61da820f9c44f9765cc9a7e84db507fc51536c7d7bada44"
+    },
+    "fixture-01-academy": {
+      "path": "/workspace/projects/astra-junior-astronaut-mission-trainer/docs/demo/fixture-captures/fixture-01-academy.png",
+      "kind": "prepared-demo-capture",
+      "sha256": "19909ca4244d5f14516380032fa6ff0e4d49e6b746c191bb54f6caa39cea13b7"
+    }
+  },
+  "limitations": [
+    "Approved artwork is reused without regeneration; embedded English art labels remain original.",
+    "Demo captures are staged prototype evidence, not production screenshots.",
+    "PDF is static; PowerPoint and HTML carry six-second slide timing.",
+    "PowerPoint text is editable; concept illustrations are raster images."
+  ],
+  "artifactChecks": {
+    "pdfPages": 30,
+    "pptxSlides": 30,
+    "pptxSecondsPerSlide": 6,
+    "pptxTotalSeconds": 180,
+    "editableTextAndNotes": true,
+    "pdfHeadlineVerified": true,
+    "contactSheetVisuallyReviewed": true,
+    "firstPDFPageVisuallyReviewed": true
+  },
+  "browserCheck": {
+    "browser": "Chromium headless",
+    "language": "pt-BR",
+    "frames": 30,
+    "totalSeconds": 180,
+    "previousNext": true,
+    "realSixSecondAdvance": true,
+    "pause": true,
+    "lastSlide": true,
+    "selfContainedHTMLViaLocalHTTP": true,
+    "localFileScheme": "blocked by this managed browser policy; tested via local HTTP"
+  }
+}
