@@ -55,6 +55,8 @@ Registration, local rules, treatment of prior work, the current submission guide
 
 ## NASA data and AI media transparency
 
+The [future APIs and resources roadmap](docs/delivery/FUTURE_APIS_AND_RESOURCES_EN.md) inventories all seven resources in the supplied challenge excerpt, supporting NASA datasets and media, access requirements, current API migrations and a phased integration plan. It distinguishes today's static references from planned integrations; [bounded endpoint checks](docs/delivery/API_RESOURCE_VERIFICATION_2026-11-15.json) record the limited verification performed.
+
 The [institutional site’s NASA data section](https://astra-mission-odyssey.andrevictorandrade.chatgpt.site/#nasa-data) distinguishes real NASA satellite media, numerical reference values, scientific concepts and fictional gameplay assumptions. The [structured NASA data registry](public/science/nasa-data-registry.json) records exact values, units, source URLs and how each source relates to the implementation. The genuine Blue Marble Earth texture remains separately credited and is not AI-generated. See [NASA data usage](docs/delivery/NASA_DATA_AND_USAGE_EN.md).
 
 Concept images are visibly marked **AI-generated art**. AI-created SVG identity work and AI-assisted procedural models, portraits and world composition are disclosed separately from NASA media and actual staged gameplay captures. [Public media credits](https://astra-mission-odyssey.andrevictorandrade.chatgpt.site/science-and-art.html), [AI_USAGE.md](AI_USAGE.md) and the asset inventories provide the provenance. The [institutional source repository](https://github.com/andrecodexvictor/astra-institutional) is separate from this game.
