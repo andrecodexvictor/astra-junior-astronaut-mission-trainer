@@ -1,3 +1,22 @@
+# ASTRA public downloads
+
+## Institutional presentation — 15 November 2026
+
+The revised presentation addresses hackathon judges and education partners. It uses coherent game-world scenes and keeps the demo separate from production concepts.
+
+- [Complete presentation pack](ASTRA-Submission-Pack.zip)
+- [English pitch — editable PowerPoint, 180 seconds](ASTRA-Pitch-EN-180s.pptx) · [PDF](ASTRA-Pitch-EN-180s.pdf)
+- [Portuguese elevator — 6 slides, 30 seconds](ASTRA-Elevator-PT-30s.pptx) · [PDF](ASTRA-Elevator-PT-30s.pdf) · [silent MP4](ASTRA-Elevator-PT-30s.mp4)
+- [English handoff PDF](ASTRA-Handoff-EN.pdf) · [reproducible agent source kit](ASTRA-Handoff-Source-Kit.zip)
+- [Institutional website source](ASTRA-Institutional-Source.zip)
+- [Public institutional website](https://astra-mission-odyssey.andrevictorandrade.chatgpt.site)
+
+All files are public and require no GitHub sign-in. Click a file, then Download raw file if GitHub shows a preview. Checksums below cover both new and earlier exports. The MP4 has no narration; scripts and editable notes are included.
+
+The English institutional copy preserves original Portuguese source artwork and demo interfaces. Earlier Portuguese decks below are archived versions. No official NASA submission, endorsement or educational efficacy is claimed. Current eligibility, media marks and final submission language require the team’s review.
+
+---
+
 # ASTRA — downloads públicos
 
 Arquivos da apresentação, artes e demo de 15/11/2026. Os links abaixo usam HTTPS público, sem login.
