@@ -34,6 +34,23 @@
       "githubSourceCommit": "3b5c10d1c854365953272794e584984f2e532d4f",
       "archiveContentHash": "sha256:1ba8d2faa749f107532cb23d88cc080507a59d66bdbfac1304bc3a1bed4c5608",
       "publishedAt": "2026-11-15T11:44:07.537926+00:00"
+    },
+    {
+      "channel": "institutional",
+      "projectId": "appgprj_6af9d7bf7c0c819190f83a7fa1b528ee",
+      "url": "https://astra-mission-odyssey.andrevictorandrade.chatgpt.site",
+      "repository": null,
+      "repositoryStatus": "Separate public GitHub creation refused by integration; complete source ZIP supplied, awaiting owner-created astra-institutional.",
+      "access": "public",
+      "status": "succeeded",
+      "versionNumber": 1,
+      "versionId": "appgprj_6af9d7bf7c0c819190f83a7fa1b528ee~appgver_44ab5d82c6b08191b3e78b8367d58632",
+      "deploymentId": "appgdep_6af9d9fa9c3881918c4375bdcb808be0",
+      "siteSourceCommit": "40c5e9f1250d677c509423707f6c06fa79899b3e",
+      "pitchSourceCommit": "fc49d61",
+      "publishedAt": "2026-11-15T16:13:01.788468+00:00",
+      "browserQA": "not performed: managed CUA tool unavailable",
+      "httpAccess": "200 without authentication for landing, downloads and both slide viewers"
     }
   ],
   "notes": [
@@ -80,5 +97,5 @@
       "publishedAt": "2026-11-15T00:21:48.498113+00:00"
     }
   ],
-  "latestBatch": "Graphical resource HUD and 30-slide / 13-concept-board export, 2026-11-15"
+  "latestBatch": "Institutional English landing and 180-second pitch, 30-second Portuguese elevator, public verified downloads, 2026-11-15"
 }

@@ -45,6 +45,10 @@ This project builds on an earlier ASTRA prototype and planning from before the e
 
 Registration, local rules, treatment of prior work, the current submission guide and the challenge's exact resource list need human confirmation. No eligibility, award readiness or official submission is claimed. See `docs/SPACE_APPS_COMPLIANCE.md`, `docs/delivery/SUBMISSION_DRAFT_EN.md` and `docs/delivery/VERSION_HISTORY.md`.
 
+## Institutional presentation
+
+[Public English institutional landing](https://astra-mission-odyssey.andrevictorandrade.chatgpt.site) · [Judges’ pack and downloads](https://astra-mission-odyssey.andrevictorandrade.chatgpt.site/downloads.html). The main pitch is English, 30 slides / 180 seconds; the requested Portuguese elevator is six slides / 30 seconds. Terra implemented the first version and the integrator reviewed it. Copy remains provisional until the owner provides the final pitch. [Delivery verification](docs/presentation/v3/DELIVERY_REPORT_EN.json), [handoff](docs/presentation/v3/MASTER_HANDOFF_EN.md) and [repository dates](docs/presentation/v3/REPOSITORY_DATES_EN.md) preserve the exact scope and pending checks.
+
 ## Downloads
 
 [Baixe o pacote completo, os slides, as artes e a demo por links HTTPS públicos](docs/presentation/DOWNLOADS.md).

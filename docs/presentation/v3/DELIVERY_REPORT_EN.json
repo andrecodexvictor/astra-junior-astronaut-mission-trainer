@@ -1,0 +1,108 @@
+{
+  "downloadCommit": "d0decddb3af5e1106662540a8707a5e05d15e016",
+  "downloads": [
+    {
+      "file": "ASTRA-Pitch-EN-180s.pptx",
+      "status": 200,
+      "bytes": 9025094,
+      "sha256Verified": true,
+      "url": "https://raw.githubusercontent.com/andrecodexvictor/astra-junior-astronaut-mission-trainer/d0decddb3af5e1106662540a8707a5e05d15e016/ASTRA-Pitch-EN-180s.pptx",
+      "authentication": "none"
+    },
+    {
+      "file": "ASTRA-Pitch-EN-180s.pdf",
+      "status": 200,
+      "bytes": 21568341,
+      "sha256Verified": true,
+      "url": "https://raw.githubusercontent.com/andrecodexvictor/astra-junior-astronaut-mission-trainer/d0decddb3af5e1106662540a8707a5e05d15e016/ASTRA-Pitch-EN-180s.pdf",
+      "authentication": "none"
+    },
+    {
+      "file": "ASTRA-Elevator-PT-30s.pptx",
+      "status": 200,
+      "bytes": 2840520,
+      "sha256Verified": true,
+      "url": "https://raw.githubusercontent.com/andrecodexvictor/astra-junior-astronaut-mission-trainer/d0decddb3af5e1106662540a8707a5e05d15e016/ASTRA-Elevator-PT-30s.pptx",
+      "authentication": "none"
+    },
+    {
+      "file": "ASTRA-Elevator-PT-30s.pdf",
+      "status": 200,
+      "bytes": 4592811,
+      "sha256Verified": true,
+      "url": "https://raw.githubusercontent.com/andrecodexvictor/astra-junior-astronaut-mission-trainer/d0decddb3af5e1106662540a8707a5e05d15e016/ASTRA-Elevator-PT-30s.pdf",
+      "authentication": "none"
+    },
+    {
+      "file": "ASTRA-Handoff-EN.pdf",
+      "status": 200,
+      "bytes": 46489,
+      "sha256Verified": true,
+      "url": "https://raw.githubusercontent.com/andrecodexvictor/astra-junior-astronaut-mission-trainer/d0decddb3af5e1106662540a8707a5e05d15e016/ASTRA-Handoff-EN.pdf",
+      "authentication": "none"
+    },
+    {
+      "file": "ASTRA-Handoff-Source-Kit.zip",
+      "status": 200,
+      "bytes": 23966047,
+      "sha256Verified": true,
+      "url": "https://raw.githubusercontent.com/andrecodexvictor/astra-junior-astronaut-mission-trainer/d0decddb3af5e1106662540a8707a5e05d15e016/ASTRA-Handoff-Source-Kit.zip",
+      "authentication": "none"
+    },
+    {
+      "file": "ASTRA-Institutional-Source.zip",
+      "status": 200,
+      "bytes": 4480655,
+      "sha256Verified": true,
+      "url": "https://raw.githubusercontent.com/andrecodexvictor/astra-junior-astronaut-mission-trainer/d0decddb3af5e1106662540a8707a5e05d15e016/ASTRA-Institutional-Source.zip",
+      "authentication": "none"
+    },
+    {
+      "file": "ASTRA-Elevator-PT-30s.mp4",
+      "status": 200,
+      "bytes": 1554101,
+      "sha256Verified": true,
+      "url": "https://raw.githubusercontent.com/andrecodexvictor/astra-junior-astronaut-mission-trainer/d0decddb3af5e1106662540a8707a5e05d15e016/ASTRA-Elevator-PT-30s.mp4",
+      "authentication": "none"
+    },
+    {
+      "file": "ASTRA-Submission-Pack.zip",
+      "status": 200,
+      "bytes": 70219513,
+      "sha256Verified": true,
+      "url": "https://raw.githubusercontent.com/andrecodexvictor/astra-junior-astronaut-mission-trainer/d0decddb3af5e1106662540a8707a5e05d15e016/ASTRA-Submission-Pack.zip",
+      "authentication": "none"
+    }
+  ],
+  "siteHttpChecks": [
+    {
+      "url": "https://astra-mission-odyssey.andrevictorandrade.chatgpt.site/",
+      "status": 200,
+      "bytes": 8966,
+      "authentication": "none"
+    },
+    {
+      "url": "https://astra-mission-odyssey.andrevictorandrade.chatgpt.site/downloads.html",
+      "status": 200,
+      "bytes": 3520,
+      "authentication": "none"
+    },
+    {
+      "url": "https://astra-mission-odyssey.andrevictorandrade.chatgpt.site/pitch-en.html",
+      "status": 200,
+      "bytes": 4147632,
+      "authentication": "none"
+    },
+    {
+      "url": "https://astra-mission-odyssey.andrevictorandrade.chatgpt.site/elevator-pt.html",
+      "status": 200,
+      "bytes": 806100,
+      "authentication": "none"
+    }
+  ],
+  "browserVisualQA": "not performed; HTTP checks do not verify rendered layout",
+  "sourceKitColdRebuild": "passed: extracted source kit rebuilt English30 and Portuguese6 decks in a new directory",
+  "institutionalSiteSourceCommit": "40c5e9f1250d677c509423707f6c06fa79899b3e",
+  "siteVersion": 1,
+  "copyStatus": "Working institutional pitch; owner will supply final pitch later."
+}
