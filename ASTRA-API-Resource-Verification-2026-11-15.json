@@ -1,0 +1,56 @@
+{
+  "scope": "Limited anonymous server-side endpoint probes; not implemented integrations, browser CORS tests, load tests or scientific validation.",
+  "checks": [
+    {
+      "id": "DONKI_CCMC",
+      "url": "https://ccmc.gsfc.nasa.gov/DONKI/WS/get/FLR?startDate=2024-05-10&endDate=2024-05-10",
+      "checkedAt": "2026-11-15T17:34:22.509911+00:00",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "jsonParsed": true
+    },
+    {
+      "id": "OSDR_SEARCH",
+      "url": "https://osdr.nasa.gov/osdr/data/search?term=plants",
+      "checkedAt": "2026-11-15T17:34:22.510532+00:00",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "jsonParsed": true
+    },
+    {
+      "id": "RADLAB",
+      "url": "https://visualization.osdr.nasa.gov/radlab/api/?spacecraft=ISS&instrument=DosTel&timestamp%3E=2022-04-01T23%3A00&timestamp%3C=2022-04-01T23%3A05&absorbed_dose_rate&format=json",
+      "checkedAt": "2026-11-15T17:34:22.511331+00:00",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "jsonParsed": true,
+      "returnedColumns": [
+        "timestamp",
+        "instrument_id",
+        "absorbed_dose_rate",
+        "instrument",
+        "spacecraft"
+      ],
+      "returnedRows": 10
+    },
+    {
+      "id": "NASA_IMAGES",
+      "url": "https://images-api.nasa.gov/search?q=moon&media_type=image&page_size=1",
+      "checkedAt": "2026-11-15T17:34:22.511875+00:00",
+      "httpStatus": 200,
+      "contentType": "application/json",
+      "jsonParsed": true
+    },
+    {
+      "id": "APOD_SINGLE",
+      "url": "https://science.nasa.gov/wp-json/wp/v2/apod-basic/140918",
+      "checkedAt": "2026-11-15T17:34:22.514884+00:00",
+      "httpStatus": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "jsonParsed": true,
+      "expectedDate": "2014-09-18",
+      "returnedDate": "2014-09-18",
+      "dateMatches": true
+    }
+  ]
+}

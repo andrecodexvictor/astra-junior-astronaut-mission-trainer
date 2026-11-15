@@ -26,3 +26,5 @@ ca6ae59e99bbf758d0e8d045acf615ec3ff0e6e34f8d8195cae396c705a0d32e  ASTRA-Submissi
 3ddc84a6deba305240821fa5cf9429db940710ecf5911491f3b754622f8a04a0  ASTRA-artes-2026-11-15.zip
 3fce559d38fe081e7ce62551b8ccf0fc342a609d8bfa5eb6229ddfe62da93bd7  ASTRA-demo-jogavel-2026-11-15.zip
 d5c9c4d3701acc1c245b506326a03777537b973bad58e9b78d5621c905948d2d  ASTRA-pacote-completo.zip
+7d3f8485cf796a5134a08278aeac6e9c5ddc97de4398dd5d4433dfab4aa446ca  ASTRA-Future-APIs-and-Resources-EN.md
+dec4eb78bde7fea2dd31135a246c1e6c7e0f0872bca3342504f4c480cf8a11b2  ASTRA-API-Resource-Verification-2026-11-15.json

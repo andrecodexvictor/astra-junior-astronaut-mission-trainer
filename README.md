@@ -1,3 +1,12 @@
+# NASA / CSA API and resource roadmap — 15 November 2026
+
+- [Future APIs, datasets and learning resources (English Markdown)](ASTRA-Future-APIs-and-Resources-EN.md)
+- [Limited endpoint verification evidence (JSON)](ASTRA-API-Resource-Verification-2026-11-15.json)
+
+Includes the seven resources from the supplied challenge excerpt, official links, access requirements, service migrations, proposed game uses and integration priorities. Planned integrations are distinguished from the implemented demo.
+
+---
+
 # Latest updated ASTRA materials — dossier and complete v4 deck
 
 - [Complete English project dossier (PDF)](ASTRA-Project-Dossier-EN.pdf) · [editable Word](ASTRA-Project-Dossier-EN.docx)
