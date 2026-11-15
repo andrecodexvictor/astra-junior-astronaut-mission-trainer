@@ -584,5 +584,11 @@
         "r_frame_rate": "12/1"
       }
     ]
+  },
+  "codeGate": {
+    "testsPassed": 67,
+    "testFiles": 9,
+    "dependencyVulnerabilities": 0,
+    "evidence": "docs/demo/evidence/FINAL_CHECKS.json"
   }
 }
