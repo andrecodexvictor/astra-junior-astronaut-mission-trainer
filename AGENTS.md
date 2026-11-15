@@ -10,7 +10,7 @@ The owner asked for a team-agent execution goal. Delegation is encouraged with b
 
 GOAL G0 is resolved for this phase: the owner explicitly authorized this independent demo and reuse with provenance. Continue reversible implementation without reopening that choice. Competition timing and treatment of pre-event work only become gates for a separate official entry; do not fabricate organizer approval or hide prior work. MASTER_GOAL.md is the current batch execution plan.
 
-Do not import the old Sites deployment identity or credentials. A public legacy demo is not this repo's release. Never alter commit timestamps to change provenance. No automatic official submission, collaborator invitation or replacement of the old live site is authorized by the planning handoff.
+The owner has explicitly authorized updates to both the existing public Site and a second delivery-candidate Site, overriding the older planning handoff restriction on replacing the existing live site. Use the appropriate current deployment identity; do not import legacy credentials. Record versions and status in docs/PUBLICATIONS.json. Never alter commit timestamps. Official submission and collaborator invitations are not authorized.
 
 ## Engineering contracts
 

@@ -1,0 +1,14 @@
+{
+  "classification": "single_read_software_diagnostic_not_hardware_profile",
+  "sourceCommit": "3616af2",
+  "render": "SwiftShader",
+  "quality": "low_before_shadow_and_scale_reduction",
+  "region": "habitat",
+  "fps": 1,
+  "frameTimeMs": 2945.7,
+  "p95FrameTimeMs": 1964.2,
+  "drawCalls": 274,
+  "triangles": 92302,
+  "cpuQuotaCores": 2,
+  "action": "Run stopped because software rendering prevented a meaningful full walkthrough; raw partial report retained."
+}

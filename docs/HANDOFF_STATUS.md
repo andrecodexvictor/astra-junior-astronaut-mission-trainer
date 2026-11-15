@@ -1,9 +1,7 @@
-# Estado do handoff — 14/11/2026
+# Handoff status
 
-O estado anterior de “planejamento apenas” foi superado por uma demo independente autorizada pelo proprietário. Há código executável Vite/TypeScript/Babylon, cinco regiões, oito GLBs, simulação pura, missões conectadas, Scout, inspeção, diário, save/checkpoint e relatório. Há 13 skills locais, master goal por lotes e fontes/licenças auditáveis.
+The owner-authorized independent demo contains runnable Vite/TypeScript/Babylon source, five finite regions, 13 GLBs (eight reused and five skinned characters), Cometa, Scout, connected resource systems and ten episode beats. Cargo and field-loadout mass limits, a three-port auxiliary bay and a three-slot field kit are implemented. The simulation is version 3; the save envelope is version 4 with migration paths.
 
-Consulte os registros atuais na raiz: `HANDOFF.md`, `TEST_REPORT.md`, `ACCEPTANCE.json` e `PROGRESS.md`. A spec ampliada e a bíblia continuam metas de produto, não uma lista de funcionalidades já entregues. `MASTER_GOAL.md` é a entrada de execução para Gemini; `GEMINI.md` explica leitura e skills.
+The initial Wave 3 CPU check recorded 64 passing tests across eight files. See `../TEST_REPORT.md`, `../ACCEPTANCE.json` and `demo/E2E_REPORT.json` for final evidence and limitations. Chromium software-rendered runs include failures and an aborted slow run; hardware-GPU, real-device and human playtest acceptance remain pending. Concept boards are not gameplay captures.
 
-Build e testes CPU não equivalem a GPU: Chrome real, playtest, duração, acessibilidade e performance ainda precisam da execução descrita em `demo/BROWSER_SMOKE.md`. Construção, veículos, 6DoF e planetas adicionais não estão implementados. Após a solicitação explícita de publicação, a página Sites existente foi atualizada para esta demo (versão 4). O histórico anterior foi preservado; ver `SITE_RELEASE.md`.
-
-A escolha atual de demo independente resolve G0 para desenvolvimento, mas não inscrição, elegibilidade ou submissão NASA. Manter história e reuso de assets explícitos.
+The existing independent repo and its history are retained, with a separate public delivery-candidate repo. The owner authorized both Site updates; consult `PUBLICATIONS.json` for final deployment status. No official submission or eligibility is claimed. See `../HANDOFF.md`, `../PROGRESS.md`, `../GEMINI.md` and `PRIOR_WORK.md`.

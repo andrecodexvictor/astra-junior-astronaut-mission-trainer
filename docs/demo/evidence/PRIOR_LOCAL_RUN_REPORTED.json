@@ -1,0 +1,24 @@
+{
+  "classification": "user_reported_prior_run_not_reproduced_on_that_device",
+  "source": "Uploaded Wave3 handoff",
+  "browser": "Chrome 157.0.8103.51",
+  "renderer": "ANGLE D3D11 / Intel HD Graphics 520 (reported)",
+  "usedSwiftShader": false,
+  "checksPassed": 55,
+  "checksFailed": 3,
+  "knownFailures": [
+    "cometa-pressurized-inside-shelter",
+    "unstarted-pagehide-does-not-write-save",
+    "zero-http-4xx-5xx-responses"
+  ],
+  "beforeLatestFixes": true,
+  "performance": {
+    "durationSeconds": 10,
+    "avgBabylonFps": 30.9,
+    "avgRafMs": 32.28,
+    "p95RafMs": 40.2,
+    "drawCalls": 405,
+    "triangles": 135866
+  },
+  "note": "Prior results supplied by the user; do not merge with fresh Linux/SwiftShader evidence or claim the final fixes were tested on this physical GPU."
+}

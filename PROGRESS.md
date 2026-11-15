@@ -1,32 +1,12 @@
-# Progresso — 14/11/2026
+# Progress — Wave 3B
 
-- [x] Trilha independente/descartável escolhida pelo proprietário; G0 resolvida.
-- [x] Scaffold Vite/TypeScript/Babylon, engine/loaders 9.35.0 e lockfile.
-- [x] Cinco regiões finitas conectadas, controle/câmera, colisão seletiva, GLBs e animação por pivôs.
-- [x] Academia, cabine orbital assistida, crise lunar, Scout, gelo, cultivo, abrigo, sucesso/falha e retry integrados em código.
-- [x] Simulador puro com unidades, dependências, perdas, custos, atrasos, save validado e evidências.
-- [x] HUD, inspeção/falas autorais, diário, fontes locais, mapa, opções, save/checkpoint e relatório JSON.
-- [x] 13 skills no clone, commits/hashes/licenças, GEMINI.md e MASTER_GOAL.md.
-- [x] Typecheck, testes CPU/NullEngine, oito GLBs sem erros/avisos e auditoria de 25 hashes de skills. Resultado final e build em TEST_REPORT.md.
-- [ ] Percurso Chrome/GPU e teste humano; duração e qualidade gráfica ainda não medidas.
-- [ ] Foco/acessibilidade/toque e 20 transições de região em navegador real.
-- [ ] Campanha ampliada, ferramentas/equipe avançada, construção e veículos: próximos lotes, não parte pronta.
+- [x] Independent demo source: five finite regions, exploration, connected resource simulation, failure and checkpoint recovery.
+- [x] Thirteen GLBs: eight legacy originals and five skinned/keyframed character models, including optional Cometa; local SVG portraits and ten episode beats with causal actions.
+- [x] Cargo budget (45 kg), field loadout (18 kg), three auxiliary ports and a three-slot restricted field kit. Simulation version 3; save envelope version 4 with migration paths.
+- [x] Initial Wave 3 CPU check recorded 64 passing tests across eight files. Consult `TEST_REPORT.md` for the final gate and `docs/demo/E2E_REPORT.json` for browser outcomes, conditions and failures.
+- [x] Existing project history preserved in the separately created public delivery-candidate repository through `a676eb5`. Owner authorized updates to the original and new Sites; consult `docs/PUBLICATIONS.json` for final status.
+- [x] Separate staged visual audit: six checks and six fresh captures, with zero HTTP/network/console/JavaScript errors. Full E2E remains incomplete after the radiation gate rejection.
+- [ ] Hardware-GPU validation, real-device accessibility and performance, and human playtesting remain pending.
+- [ ] Full campaign and broader goals are not complete. No official challenge submission or eligibility is claimed.
 
-O produto atual é um primeiro corte de demo, não a entrega final do mundo nem uma submissão. Continuar por `GEMINI.md` e `MASTER_GOAL.md`; validar o circuito antes de expandir.
-
-## Pacote de arte e próxima goal de personagens
-
-- [x] Quatro PNGs originais com rótulo de IA, hashes, guia de uso e tradução para Babylon.
-- [x] Pesquisa primária Horizon Zero Dawn/No Man’s Sky, acessos/limites registrados.
-- [x] Spec e manifests propostos de rigs/animações de astronauta, NPCs, PIP/Scout e Cometa.
-- [x] MASTER_GOAL e GEMINI atualizados; Cometa requerido na implementação e opcional para o jogador.
-- [ ] Modelos/rigs/clips novos, integração do cachorro e comparações de GPU: ainda não implementados.
-
-Esta revisão muda referências e contratos de design, não o jogo publicado.
-
-## Storyboards adicionais e roteiro
-
-- [x] Pranchas 05–08: academia/vínculo, trânsito, cânion/Scout e abrigo/colheita; pacote agora com oito PNGs.
-- [x] Episódio “Uma luz de cada vez”: dez beats propostos, falas, alvos, escolhas causais e recuperação.
-- [x] Master goal 4D e Gemini atualizados; novos arquivos auditáveis sem alterar runtime.
-- [ ] Novas cenas/diálogos/cenários ainda precisam de implementação e QA real.
+Eight labelled AI reference boards remain design material. Screenshots under `docs/demo/captures/` are browser evidence and must be read with the renderer and test conditions in the report. See `HANDOFF.md` for the code map and `docs/PRIOR_WORK.md` for pre-event provenance.

@@ -1,17 +1,22 @@
 {
   "schemaVersion": 1,
-  "scope": "Independent disposable ASTRA first demo slice; extended campaign not complete",
+  "scope": "Independent ASTRA Waves 0–3B finite exploration slice; extended campaign incomplete",
   "executionMode": "independent_demo",
-  "implementationCommit": "2076c9689b22c7e8424bd68c5f50547c22a1e4da",
+  "implementationCommit": "a239c952675598253a4c5fa4497f7c45273714f9",
   "buildArtifact": "npm run build -> dist/ (generated, not committed)",
   "date": "2026-11-14",
   "environment": {
     "os": "Linux x86_64",
     "node": "24.22.1",
     "npm": "11.9.0",
-    "browser": null,
-    "gpu": null,
-    "viewport": null
+    "browser": "Chromium 156.0.8078.79",
+    "gpu": "SwiftShader software renderer; no hardware GPU available",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "timezone": "America/Sao_Paulo",
+    "utcRollover": "Host execution continues on November 15 UTC; Git dates are untouched."
   },
   "checks": [
     {
@@ -23,7 +28,7 @@
         "docs/demo/BROWSER_SMOKE.md"
       ],
       "limitations": [
-        "Scripted completion/failure succeeds; actual browser walkthrough and 20–30 minute human playtime unmeasured."
+        "64 CPU tests pass; full browser mission and 20–30 minute human playtime remain unverified."
       ]
     },
     {
@@ -36,7 +41,7 @@
         "public/science/assumptions.json"
       ],
       "limitations": [
-        "Crop biomass, safety and operational rates are explicitly didactic abstractions; not a full physical mission model."
+        "Crop biomass, radiation safety, rates and geography remain labelled didactic abstractions."
       ]
     },
     {
@@ -48,7 +53,7 @@
         "tests/unit/app.test.ts"
       ],
       "limitations": [
-        "CPU fixed tick/hash/save tests at 10/30/60/144 schedules; physical browser frame scheduling not measured."
+        "CPU determinism/accounting pass; software-rendered navigation does not certify hardware scheduling."
       ]
     },
     {
@@ -57,10 +62,11 @@
       "owner": "ASTRA integration",
       "evidence": [
         "src/actors/movement.ts",
-        "tests/unit/controller-motion.test.ts"
+        "tests/unit/controller-motion.test.ts",
+        "docs/demo/E2E_REPORT.json"
       ],
       "limitations": [
-        "Pivot gait and jump/controller logic implemented; animation/camera video and sloped or moving platforms absent."
+        "Five skinned/keyframed character GLBs integrated, movement/clip change observed in Chromium; all-clip contact and platform visual approval pending."
       ]
     },
     {
@@ -69,10 +75,11 @@
       "owner": "ASTRA integration",
       "evidence": [
         "src/world/createGameWorld.ts",
-        "tests/unit/quests.test.ts"
+        "tests/unit/quests.test.ts",
+        "docs/demo/E2E_REPORT.json"
       ],
       "limitations": [
-        "PIP/Scout follow and one recruit implemented; general companion tasks, interruptions, navigation and team management absent."
+        "Cometa follow/wait/recall/pet/sniff, Scout and PIP implemented; advanced pathfinding and full companion team management absent."
       ]
     },
     {
@@ -81,10 +88,11 @@
       "owner": "ASTRA integration",
       "evidence": [
         "tests/unit/world-layout.test.ts",
-        "tests/unit/world-assets.test.ts"
+        "tests/unit/world-assets.test.ts",
+        "docs/demo/E2E_REPORT.json"
       ],
       "limitations": [
-        "Grid reachability and 3 actual GLB template disposal cycles checked; 20 complete browser region transitions not checked."
+        "Finite-region reachability and asset disposal CPU tests pass; full 20-transition browser check pending."
       ]
     },
     {
@@ -94,10 +102,11 @@
       "evidence": [
         "src/app/save.ts",
         "tests/unit/app.test.ts",
-        "tests/unit/simulation.test.ts"
+        "tests/unit/simulation.test.ts",
+        "docs/demo/E2E_REPORT.json"
       ],
       "limitations": [
-        "Envelope v3/core v2; invalid/obsolete saves rejected, no legacy migration. Physical browser reload/storage-denial flow pending."
+        "Save envelope v4/core v3 and legacy migrations covered by CPU tests. Staged browser pre-start reload writes no save; full reload/storage-denial route remains pending."
       ]
     },
     {
@@ -110,30 +119,32 @@
         "src/app/catalogue.ts"
       ],
       "limitations": [
-        "Two scripted sequences and report/evidence exist; learner reasoning, alternatives and pedagogical efficacy not human tested."
+        "Ten state-driven episode beats and mission evidence implemented; learner efficacy and human reasoning not tested."
       ]
     },
     {
       "id": "AC09",
-      "status": "pending_browser",
+      "status": "partial_browser_software",
       "owner": "ASTRA integration",
       "evidence": [
         "src/presentation/style.css",
-        "docs/demo/BROWSER_SMOKE.md"
+        "docs/demo/BROWSER_SMOKE.md",
+        "docs/demo/E2E_REPORT.json"
       ],
       "limitations": [
-        "Focus/pause/captions/text and reduced motion implemented but not browser tested. Touch movement is absent."
+        "Keyboard focus, movement and pause observed in software browser; touch controls implemented, actual touch device/accessibility review pending."
       ]
     },
     {
       "id": "AC10",
-      "status": "pending_browser",
+      "status": "blocked_hardware_validation",
       "owner": "ASTRA integration",
       "evidence": [
-        "src/world/createGameWorld.ts"
+        "src/world/createGameWorld.ts",
+        "docs/demo/E2E_REPORT.json"
       ],
       "limitations": [
-        "Real runtime metrics exposed; device/GPU/viewport, FPS, p95 and trace not measured. Bundle sizes are separate measurements."
+        "SwiftShader only: roughly 1–2 FPS in Aurora, not acceptable hardware performance evidence; physical-GPU validation pending."
       ]
     },
     {
@@ -147,7 +158,7 @@
         "TEST_REPORT.md"
       ],
       "limitations": [
-        "Clean npm ci, typecheck/tests/audits/build pass; Vite reports a 1.6 MB chunk warning. Browser readiness remains separate."
+        "64 unit tests/8 files; 13 GLBs validate with zero errors/warnings; dependency audit zero known vulnerabilities. Final gate see TEST_REPORT."
       ]
     },
     {
@@ -161,7 +172,7 @@
         "HANDOFF.md"
       ],
       "limitations": [
-        "Independent demo authorized; no NASA submission, organizer approval or award readiness claimed. Official Resource list/guide verification is unresolved for any later official entry."
+        "History and prior work preserved; official challenge resource list and eligibility remain unverified; no submission made."
       ]
     }
   ],
@@ -553,9 +564,9 @@
     }
   ],
   "validationSummary": {
-    "unitTests": 25,
-    "testFiles": 6,
-    "gltfModels": 8,
+    "unitTests": 64,
+    "testFiles": 8,
+    "gltfModels": 13,
     "gltfErrors": 0,
     "gltfWarnings": 0,
     "skillEntrypoints": 13,
@@ -568,26 +579,35 @@
       "critical": 0,
       "total": 0
     },
-    "browserE2E": "not_run_exit_2",
-    "viteMainChunkBytes": 1758589,
-    "viteMainChunkGzipApproxBytes": 454180,
-    "buildWarning": "Main chunk exceeds Vite 1600 kB warning threshold; no device performance inferred."
+    "browserE2E": "failed_incomplete_25_assertions_passed_then_radiation_gate_rejection_on_swiftshader",
+    "viteMainChunkBytes": 1584125,
+    "viteMainChunkGzipApproxBytes": null,
+    "buildWarning": "Largest Babylon chunk 1,584,125 bytes; no device performance inferred.",
+    "hardwareGpu": "pending",
+    "stagedVisualAudit": {
+      "status": "passed",
+      "checks": 6,
+      "captures": 6,
+      "renderer": "SwiftShader software",
+      "fullNavigation": false,
+      "report": "docs/demo/VISUAL_FIXTURE_REPORT.json"
+    }
   },
   "buildManifest": "docs/demo/BUILD_MANIFEST.json",
   "designAdditions": {
     "date": "2026-11-14",
-    "status": "reference_pack_delivered_runtime_pending",
+    "status": "runtime_integrated_visual_acceptance_partial",
     "references": "docs/art/README.md",
     "worldResearch": "docs/research/HORIZON_NMS_WORLDBUILDING.md",
     "animationSpec": "docs/animation/CHARACTER_ANIMATION_SPEC.md",
     "cometaSpec": "docs/characters/COMETA_BUDDY.md",
-    "runtimeChanged": false,
-    "newRigsImplemented": false,
-    "cometaImplemented": false,
+    "runtimeChanged": true,
+    "newRigsImplemented": true,
+    "cometaImplemented": true,
     "visualTargetReached": false,
     "referenceBoardCount": 8,
     "narrativeTreatment": "docs/narrative/EPISODE_01_TREATMENT.md",
     "narrativeBeats": "content-design/narrative-beats.json",
-    "newEpisodeImplemented": false
+    "newEpisodeImplemented": true
   }
 }

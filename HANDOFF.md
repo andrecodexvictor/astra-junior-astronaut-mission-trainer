@@ -1,49 +1,28 @@
-# Handoff — ASTRA demo independente v0.2
+# Handoff — ASTRA independent demo
 
-O proprietário escolheu uma demo descartável, separada da entrega oficial. A primeira integração agora tem aplicação Vite/TypeScript/Babylon, cinco regiões, oito GLBs, personagem e PIP, Scout reparável/recrutável, treinamento, cadeia lunar, expedição, gelo, cultivo, tempestade, falha/checkpoint, fontes e relatório. Isso é um primeiro corte de implementação; não é a campanha ampliada ou o aceite completo de G-001.
+The owner authorized continued development of the independent demo, preservation of prior work, an additional public delivery-candidate repository and updates to two Sites. It is not an official NASA submission. The current source implements a finite exploration slice; the broader `GOAL.md` remains a goal, not completed acceptance.
 
-## Rodar e continuar
+## Run and current behavior
 
-Node 24 → `npm ci` → `npm run check` → `npm run dev`. Chrome com WebGL 2. Build estático em `dist/`; não precisa login, backend, CDN ou chave. A pedido explícito do proprietário, o site existente agora publica esta demo sem login: https://astra-lunar-frontier-academy.andrevictorandrade.chatgpt.site . A versão anterior permanece no histórico da fonte Sites; ver `docs/SITE_RELEASE.md`.
+Use Node 24: `npm ci`, `npm run check`, `npm run dev`; `npm run build` produces static `dist/`. See `README.md` for controls. Five connected regions cover academy, floor-assisted orbit, habitat, canyon and greenhouse. The player can restore systems, select cargo (45 kg) and a field loadout (18 kg), repair Scout, collect ice, grow food and seek shelter. Three auxiliary ports and a restricted three-slot field kit have modeled costs and effects. Optional Cometa follows or waits; her interactions do not create resources. The episode has ten state-driven beats with causal actions, and local SVG portraits.
 
-Para o Gemini, carregar `GEMINI.md` e `MASTER_GOAL.md`, inspecionar `ACCEPTANCE.json`, então seguir o primeiro gate incompleto. As 13 skills estão no clone com lock e licenças; não reinstalar o catálogo inteiro. As seis referências atuais estão traduzidas em mecânicas originais em `docs/demo/DESIGN_PILLARS.md`.
+Thirteen GLBs comprise eight reused original legacy assets and five new skinned, keyframed characters. They are original parametric assets, not scanned mission hardware. Eight labelled AI concept boards are design references, not runtime captures. NASA Blue Marble credit and transformations are recorded in `public/science/earth-provenance.json`; terrain is fictional.
 
-## Autoridades de código
+## Code map and contracts
 
-| Área | Arquivo / responsabilidade |
-| --- | --- |
-| Contratos de mundo | `src/contracts.ts`: regiões, alvos, posição, callbacks e API da cena |
-| Mundo | `src/world/createGameWorld.ts`: Engine/Scene Babylon, glTF 2 local, região finita por raiz descartável, câmera, input, interação, seguidores e métricas |
-| Planta espacial | `src/world/manifest.ts`: alvos, portais, limites, footprints e medidas |
-| Locomoção | `src/actors/movement.ts`: movimento cinemático, colisão seletiva, salto e easing; Terra 9,81, Lua 1,62 m/s²; órbita assistida usa piso |
-| Verdade física/didática | `src/simulation/index.ts`: estado puro, ações ordenadas, passo de 1 s, energia/massa, tarefas atrasadas, flags, objetivo, validação e relatório |
-| Tempo e save | `src/app/clock.ts`, `save.ts`: relógio monotônico independente do render, resto salvo pelo simulador, versão 3 do envelope / versão 2 do núcleo, checkpoint completo |
-| Texto e apresentação | `src/app/catalogue.ts`, `src/main.ts`, `src/presentation/style.css`: falas autorais, inspeção, HUD, mapa, diário e modais |
-| Modelos/fontes | `public/assets/manifest.json`, `public/science/`, `tools/models/build.py`: hashes, autoria, NASA Blue Marble e parâmetros didáticos |
-| Auditorias | `scripts/audit-assets.mjs`, `audit-skills.mjs`, `vendor/skills/verify.mjs` |
+- `src/simulation/index.ts`: pure version 3 state, ordered fixed ticks, resource accounting, actions, evidence and validation. The UI enforces proximity; simulation does not independently know world coordinates.
+- `src/app/clock.ts` and `src/app/save.ts`: time policy, save envelope version 4 and earlier-envelope migrations. Paused panels and hidden tabs pause mission time; 3× advances simulated costs and hazards. Saves are browser-local.
+- `src/world/manifest.ts`, `src/world/createGameWorld.ts`, `src/actors/`: finite regions, targets, movement, rendering and actors. Babylon does not own resource truth.
+- `src/presentation/`, `src/main.ts`: local HUD, dialogue, SVG portraits, journal and controls. `public/assets/manifest.json` inventories source and rights.
 
-Todos os modelos são pré-carregados uma vez em AssetContainers; cada região cria/descarta apenas seus nós. Não há cinco cenas simultâneas, mundo infinito ou cache ilimitado. Materiais/templates são compartilhados com propriedade explícita. A simulação não importa Babylon/DOM, e o render não decide recursos. A UI aplica ações por alvo próximo; o núcleo não simula coordenadas.
+## Evidence and remaining work
 
-Pausa por menu, leitura, transição ou aba oculta congela tempo de missão; abrigo congela locomoção mas mantém a simulação com painel fechado. A aceleração 3× é visível e afeta todos os custos/perigos. Não existe progresso offline. Save inválido produz mensagem e uma nova partida disponível; o storage local é privado ao navegador, sem sincronização de conta.
+The initial Wave 3 CPU check recorded 64 passing unit tests in eight files. Full final-gate status belongs to `TEST_REPORT.md` and `ACCEPTANCE.json`; browser execution and snapshots belong to `docs/demo/E2E_REPORT.json` and `docs/demo/evidence/`. Earlier Chromium 156 SwiftShader runs included failures and a slow aborted run; they do not prove hardware-GPU acceptance. The third economy run passed 25 assertions before the radiation deadline blocked the route; its overall status is failed/incomplete. Review the raw report. A separate staged visual audit passed six checks and produced six fresh captures; it verifies the three reported regressions only within prepared states and does not establish navigation or hardware acceptance. Real-device GPU, accessibility, performance and human playtesting remain to be established. The quality economy mode reduces resolution by a factor of three and disables shadows; high quality is unchanged.
 
-## Qualidade e limites materiais
+The orbital cabin is not 6DoF; terrain, biology and safety are educational abstractions. Freeform building, vehicles, additional planets and a tutor LLM remain out of scope. `docs/demo/SCIENCE_ASSUMPTIONS.md` documents model rates and limitations. Continue from actual evidence and `MASTER_GOAL.md`, rather than treating older planned features as acceptance.
 
-Consulte `TEST_REPORT.md` para comandos e `ACCEPTANCE.json` para aceite por requisito. Testes puros, controlador, alcance em grid, importação real GLB em NullEngine, auditorias e build são evidência CPU/empacotamento. Não comprovam percurso no Chrome, foco real de teclado, qualidade de imagem, 20 transições completas, estabilidade GPU ou duração de 20–30 minutos. `test:e2e` informa essa pendência e sai com status 2.
+## Publication and provenance
 
-Órbita é assistida, não 6DoF. Não há manifesto de massa, física Havok, rig esquelético, plataformas móveis, navegação robusta dos robôs, escolha de equipe ou habilidades, construção livre, veículos, multiplayer, planetas extras ou tutor LLM. A interação narrativa é um painel autoral com símbolo CSS de robô, sem retratos finais/close cinematográfico humano. Parte do log técnico permanece em inglês. A geografia é ficcional; cultivo e segurança são abstrações. Não alegar fidelidade gráfica às imagens sem captura comparativa.
+The independent original repository remains https://github.com/andrecodexvictor/astra-lunar-frontier; the separate public delivery candidate is https://github.com/andrecodexvictor/astra-junior-astronaut-mission-trainer. Its history through `a676eb5` was pushed without rewriting dates. The original Site is https://astra-lunar-frontier-academy.andrevictorandrade.chatgpt.site and the second Site is expected at https://astra-mission-trainer.andrevictorandrade.chatgpt.site. `docs/PUBLICATIONS.json` records final statuses and revisions. `source.config.json` supplies per-site source links.
 
-## Próximo lote recomendado
-
-1. Executar `docs/demo/BROWSER_SMOKE.md` no Chrome real, corrigir softlocks/câmera/materiais e registrar hardware, resolução, capturas e trace. Medir o circuito atual e o tempo de leitura, sem aumentar área antes.
-2. Melhorar legibilidade e reação do equipamento no mundo a partir dessas capturas. Depois implementar uma ferramenta/descoberta original com desbloqueio causal e save.
-3. Introduzir uma pequena rede de três conectores; depois um kit com painel/cabo/bateria. Montagem livre e veículo entram só após provar custos, rede e colisões. `MASTER_GOAL.md` contém os lotes e portas restantes.
-
-Preservar a proveniência: oito GLBs e Blue Marble foram reutilizados do legado autorizado, enquanto núcleo modular e integração foram implementados nesta fase. As dúvidas de competição não são bloqueios desta demo e não foram convertidas em aprovação NASA.
-
-## Próxima goal visual — 14/11/2026
-
-O novo pacote [arte](docs/art/README.md) contém oito PNGs originais, pesquisa Horizon/NMS e tradução para Babylon. `MASTER_GOAL.md` 4A–4C exige mundo refinado, animações de humanos/robôs e Cometa, buddy dachshund astronauta. [Manifests de design](content-design/animation-manifest.json) são propostas; não são assets ou clips de runtime. O site publicado continua no primeiro corte, sem Cometa ou novos rigs. Começar abrindo as imagens e preservar a simulação e o caminho completo.
-
-## Episódio e novas pranchas
-
-As pranchas 05–08 ampliam o mundo com cenas de vínculo/treino, trânsito, investigação no cânion e retorno/colheita. `docs/narrative/EPISODE_01_TREATMENT.md` e `content-design/narrative-beats.json` descrevem dez batidas propostas com diálogos, ações, escolhas, evidência e retry. A master goal 4D rege sua integração. `audit:art` verifica também alvos narrativos presentes no manifesto do mundo; isso não executa as cenas. Nenhum runtime foi alterado nesta revisão.
+Preserve the real history, reuse and AI/third-party credits in `docs/PRIOR_WORK.md`, `AI_USAGE.md` and `NOTICE`. The official challenge resource list and rules governing prior work remain unverified; do not claim eligibility or submit on that basis.

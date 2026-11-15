@@ -1,0 +1,78 @@
+{
+  "historyPreserved": true,
+  "snapshotThrough": "a239c952675598253a4c5fa4497f7c45273714f9",
+  "timezone": "America/Sao_Paulo",
+  "note": "Snapshot through the tested application commit. Later documentation/publication commits retain normal Git dates. No timestamp rewriting.",
+  "commits": [
+    {
+      "sha": "a26e9c70e7e6bf87bbad612743d26deae2887e4d",
+      "authorDate": "2026-11-14T09:03:03Z",
+      "committerDate": "2026-11-14T09:03:03Z",
+      "authorDateSaoPaulo": "2026-11-14T06:03:03-03:00",
+      "subject": "Document ASTRA exploration RPG specification, compliance review and agent execution goal"
+    },
+    {
+      "sha": "2076c9689b22c7e8424bd68c5f50547c22a1e4da",
+      "authorDate": "2026-11-14T10:30:14Z",
+      "committerDate": "2026-11-14T10:30:14Z",
+      "authorDateSaoPaulo": "2026-11-14T07:30:14-03:00",
+      "subject": "Implement independent Babylon exploration demo and versioned Gemini skill pack"
+    },
+    {
+      "sha": "8e1d559006e8436a39387bd05f01a209a4e5346b",
+      "authorDate": "2026-11-14T10:30:50Z",
+      "committerDate": "2026-11-14T10:30:50Z",
+      "authorDateSaoPaulo": "2026-11-14T07:30:50-03:00",
+      "subject": "Record exact implementation reference and final validation evidence"
+    },
+    {
+      "sha": "19167c933bd1a9b08ce24cc1d5090f3b8b1c5226",
+      "authorDate": "2026-11-14T11:22:57Z",
+      "committerDate": "2026-11-14T11:22:57Z",
+      "authorDateSaoPaulo": "2026-11-14T08:22:57-03:00",
+      "subject": "Record deployment of demo to existing public Sites URL"
+    },
+    {
+      "sha": "1e7eb77babdccf67913e2fd897cae40baa4f7a07",
+      "authorDate": "2026-11-14T12:54:19Z",
+      "committerDate": "2026-11-14T12:54:19Z",
+      "authorDateSaoPaulo": "2026-11-14T09:54:19-03:00",
+      "subject": "Add original world concept boards and Cometa animation goals for Gemini"
+    },
+    {
+      "sha": "4e9289281f36bf88a6371105b0f38fe68e20d21b",
+      "authorDate": "2026-11-14T13:20:59Z",
+      "committerDate": "2026-11-14T13:20:59Z",
+      "authorDateSaoPaulo": "2026-11-14T10:20:59-03:00",
+      "subject": "Expand worldbuilding with four storyboards and a ten-beat episode treatment"
+    },
+    {
+      "sha": "2b098b183842eb6208c22495cf8c635865e67199",
+      "authorDate": "2026-11-14T11:01:55-03:00",
+      "committerDate": "2026-11-14T11:01:55-03:00",
+      "authorDateSaoPaulo": "2026-11-14T11:01:55-03:00",
+      "subject": "chore: enforce LF line endings in .gitattributes for skill audit"
+    },
+    {
+      "sha": "a676eb52b0c757b505cf8c4bc8cc9ebaa79404c0",
+      "authorDate": "2026-11-14T20:32:52-03:00",
+      "committerDate": "2026-11-14T20:32:52-03:00",
+      "authorDateSaoPaulo": "2026-11-14T20:32:52-03:00",
+      "subject": "feat: implement ASTRA demo Waves 0-3A (simulation, character GLBs, Cometa, episode UI, PBR worlds, CDP E2E)"
+    },
+    {
+      "sha": "3616af2eb76ed83f882b651dc623dee0851750d2",
+      "authorDate": "2026-11-14T23:46:44Z",
+      "committerDate": "2026-11-14T23:46:44Z",
+      "authorDateSaoPaulo": "2026-11-14T20:46:44-03:00",
+      "subject": "Make browser verification portable and expose the public source repository"
+    },
+    {
+      "sha": "a239c952675598253a4c5fa4497f7c45273714f9",
+      "authorDate": "2026-11-14T23:57:52Z",
+      "committerDate": "2026-11-14T23:57:52Z",
+      "authorDateSaoPaulo": "2026-11-14T20:57:52-03:00",
+      "subject": "Reduce economy graphics cost and record deterministic build inventories"
+    }
+  ]
+}

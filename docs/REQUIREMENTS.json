@@ -390,5 +390,5 @@
       ]
     }
   ],
-  "statusNote": "Baseline implemented; browser/GPU acceptance pending. MASTER_GOAL.md governs next batches."
+  "statusNote": "Independent demo remains partial against the broader specification. Source includes 13 GLBs (eight reused and five skinned), Cometa, ten episode beats, cargo and loadout limits, auxiliary ports, a restricted field kit, simulation v3 and save envelope v4 migrations. Initial Wave 3 CPU check: 64 tests in eight files; final checks are in TEST_REPORT.md. Chromium software-renderer runs include failures and an aborted partial run; the third run passed 25 assertions before radiation timing blocked the route, leaving overall E2E failed/incomplete. Hardware GPU, device performance and a complete 20-transition test remain pending. See docs/demo/E2E_REPORT.json and docs/demo/evidence/ for conditions and results. Statuses remain conservative; no official submission or eligibility is claimed."
 }

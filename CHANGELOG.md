@@ -1,12 +1,18 @@
 # Changelog
 
+## Waves 0–3B — 2026-11-14 (São Paulo; UTC rollover on November 15)
+
+Integrated extended resource and discovery mechanics, 45 kg cargo and 18 kg field-loadout limits, auxiliary ports, a restricted three-slot field kit and ten episode beats with causal actions. Added five original skinned/keyframed character GLBs, optional Cometa, local SVG portraits and world refinements; eight legacy GLBs remain in use. The simulation is version 3 and the save envelope version 4 with migrations. Added an executable CDP browser workflow and an economy rendering mode (threefold resolution reduction and no shadows; high remains unchanged). See `TEST_REPORT.md` and `docs/demo/E2E_REPORT.json` for measured outcomes and limitations. The initial Wave 3 CPU check recorded 64 tests passing in eight files; the final gate is recorded separately.
+
+The owner authorized a separate public delivery-candidate repository and two Site updates. Original Git history and prior-work provenance remain intact. See `docs/PUBLICATIONS.json` for final publication status. No official submission or eligibility is claimed.
+
 ## Storyboard expansion — 2026-11-14
 
-Four additional original storyboards (eight boards total) and a ten-beat episode treatment connect academy, transit, canyon investigation and homecoming to world targets and resource consequences. Master goal batch 4D covers narrative integration. Runtime remains unchanged.
+Four additional original storyboards (eight boards total) and a ten-beat episode treatment connect academy, transit, canyon investigation and homecoming to world targets and resource consequences. At that revision, master goal batch 4D covered subsequent narrative integration; runtime was unchanged by the storyboard commit.
 
 ## Visual design pack — 2026-11-14
 
-Four original labelled AI concept boards, primary Horizon Zero Dawn / No Man’s Sky research, Babylon art-to-world guide and required next goals for human/robot animations and Cometa, an astronaut dachshund. Proposed character/animation manifests are not runtime assets; the live game remains unchanged.
+Four original labelled AI concept boards, primary Horizon Zero Dawn / No Man’s Sky research, Babylon art-to-world guide and required next goals for human/robot animations and Cometa, an astronaut dachshund. At that revision, proposed character/animation manifests were design material and runtime was unchanged.
 
 ## 0.2.0 — 2026-11-14
 
