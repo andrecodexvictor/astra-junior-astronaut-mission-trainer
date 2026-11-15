@@ -43,20 +43,23 @@
       "repositoryStatus": "Public owner-created repository synchronized; GitHub and Sites source commits match.",
       "access": "public",
       "status": "succeeded",
-      "versionNumber": 3,
-      "versionId": "appgprj_6af9d7bf7c0c819190f83a7fa1b528ee~appgver_9b0f416178d48191a602ebccd0b929a0",
-      "deploymentId": "appgdep_6af9e8bde2588191ac9d5ac0a3704ccf",
-      "siteSourceCommit": "95475298546db167653408129a56517647429b14",
+      "versionNumber": 4,
+      "versionId": "appgprj_6af9d7bf7c0c819190f83a7fa1b528ee~appgver_9c2197ef77c4819185270702fb925eec",
+      "deploymentId": "appgdep_6af9f6995a0c8191bc7a6073e3c54865",
+      "siteSourceCommit": "24dd814e7adb6530423ebc61d968d3f3b50ed7e0",
       "pitchSourceCommit": "815304ba925d6b7241f73c1823a6452bd9b6ea14",
-      "publishedAt": "2026-11-15T17:16:01.692590+00:00",
+      "publishedAt": "2026-11-15T18:15:02.854759+00:00",
       "browserQA": "not performed: managed CUA tool unavailable",
-      "httpAccess": "Landing, logo, all four English illustrations, NASA registry, media credits and actual NASA image returned HTTP200 without authentication and match committed files.",
-      "githubSourceCommit": "95475298546db167653408129a56517647429b14",
-      "archiveContentHash": "sha256:b1cabef8f320060843db934deae6edba4b86c77731048a0daa3e2fbda50eb4f8",
+      "httpAccess": "Vercel landing and CSS returned HTTP200 anonymously and match committed bytes; submission README links returned HTTP200. Sites native publication succeeded with public access unchanged; a separate automated HTTP probe returned403 and was not treated as a passing HTTP check.",
+      "githubSourceCommit": "24dd814e7adb6530423ebc61d968d3f3b50ed7e0",
+      "archiveContentHash": "sha256:9707e7fd833f38caa7605af2d56b87a93c442407a48c49f66746edc42d4b1c8f",
       "demoDestination": "https://astra-junior-mission-trainer.vercel.app/",
       "additionalPublicUrl": "https://astra-institutional.vercel.app/",
       "vercelConfiguration": "Static output dist, no framework/install/build; deployment and public HTTP/file hashes verified.",
-      "artReview": "Current 13 production boards cleaned of NASA identifiers; SI plus explicit AI watermark; recurring cast reviewed against canonical hero."
+      "artReview": "Current 13 production boards cleaned of NASA identifiers; SI plus explicit AI watermark; recurring cast reviewed against canonical hero.",
+      "change": "Added accessible GitHub icon button in final footer linking to astra-junior-astronaut-mission-trainer; submission README highlights institutional and demo Vercel URLs.",
+      "vercelStatus": "GitHub Vercel commit status success; public HTML and stylesheet verified.",
+      "readmeLinkCommit": "25e9ca5"
     }
   ],
   "notes": [
@@ -138,7 +141,30 @@
       "githubSourceCommit": "1f93bb010ffef381bb107e660a400aaefd389332",
       "archiveContentHash": "sha256:318b6eda25e31881a68d084de1a0879b984a3c88048f16063b9ad238d144ba82",
       "demoDestination": "https://astra-junior-mission-trainer.vercel.app/"
+    },
+    {
+      "channel": "institutional",
+      "projectId": "appgprj_6af9d7bf7c0c819190f83a7fa1b528ee",
+      "url": "https://astra-mission-odyssey.andrevictorandrade.chatgpt.site",
+      "repository": "https://github.com/andrecodexvictor/astra-institutional",
+      "repositoryStatus": "Public owner-created repository synchronized; GitHub and Sites source commits match.",
+      "access": "public",
+      "status": "succeeded",
+      "versionNumber": 3,
+      "versionId": "appgprj_6af9d7bf7c0c819190f83a7fa1b528ee~appgver_9b0f416178d48191a602ebccd0b929a0",
+      "deploymentId": "appgdep_6af9e8bde2588191ac9d5ac0a3704ccf",
+      "siteSourceCommit": "95475298546db167653408129a56517647429b14",
+      "pitchSourceCommit": "815304ba925d6b7241f73c1823a6452bd9b6ea14",
+      "publishedAt": "2026-11-15T17:16:01.692590+00:00",
+      "browserQA": "not performed: managed CUA tool unavailable",
+      "httpAccess": "Landing, logo, all four English illustrations, NASA registry, media credits and actual NASA image returned HTTP200 without authentication and match committed files.",
+      "githubSourceCommit": "95475298546db167653408129a56517647429b14",
+      "archiveContentHash": "sha256:b1cabef8f320060843db934deae6edba4b86c77731048a0daa3e2fbda50eb4f8",
+      "demoDestination": "https://astra-junior-mission-trainer.vercel.app/",
+      "additionalPublicUrl": "https://astra-institutional.vercel.app/",
+      "vercelConfiguration": "Static output dist, no framework/install/build; deployment and public HTTP/file hashes verified.",
+      "artReview": "Current 13 production boards cleaned of NASA identifiers; SI plus explicit AI watermark; recurring cast reviewed against canonical hero."
     }
   ],
-  "latestBatch": "Complete English project dossier (PDF/Word), v4 full English and Portuguese decks, reviewed original ASTRA patches and SI/AI disclosure; Vercel static deployment repaired"
+  "latestBatch": "Submission README Vercel links and institutional footer GitHub button; public Vercel content verified and Sites version4 published."
 }
