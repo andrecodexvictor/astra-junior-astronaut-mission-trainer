@@ -1,7 +1,9 @@
 # ASTRA — Future APIs, datasets and learning resources
 
-**Updated:** 15 November 2026  
-**Purpose:** implementation roadmap for the browser game, institutional project description and future agent handoff.  
+**Updated:** 15 November 2026
+
+**Purpose:** implementation roadmap for the browser game, institutional project description and future agent handoff.
+
 **Language:** English, consistent with the project's submission materials.
 
 This is the proposed resource stack for ASTRA, not a claim that every integration is implemented. The seven entries in the first table come from the official challenge Resources excerpt supplied by the project owner. Their destinations and relevant documentation were reviewed separately. The challenge page itself was not independently captured during this review. Listing a resource does not establish eligibility, endorsement or permission to reuse every associated asset.
