@@ -2,9 +2,14 @@
 
 ASTRA is an independent, playable lunar exploration prototype built with Babylon.js. A cadet travels from an Earth academy to a fictional lunar outpost, investigates interconnected systems, prepares a field expedition and responds to a storm. It is a delivery candidate inspired by the [2026 Junior Astronaut Mission Trainer challenge](https://www.spaceappschallenge.org/2026/challenges/junior-astronaut-mission-trainer/); it is not an official submission or NASA-endorsed training.
 
+## Project links
+
+- **Institutional website:** [astra-institutional.vercel.app](https://astra-institutional.vercel.app/)
+- **Play the demo:** [astra-junior-mission-trainer.vercel.app](https://astra-junior-mission-trainer.vercel.app/)
+
 The in-game narrative and much of the interface are currently in Portuguese. This repository preserves the independent demo history; its runtime differs only in the public source link and delivery label.
 
-Public candidate site: https://astra-mission-trainer.andrevictorandrade.chatgpt.site
+Additional Sites-hosted demo: https://astra-mission-trainer.andrevictorandrade.chatgpt.site
 
 Original demo: https://github.com/andrecodexvictor/astra-lunar-frontier — its public site remains separate. Exact publication revisions are in `docs/PUBLICATIONS.json`.
 
