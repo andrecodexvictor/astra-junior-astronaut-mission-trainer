@@ -1,3 +1,14 @@
+# Portuguese complete pitch — 30 slides / 180 seconds
+
+- [Portuguese deck (PDF)](ASTRA-Pitch-PT-30-Slides-v5.pdf)
+- [Editable timed PowerPoint](ASTRA-Pitch-PT-30-Slides-v5.pptx)
+- [Complete Portuguese presentation package](ASTRA-Pitch-PT-30-Slides-v5.zip)
+- [Presenter script](ASTRA-Pitch-PT-Roteiro-v5.md) · [30-slide preview](ASTRA-Pitch-PT-Preview-v5.png) · [Timed HTML](ASTRA-Pitch-PT-30-Slides-v5.html)
+
+Reuses the approved institutional website art with Portuguese presentation copy, the same ASTRA cast and explicit AI disclosure. This is the full three-minute deck, separate from the Portuguese 30-second elevator.
+
+---
+
 # NASA / CSA API and resource roadmap — 15 November 2026
 
 - [Future APIs, datasets and learning resources (English Markdown)](ASTRA-Future-APIs-and-Resources-EN.md)
