@@ -1,36 +1,46 @@
-# ASTRA — Lunar Frontier demo
+# ASTRA — Junior Astronaut Mission Trainer
 
-ASTRA is an independent Babylon.js exploration prototype. Train at an Earth academy, travel to a fictional lunar outpost, restore connected systems, investigate ice with Scout, grow food and shelter through a modeled storm. The game needs no account, API key or backend. It is not an official NASA submission or endorsed training.
+ASTRA is an independent, playable lunar exploration prototype built with Babylon.js. A cadet travels from an Earth academy to a fictional lunar outpost, investigates interconnected systems, prepares a field expedition and responds to a storm. It is a delivery candidate inspired by the [2026 Junior Astronaut Mission Trainer challenge](https://www.spaceappschallenge.org/2026/challenges/junior-astronaut-mission-trainer/); it is not an official submission or NASA-endorsed training.
 
-The existing public demo is at https://astra-lunar-frontier-academy.andrevictorandrade.chatgpt.site. A separate [delivery-candidate repository](https://github.com/andrecodexvictor/astra-junior-astronaut-mission-trainer) preserves this project's history. The owner has also authorized a second public site; consult `docs/PUBLICATIONS.json` for the final version and publication status of both sites. A site URL does not establish competition eligibility.
+The in-game narrative and much of the interface are currently in Portuguese. This repository preserves the independent demo history; its runtime differs only in the public source link and delivery label.
 
-## Run
+Public candidate site: https://astra-mission-trainer.andrevictorandrade.chatgpt.site
 
-Use Node 24 and npm:
+Original demo: https://github.com/andrecodexvictor/astra-lunar-frontier — its public site remains separate. Exact publication revisions are in `docs/PUBLICATIONS.json`.
+
+## Run locally
+
+Requires Node.js 24 and npm:
 
 ```sh
-git clone https://github.com/andrecodexvictor/astra-lunar-frontier.git
-cd astra-lunar-frontier
+git clone https://github.com/andrecodexvictor/astra-junior-astronaut-mission-trainer.git
+cd astra-junior-astronaut-mission-trainer
 npm ci
-npm run check
 npm run dev
 ```
 
-Open the Vite URL in a WebGL 2 capable browser. `npm run build` produces static `dist/`. WASD/arrows move, mouse drag rotates the camera, Shift runs, Space jumps and E interacts. Tab opens objectives, J science, M the map and Esc pauses. On-screen controls expose actions; settings include larger text, reduced motion, quality and 3× mission time. Saves and checkpoints are local to the browser. Much of the in-game text is Portuguese.
+Open the Vite URL in a WebGL 2 capable browser. `npm run build` creates the static `dist/` output. No account, API key or server-side service is needed for gameplay. WASD or arrow keys move, mouse drag rotates the camera, Shift runs, Space jumps and E interacts. Tab opens objectives, J the science journal, M the map and Esc pauses; on-screen controls also expose actions. Save data is local to the browser.
 
-## Current source
+## Explore and learn
 
-- Five finite regions, third-person movement and camera, PIP and repairable Scout; optional astronaut dachshund Cometa can follow or wait.
-- Thirteen local GLBs: eight reused original models and five newly authored skinned character models with keyframed clips. An authored ten-beat episode connects dialogue, choices and actions to simulation state; character portraits are local SVGs.
-- A 45 kg orbital cargo budget, 18 kg field loadout, three auxiliary ports and a restricted three-slot field kit. These are bounded mechanics, not freeform construction.
-- Fixed one-second simulation ticks, kW/kWh and water accounting, electrolysis, ice processing, crop growth, a fictional storm, failure and checkpoint recovery. Simulation state is version 3 and the save envelope version 4, with migration paths for earlier envelopes.
+- **Train and travel:** practice at the academy, prepare cargo in the assisted orbital cabin and reach the fictional Aurora habitat. Orbit movement is floor-assisted, not six-degree-of-freedom simulation.
+- **Operate the base:** repair power and life-support systems, compare kW and kWh, recycle water and use electrolysis while watching resource balances and costs.
+- **Investigate:** equip a limited field loadout, repair Scout, inspect discoveries and transport a finite ice sample for processing. The journal records hypotheses and evidence; the player can compare conditions before and after an intervention.
+- **Protect the crew and grow food:** manage shelter during an artificial storm and give the crop power, water and time. An optional astronaut dachshund, Cometa, follows or waits; her interactions do not create resources.
 
-Orbit is floor-assisted, not six-degree-of-freedom flight. The terrain and equipment are fictional; radiation, physiology and crop yield are simplified game models, not mission procedures. Freeform construction, vehicles, extra planets and an AI tutor are not implemented. See [science assumptions](docs/demo/SCIENCE_ASSUMPTIONS.md).
+Five finite authored regions, a deterministic fixed-tick simulation, local checkpoints, mission evidence and character animation assets are present in source. The models and lunar geography are fictional. Game rates, radiation safety and crop yields are simplified for play; this is not operational astronaut instruction or a validated engineering or educational model. See `docs/delivery/SCIENCE_AND_PROVENANCE.md` and `docs/demo/SCIENCE_ASSUMPTIONS.md`.
 
-## Evidence and continuation
+## Verification and scope
 
-The initial Wave 3 CPU check recorded 64 passing unit tests across eight files. The final gate is tracked in [TEST_REPORT.md](TEST_REPORT.md); browser runs and their limitations are recorded in [E2E_REPORT.json](docs/demo/E2E_REPORT.json) and `docs/demo/evidence/`. A Chromium software-renderer run is useful evidence but does not establish hardware-GPU performance, accessibility or human playtest results. Run `npm run test:e2e` for the browser workflow and consult [browser instructions](docs/demo/BROWSER_SMOKE.md). Do not infer a pass from the script's presence.
+The repository contains unit tests, asset audits and a Chrome DevTools Protocol browser test script. See `TEST_REPORT.md` and `ACCEPTANCE.json` for the actual results and commit tested; the presence of scripts alone is not a passing result. Browser visual quality, accessibility, real-device touch behavior, performance and human learning outcomes require their own recorded evidence. The expanded game described in `GOAL.md` remains a goal, not a claim of completion.
 
-Read [HANDOFF.md](HANDOFF.md) and [GEMINI.md](GEMINI.md) to continue. The eight labelled AI-generated [concept boards](docs/art/README.md) are design references, not gameplay captures. Browser captures in `docs/demo/captures/` are separate evidence and must be interpreted with the test report.
+```sh
+npm run check
+npm run test:e2e
+```
 
-This repository includes 13 agent skills with sources and licenses documented in [the skill ledger](skills.lock.json). Original contributions are Apache-2.0; third-party assets and skills retain their own terms. See [AI disclosure](AI_USAGE.md), [asset manifest](public/assets/manifest.json), [prior work](docs/PRIOR_WORK.md), and [challenge review](docs/SPACE_APPS_COMPLIANCE.md). The earlier prototype and planning predate the event; preserved history does not become new work by moving repositories. Registration, applicable rules, reuse and the challenge resource list remain unresolved for any official entry. No NASA endorsement or eligibility is claimed.
+## Provenance and challenge status
+
+This project builds on an earlier ASTRA prototype and planning from before the event; the real Git history and dates are preserved. Eight original GLBs were reused and five animated character GLBs were added. Original contributions are Apache-2.0; third-party materials retain their own terms. `NOTICE`, `AI_USAGE.md`, `public/assets/manifest.json` and `docs/PRIOR_WORK.md` provide credits and disclosures. NASA Blue Marble imagery is used with attribution; its presence does not establish that it appears on the challenge's resource list.
+
+Registration, local rules, treatment of prior work, the current submission guide and the challenge's exact resource list need human confirmation. No eligibility, award readiness or official submission is claimed. See `docs/SPACE_APPS_COMPLIANCE.md`, `docs/delivery/SUBMISSION_DRAFT_EN.md` and `docs/delivery/VERSION_HISTORY.md`.

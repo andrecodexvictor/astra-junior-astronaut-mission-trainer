@@ -2,7 +2,7 @@
   "version": 2,
   "node": "24.22.1",
   "vite": "7.3.8",
-  "totalBytes": 9324815,
+  "totalBytes": 9324833,
   "files": [
     {
       "path": "assets/babylon-core-CRq0Owvr.js",
@@ -45,19 +45,19 @@
       "sha256": "ac623c58e8961e6c3c830c1e6ed818f0b96cb5c46f49f4effd2b5984e3268ede"
     },
     {
-      "path": "assets/createGameWorld-BqVdhwKx.js",
+      "path": "assets/createGameWorld-s6GJFq1U.js",
       "bytes": 52296,
-      "sha256": "9761971b1dae2918ae03572d7c4a5ae24aea940cfd55588b6d1db24d04071165"
+      "sha256": "fe60bfe6347a8188b6df07722eeba9f4ad081bbac0b08348fedad5cd2ea926aa"
+    },
+    {
+      "path": "assets/index-D1988lKP.js",
+      "bytes": 175493,
+      "sha256": "4b0be318bbe0de5476efef9e6cc9094aad782cfeab7c6705b2d7da691f59a650"
     },
     {
       "path": "assets/index-D9uRhtW3.css",
       "bytes": 21226,
       "sha256": "fe472084fa9fc18fa4982a4db1e3a202a8fb186b8cf93503c7428d66e69eaa31"
-    },
-    {
-      "path": "assets/index-tfFyaPVP.js",
-      "bytes": 175475,
-      "sha256": "1790bb459553b9ad960542767506fb953881d4764a271538718023a6744660d6"
     },
     {
       "path": "assets/manifest.json",
@@ -137,7 +137,7 @@
     {
       "path": "index.html",
       "bytes": 1427,
-      "sha256": "afa9a755b19cd3e3880664bfa7164e86796db428250038d18623dda9c51b69c5"
+      "sha256": "b4f39c627ba69d997c7cc1867172ea6a625ccedc9919d74dcb5158db0209eaab"
     },
     {
       "path": "science/assumptions.json",

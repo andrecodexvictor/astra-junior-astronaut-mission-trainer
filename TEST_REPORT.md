@@ -38,3 +38,7 @@ The final post-documentation commands and their exact exits are recorded in `doc
 The full route, all six fresh route captures, 20 actual region transitions, stable lifecycle/performance window, full save/load/storage-denial sequence and the three end-to-end regressions require completed browser evidence. Physical-GPU Chrome, actual touch input, accessibility review, character ground contact/all clips and human playtesting remain pending. `ACCEPTANCE.json` retains partial and blocked statuses.
 
 Orbital movement is assisted, not 6DoF. Terrain is procedural artistic geography, not a measured lunar DEM. Collision covers selected structures; companions do not have production-grade pathfinding. Restricted auxiliary/field-kit construction exists; freeform construction, vehicles, later planets and an online tutor are out of scope. Scientific rates are disclosed teaching assumptions and educational effectiveness has not been established. No official NASA submission or eligibility is claimed.
+
+## Delivery repository variant
+
+This checkout preserves the complete demo history. The candidate variant changes only `README.md` and `source.config.json` (public source URL/label); runtime simulation, models, world and controls are shared with the tested application commit. The browser reports identify the original tested build and are not a separate browser run of this candidate URL. Its own final check/dependency evidence and regenerated build inventory are recorded in this checkout.

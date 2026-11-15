@@ -11,13 +11,13 @@
 > vitest run
 
 
- RUN  v4.1.12 /workspace/projects/astra-lunar-frontier
+ RUN  v4.1.12 /workspace/projects/astra-junior-astronaut-mission-trainer
 
 
  Test Files  8 passed (8)
       Tests  64 passed (64)
-   Start at  00:14:48
-   Duration  26.01s (transform 1.87s, setup 0ms, import 4.10s, tests 19.02s, environment 1ms)
+   Start at  00:17:15
+   Duration  22.52s (transform 1.42s, setup 0ms, import 3.06s, tests 16.78s, environment 2ms)
 
 
 > astra-lunar-frontier-demo@0.2.0 audit:assets
@@ -46,7 +46,7 @@ Skill audit passed: 13 skills, 21 skill files, 3 license sources; 25 hashes veri
 > astra-lunar-frontier-demo@0.2.0 audit:docs
 > node scripts/audit-docs.mjs
 
-Documentation: 30 JSON files parse; 60 local Markdown links resolve.
+Documentation: 33 JSON files parse; 48 local Markdown links resolve.
 
 > astra-lunar-frontier-demo@0.2.0 audit:art
 > node scripts/audit-art.mjs
@@ -72,14 +72,14 @@ rendering chunks...
 computing gzip size...
 dist/index.html                                     1.43 kB │ gzip:   0.81 kB
 dist/assets/index-D9uRhtW3.css                     21.23 kB │ gzip:   5.25 kB
-dist/assets/createGameWorld-BqVdhwKx.js            52.30 kB │ gzip:  21.25 kB
+dist/assets/createGameWorld-s6GJFq1U.js            52.30 kB │ gzip:  21.25 kB
 dist/assets/babylon-loaders-B7M8COQU.js           125.71 kB │ gzip:  28.12 kB
-dist/assets/index-tfFyaPVP.js                     175.48 kB │ gzip:  55.11 kB
+dist/assets/index-D1988lKP.js                     175.49 kB │ gzip:  55.11 kB
 dist/assets/babylon-scene-features-C6wuqKuw.js    182.52 kB │ gzip:  44.39 kB
 dist/assets/babylon-pbr-RJ1oSfen.js               224.60 kB │ gzip:  44.06 kB
 dist/assets/babylon-webgpu-BqrH-B6G.js            238.48 kB │ gzip:  58.66 kB
 dist/assets/babylon-shaders-BrV0TE12.js           492.42 kB │ gzip:  94.96 kB
 dist/assets/babylon-shaders-wgsl-4y41GaUY.js      529.35 kB │ gzip:  98.11 kB
 dist/assets/babylon-core-CRq0Owvr.js            1,584.13 kB │ gzip: 416.98 kB
-✓ built in 54.79s
+✓ built in 1m 7s
 Build inventory: 30 files; SHA-256 recorded.
