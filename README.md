@@ -44,3 +44,7 @@ npm run test:e2e
 This project builds on an earlier ASTRA prototype and planning from before the event; the real Git history and dates are preserved. Eight original GLBs were reused and five animated character GLBs were added. Original contributions are Apache-2.0; third-party materials retain their own terms. `NOTICE`, `AI_USAGE.md`, `public/assets/manifest.json` and `docs/PRIOR_WORK.md` provide credits and disclosures. NASA Blue Marble imagery is used with attribution; its presence does not establish that it appears on the challenge's resource list.
 
 Registration, local rules, treatment of prior work, the current submission guide and the challenge's exact resource list need human confirmation. No eligibility, award readiness or official submission is claimed. See `docs/SPACE_APPS_COMPLIANCE.md`, `docs/delivery/SUBMISSION_DRAFT_EN.md` and `docs/delivery/VERSION_HISTORY.md`.
+
+## Downloads
+
+[Baixe o pacote completo, os slides, as artes e a demo por links HTTPS públicos](docs/presentation/DOWNLOADS.md).
