@@ -1,0 +1,185 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-15",
+  "scope": "Static source references and provenance; not a live NASA API or live feed. No gameplay accounting is changed.",
+  "challengePillars": [
+    "Power and energy",
+    "Life support and water",
+    "Radiation and shelter",
+    "Plants and food"
+  ],
+  "eligibility": "NASA origin alone does not establish inclusion in the official challenge resource list or Global Award eligibility; verify current rules independently.",
+  "mediaCredit": "NASA/Goddard Space Flight Center Scientific Visualization Studio; Reto Stockli; NASA Earth Observatory; Terra/MODIS",
+  "mediaGuidelines": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "sources": [
+    {
+      "sourceId": "nasa-moon-by-the-numbers",
+      "title": "NASA Science — Moon: By the Numbers",
+      "url": "https://science.nasa.gov/moon/by-the-numbers/",
+      "checkedAt": "2026-11-15",
+      "classification": "numericalReference",
+      "exactData": [
+        {
+          "quantity": "Moon surface gravity",
+          "value": 1.624,
+          "unit": "m/s²"
+        },
+        {
+          "quantity": "Earth surface gravity",
+          "value": 9.80665,
+          "unit": "m/s²"
+        },
+        {
+          "quantity": "Moon equatorial radius",
+          "value": 1737.5,
+          "unit": "km"
+        }
+      ],
+      "howUsedInProject": "Lunar movement uses 1.62 m/s², rounded for gameplay. Earth gravity and lunar radius are context, not a physical scale guarantee.",
+      "simplifications": "Jump speed is adjusted to 2.4 m/s for accessible controls; terrain and biomechanics are fictional.",
+      "gameFilePaths": [
+        "src/world/manifest.ts",
+        "public/science/assumptions.json"
+      ]
+    },
+    {
+      "sourceId": "nasa-blue-marble",
+      "title": "NASA SVS — Blue Marble, Terra/MODIS",
+      "url": "https://svs.gsfc.nasa.gov/2915/",
+      "checkedAt": "2026-11-15",
+      "classification": "actualSatelliteMedia",
+      "exactData": [
+        {
+          "quantity": "derived JPEG dimensions",
+          "value": "2048 × 1024",
+          "unit": "pixels"
+        },
+        {
+          "quantity": "JPEG SHA-256",
+          "value": "312c89088b2e1f50607d449c5f69e2735df03b0f8889e9b2b958c0dfed6fc887",
+          "unit": "hex"
+        }
+      ],
+      "howUsedInProject": "A static NASA satellite-observation mosaic is used as the Earth texture. The institutional copy is science/earth.jpg.",
+      "simplifications": "Source PNG was converted to an RGB JPEG at the same resolution; game lighting is artistic. This is not live weather, live imagery or lunar terrain.",
+      "gameFilePaths": [
+        "public/assets/textures/earth.jpg",
+        "public/science/earth-provenance.json",
+        "src/world/createGameWorld.ts"
+      ]
+    },
+    {
+      "sourceId": "nasa-eclss",
+      "title": "NASA — Environmental Control and Life Support Systems",
+      "url": "https://www.nasa.gov/reference/environmental-control-and-life-support-systems-eclss/",
+      "checkedAt": "2026-11-15",
+      "classification": "conceptualReference",
+      "exactData": [
+        {
+          "concept": "Life support links air, water and waste systems; electrolysis uses water and power to generate oxygen and hydrogen."
+        }
+      ],
+      "howUsedInProject": "Inspires connected power, water, recycling and oxygen choices.",
+      "simplifications": "Rates, efficiencies and capacities are didactic gameplay hypotheses, not NASA-validated specifications.",
+      "gameFilePaths": [
+        "public/science/sources.json",
+        "public/science/assumptions.json",
+        "src/simulation/index.ts"
+      ]
+    },
+    {
+      "sourceId": "nasa-radiation",
+      "title": "NASA — Hazard: Space Radiation",
+      "url": "https://www.nasa.gov/hrp/hazard-space-radiation/",
+      "checkedAt": "2026-11-15",
+      "classification": "conceptualReference",
+      "exactData": [
+        {
+          "concept": "Space radiation poses a risk to astronauts."
+        }
+      ],
+      "howUsedInProject": "Inspires the radiation and shelter challenge.",
+      "simplifications": "A deterministic storm and health model are fictional; no dose in sieverts or forecast is calculated.",
+      "gameFilePaths": [
+        "public/science/sources.json",
+        "public/science/assumptions.json",
+        "src/simulation/index.ts"
+      ]
+    },
+    {
+      "sourceId": "nasa-storm-shelter",
+      "title": "NASA Science — Protecting astronauts from space radiation at the Moon",
+      "url": "https://science.nasa.gov/science-research/heliophysics/how-nasa-will-protect-astronauts-from-space-radiation-at-the-moon/",
+      "checkedAt": "2026-11-15",
+      "classification": "conceptualReference",
+      "exactData": [
+        {
+          "concept": "Solar particle events require radiation protection planning."
+        }
+      ],
+      "howUsedInProject": "Provides background for seeking shelter during a fictional event.",
+      "simplifications": "Game timing and protection are abstractions, not predictions or clinical protection estimates.",
+      "gameFilePaths": [
+        "public/science/sources.json",
+        "public/science/assumptions.json"
+      ]
+    },
+    {
+      "sourceId": "nasa-plants",
+      "title": "NASA Science — VEGGIE",
+      "url": "https://science.nasa.gov/mission/veggie/",
+      "checkedAt": "2026-11-15",
+      "classification": "conceptualReference",
+      "exactData": [
+        {
+          "concept": "Veggie studies plant growth in space."
+        }
+      ],
+      "howUsedInProject": "Inspires the crop and food challenge.",
+      "simplifications": "Growth time, irrigation and yield are game hypotheses, not NASA-validated rates; the greenhouse is fictional.",
+      "gameFilePaths": [
+        "public/science/sources.json",
+        "public/science/assumptions.json",
+        "src/simulation/index.ts"
+      ]
+    },
+    {
+      "sourceId": "nasa-station-microgravity",
+      "title": "NASA — What Is Microgravity?",
+      "url": "https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-microgravity-grades-5-8/",
+      "checkedAt": "2026-11-15",
+      "classification": "conceptualReference",
+      "exactData": [
+        {
+          "concept": "Orbiting spacecraft and occupants experience apparent weightlessness in free fall."
+        }
+      ],
+      "howUsedInProject": "Background for the orbital setting.",
+      "simplifications": "Movement is assisted on a plane; six degrees of freedom and full orbital physics are not simulated.",
+      "gameFilePaths": [
+        "public/science/sources.json",
+        "public/science/assumptions.json"
+      ]
+    },
+    {
+      "sourceId": "nasa-lola",
+      "title": "NASA SVS — CGI Moon Kit / LRO LOLA",
+      "url": "https://svs.gsfc.nasa.gov/4720/",
+      "checkedAt": "2026-11-15",
+      "classification": "notIntegrated",
+      "exactData": [
+        {
+          "concept": "LOLA measures lunar topography; derived maps are available for visualization."
+        }
+      ],
+      "howUsedInProject": "A possible future terrain reference only.",
+      "simplifications": "No LOLA map or measured digital elevation model is integrated; the terrain and canyon are authored fiction.",
+      "gameFilePaths": [
+        "public/science/sources.json",
+        "public/science/assumptions.json",
+        "docs/delivery/SCIENCE_AND_PROVENANCE.md"
+      ]
+    }
+  ],
+  "gameRepository": "https://github.com/andrecodexvictor/astra-junior-astronaut-mission-trainer"
+}
